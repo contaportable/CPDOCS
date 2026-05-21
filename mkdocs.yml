@@ -1,0 +1,115 @@
+site_name: CP2025 Docs
+site_description: Documentación del proyecto CP2025 (Visual FoxPro 9.0 + foxbin2prg)
+site_url: https://yecapp.github.io/CPDOCS/
+#site_url: ""
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+      primary: orange
+      accent: blue
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+      primary: blue
+      accent: orange
+  features:
+    - content.code.copy
+    - navigation.instant
+    - navigation.sections
+    - navigation.tracking
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+  icon: 
+      repo: fontawesome/brands/gitkraken
+nav:
+  - Inicio: index.md
+  - Clases:
+      - Bancos: 
+        - Conciliación Bancaria: modulos/bancos/Conciliacionbancaria.md
+      - Factura:
+        - Dual: modulos/facturacion/facturacion_dual.md
+        - Multilínea: modulos/facturacion/facturacion_lineas_multiples.md
+        - Personalizar secuencia de generación DTE: modulos/facturacion/personalizar_secuencia_gen_dte.md
+        - Importar Clientes y Facturas desde plantilla Excel: modulos/facturacion/importar_clientes_desde_plantilla.md
+        - Configurar links de Pago: 
+          - Wompi: modulos/facturacion/linksPago/wompi/linkPagoWompi.md
+        - Gestión de CXC: modulos/facturacion/gestion_cuentas_por_cobrar.md
+        - Configurar Email para envio de DTE o cotización: modulos/facturacion/configMultiProvEmail.md 
+      - Compras:
+        - Gestión de CXP: modulos/compras/gestion_cuentas_por_pagar.md
+      - Inventario:
+        - Gestión de familias de inventario: modulos/inventario/FamiliaInventario.md
+        - Gastos de Importación (OEC): modulos/inventario/GastosImportacion.md
+        - Retaceos: modulos/inventario/Retaceo.md
+      - Contabilidad:
+        - Reportes Contables: modulos/contabilidad/ReportesContables.md
+      - Reportes: 
+        - Introducción: Reports/reportes.md
+        - Clientes: 
+          - Reportes de clientes: Reports/categorias/clientes.md
+          - Interfaz de gestión y envío de avisos de cobro: Reports/categorias/CLI1H.md
+        - Inventario: Reports/categorias/inventario.md
+        - Impuestos: Reports/categorias/impuestos.md
+      - Informes(Anexos):
+        - F07: modulos/Informes_anexos/anexos_f07.md
+        - F14: 
+          - Anexo de retenciones de renta: modulos/Informes_anexos/anexos_f14.md
+          - Anexo de pago de quincena 25: modulos/Informes_anexos/anexos_f14Q25.md
+      - Planillas: 
+        - Módulo de planillas: modulos/planillas/planillas.md
+        - Quincena 25: modulos/planillas/planillas_Q25.md
+      - Parametros en Contaportable:
+        - Facturación: Parametros/Modulos/Facturación/ParametrosEnFacturacion.md
+        - Informes Anexos: Parametros/Modulos/Informes_anexos/ParametrosEnAnexos.md
+
+repo_url: https://github.com/YECAPP/CPDOCS
+repo_name: Documentación de ContaPortable
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - footnotes
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - attr_list
+  - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg # Base de datos de emojis
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.keys # Para dibujar teclas dentro de las páginas
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid  # Sirve para implementar diagramas por medio de sintaxis Mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format 
+
+  - pymdownx.tabbed:
+      alternate_style: true   
+   
+  - pymdownx.critic
+
+plugins:
+  - glightbox  # Plugin para manejar imágenes con zoom
+  - search     # Plugin de búsqueda
+
+extra:
+  social:
+    - icon: simple/youtube
+      link: https://youtube.com/contaportable
+    - icon: simple/facebook
+      link: https://facebook.com/contaportable
+
+copyright: Copyright &copy; 2026 ContaPortable - Yuri Ernesto Calderón Rodríguez
