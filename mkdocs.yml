@@ -87,8 +87,8 @@ nav:
         - Generales: Parametros/ParametrosGenerales.md
         - Activar Informes/Anexos en sistemas de facturación: Parametros/Modulos/Facturación/activarModInformes.md
   - CP365 (Otros Módulos):
-    - 📦Instalador de otros modulos: other_modules/instaladorModulesCp365.md 
-    - 💧ConAgua: other_modules/ConAgua/conAgua.md
+    - 📦Instalador de otros modulos: modulos/cp365/instaladorModulesCp365.md 
+    - 💧ConAgua: modulos/cp365/ConAgua/conAgua.md
       
 
 
