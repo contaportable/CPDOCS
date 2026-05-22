@@ -11,7 +11,7 @@ El módulo ConAgua extiende el sistema ContaPortable con un flujo completo para 
 ## 📌 Introducción
 
 !!! abstract "Módulo ConAgua"
-     **[Ver instalación del módulo ConAgua :material-arrow-right-bold-box-outline:](../instaladorOtherModules.md){ .md-button }**
+     **[Ver instalación del módulo ConAgua :material-arrow-right-bold-box-outline:](../instaladorModulesCp365.md){ .md-button }**
 
     Despues de instalar el modulo y reiniciar el sistema, se habilitará el acceso al módulo/plugin CONAGUA, para poder realizar registros y facturación por consumo de agua potable en base a lecturas. El módulo comparte la interfaz con el modulo de Proyectos pero opera con base de datos y recursos propios e independientes. Permite gestionar múltiples clientes por proyecto, registrar lecturas de consumo, exportar plantillas Excel con fórmulas y generar facturas en masa listas para transmitir y generar el DTE.
 
@@ -43,7 +43,7 @@ El módulo ConAgua extiende el sistema ContaPortable con un flujo completo para 
 !!! abstract "Descripción de la solución"
     Se implementan dos pestañas integradas al módulo de Proyectos — una para el registro de lecturas y otra para la facturación — junto con la configuración de parámetros de cobro por proyecto y la gestión de clientes asociados.
 
-     ![Botón de acceso al módulo ConAgua](../../assets/cp365/ConAgua/boton_acceso_modulo.png){ align=center }
+     ![Botón de acceso al módulo ConAgua](../../../assets/cp365/ConAgua/boton_acceso_modulo.png){ align=center }
 
 ### ⚙️ Configuración de proyectos y clientes
 
@@ -56,9 +56,9 @@ El módulo ConAgua extiende el sistema ContaPortable con un flujo completo para 
 
     También permite **asociar múltiples clientes al proyecto** sin duplicar su ficha, junto con datos de última lectura, última fecha de factura, etc. Se incluye opción de exportar e importar clientes desde Excel.
 
-    ![Configuración de proyectos y clientes — vista 1](../../assets/cp365/ConAgua/config_proyecto_clientes_01.png){ align=center }
+    ![Configuración de proyectos y clientes — vista 1](../../../assets/cp365/ConAgua/config_proyecto_clientes_01.png){ align=center }
 
-    ![Configuración de proyectos y clientes — vista 2](../../assets/cp365/ConAgua/config_proyecto_clientes_02.png){ align=center }
+    ![Configuración de proyectos y clientes — vista 2](../../../assets/cp365/ConAgua/config_proyecto_clientes_02.png){ align=center }
 
 ### 🚿 Pestaña 1 — Registro de lecturas
 
@@ -70,16 +70,16 @@ El módulo ConAgua extiende el sistema ContaPortable con un flujo completo para 
 
     El registro se organiza por proyecto y puede buscarse por cliente. Los datos se guardan para facturar posteriormente.
 
-    ![Opciones: descargar plantilla o trabajar desde sistema](../../assets/cp365/ConAgua/opciones_lectura.png){ align=center }
+    ![Opciones: descargar plantilla o trabajar desde sistema](../../../assets/cp365/ConAgua/opciones_lectura.png){ align=center }
 
-    ![Grid de registro de lecturas por proyecto](../../assets/cp365/ConAgua/registro_lecturas_grid.png){ align=center }
+    ![Grid de registro de lecturas por proyecto](../../../assets/cp365/ConAgua/registro_lecturas_grid.png){ align=center }
 
 ### 📊 Plantilla Excel con fórmulas
 
 !!! note "Plantilla Excel"
     El sistema genera una plantilla Excel con las fórmulas necesarias para calcular el consumo y los cargos. El cliente puede completar las lecturas en campo y luego importarla al sistema para generar las facturas.
 
-    ![Plantilla Excel con fórmulas incluidas](../../assets/cp365/ConAgua/plantilla_excel.png){ align=center }
+    ![Plantilla Excel con fórmulas incluidas](../../../assets/cp365/ConAgua/plantilla_excel.png){ align=center }
 
 ### 📄 Pestaña 2 — Facturación automática
 
@@ -93,26 +93,26 @@ El módulo ConAgua extiende el sistema ContaPortable con un flujo completo para 
 
     El ítem **Canon** se agrega como **No Sujeto** en el detalle de la factura.
 
-    ![Pestaña 2 — grid de facturación](../../assets/cp365/ConAgua/tab2_facturacion_grid.png){ align=center }
+    ![Pestaña 2 — grid de facturación](../../../assets/cp365/ConAgua/tab2_facturacion_grid.png){ align=center }
 
-    ![Pestaña 2 — importar lecturas desde sistema](../../assets/cp365/ConAgua/tab2_importar_sistema.png){ align=center }
+    ![Pestaña 2 — importar lecturas desde sistema](../../../assets/cp365/ConAgua/tab2_importar_sistema.png){ align=center }
 
-    ![Pestaña 2 — convertir lecturas a facturas (1)](../../assets/cp365/ConAgua/tab2_convertir_facturas_01.png){ align=center }
+    ![Pestaña 2 — convertir lecturas a facturas (1)](../../../assets/cp365/ConAgua/tab2_convertir_facturas_01.png){ align=center }
 
-    ![Pestaña 2 — grid post conversión a facturas](../../assets/cp365/ConAgua/tab2_convertir_facturas_02.png){ align=center }
+    ![Pestaña 2 — grid post conversión a facturas](../../../assets/cp365/ConAgua/tab2_convertir_facturas_02.png){ align=center }
 
-    ![Factura generada — vista detalle](../../assets/cp365/ConAgua/tab2_factura_generada.png){ align=center }
+    ![Factura generada — vista detalle](../../../assets/cp365/ConAgua/tab2_factura_generada.png){ align=center }
 
-    ![Facturas en estado Generado — listas para transmisión](../../assets/cp365/ConAgua/tab2_facturas_transmision.png){ align=center }
+    ![Facturas en estado Generado — listas para transmisión](../../../assets/cp365/ConAgua/tab2_facturas_transmision.png){ align=center }
 
 ### 🔒 Comportamiento con módulo desactivado
 
 !!! note "Módulo CONAGUA desactivado"
     Cuando el parámetro `ACTIVATEMODCONAGUA = NO`, la interfaz de Proyectos mantiene su comportamiento original: sin pestaña de lecturas ni facturación de agua. El acceso a la bitácora se mantiene mediante el botón correspondiente.
 
-    ![Proyectos con CONAGUA desactivado — sin pestaña](../../assets/cp365/ConAgua/modulo_desactivado_01.png){ align=center }
+    ![Proyectos con CONAGUA desactivado — sin pestaña](../../../assets/cp365/ConAgua/modulo_desactivado_01.png){ align=center }
 
-    ![Proyectos con CONAGUA desactivado — vista detalle](../../assets/cp365/ConAgua/modulo_desactivado_02.png){ align=center }
+    ![Proyectos con CONAGUA desactivado — vista detalle](../../../assets/cp365/ConAgua/modulo_desactivado_02.png){ align=center }
 
 ---
 
@@ -123,7 +123,7 @@ El módulo ConAgua extiende el sistema ContaPortable con un flujo completo para 
 !!! note "Opción 1 — Instalación mediante formulario (recomendada)"
     La forma recomendada de instalar el módulo ConAgua es usando el **formulario de instalación de módulos y plugins**, accesible desde el menú del sistema en **Datos Generales → Instalar plugin/módulo**. Este método activa automáticamente el módulo sin necesidad de configuración manual.
 
-    **[Ver guía del instalador de módulos :material-arrow-right-bold-box-outline:](../instaladorOtherModules.md){ .md-button }**
+    **[Ver guía del instalador de módulos :material-arrow-right-bold-box-outline:](../instaladorModulesCp365.md){ .md-button }**
 
 !!! tip "Recursos independientes"
     Al activar el módulo, el sistema genera automáticamente una carpeta con los recursos propios (Base de datos y archivos) del módulo ConAgua, separados de los recursos del sistema estándar.
@@ -165,9 +165,9 @@ El módulo ConAgua extiende el sistema ContaPortable con un flujo completo para 
         - :material-check-circle: Asociación de clientes sin duplicar ficha: **confirmada**
         - :material-check-circle: Registro de lecturas por proyecto: **funcional**
 
-        ![Config proyectos y clientes — test 1](../../assets/cp365/ConAgua/config_proyecto_clientes_01.png){ align=center }
+        ![Config proyectos y clientes — test 1](../../../assets/cp365/ConAgua/config_proyecto_clientes_01.png){ align=center }
 
-        ![Config proyectos y clientes — test 2](../../assets/cp365/ConAgua/config_proyecto_clientes_02.png){ align=center }
+        ![Config proyectos y clientes — test 2](../../../assets/cp365/ConAgua/config_proyecto_clientes_02.png){ align=center }
 
     ??? example "Generación automática de facturas"
         Se validó el flujo completo desde la importación de lecturas hasta la generación de facturas en estado Generado.
@@ -176,7 +176,7 @@ El módulo ConAgua extiende el sistema ContaPortable con un flujo completo para 
         - :material-check-circle: Conversión a facturas en estado Generado: **confirmada**
         - :material-check-circle: Facturas listas para transmisión masiva: **confirmadas**
 
-        ![Tab 2 — grid de facturación](../../assets/cp365/ConAgua/tab2_facturacion_grid.png){ align=center }
+        ![Tab 2 — grid de facturación](../../../assets/cp365/ConAgua/tab2_facturacion_grid.png){ align=center }
 
     ??? example "Consumo cero — omisión de factura y Canon como No Sujeto"
         Se confirmó que los registros con consumo igual a cero se omiten al generar facturas automáticas. Adicionalmente, el ítem Canon se agrega como No Sujeto en el detalle de la factura.
@@ -185,8 +185,8 @@ El módulo ConAgua extiende el sistema ContaPortable con un flujo completo para 
         - :material-check-circle: Canon agregado como ítem No Sujeto en detalle de factura: **confirmado**
         - :material-check-circle: Facturas a cero no generadas (ni invalidadas ni generadas): **confirmado**
 
-        ![Test: omisión consumo cero + Canon No Sujeto](../../assets/cp365/ConAgua/test_consumo_cero_canon.png){ align=center }
+        ![Test: omisión consumo cero + Canon No Sujeto](../../../assets/cp365/ConAgua/test_consumo_cero_canon.png){ align=center }
 
-        ![EXE_2026_03_04: consumo cero no genera factura (1)](../../assets/cp365/ConAgua/test_facturas_cero_01.png){ align=center }
+        ![EXE_2026_03_04: consumo cero no genera factura (1)](../../../assets/cp365/ConAgua/test_facturas_cero_01.png){ align=center }
 
 ---

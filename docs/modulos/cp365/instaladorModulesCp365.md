@@ -43,15 +43,15 @@ Los módulos se entregan como comprimidos `.zip` y el instalador gestiona autom�
 !!! abstract "Descripción de la solución"
     Se implementa el formulario de instalación accesible desde el menú principal. El sistema detecta automáticamente el estado de instalación del módulo y presenta las opciones correspondientes.
 
-    ![Instalación nueva — formulario inicial](../assets/cp365/Instalador/instalacion_nueva_01.png){ align=center }
+    ![Instalación nueva — formulario inicial](../../assets/cp365/Instalador/instalacion_nueva_01.png){ align=center }
 
     **Espacio de nombres y directorios generados**
     
-    ![Clase NameSpaceForNewModule — definición (1)](../assets/cp365/Instalador/namespace_clase_01.png){ align=center }
+    ![Clase NameSpaceForNewModule — definición (1)](../../assets/cp365/Instalador/namespace_clase_01.png){ align=center }
 
-    ![Clase NameSpaceForNewModule — definición (2)](../assets/cp365/Instalador/namespace_clase_02.png){ align=center }
+    ![Clase NameSpaceForNewModule — definición (2)](../../assets/cp365/Instalador/namespace_clase_02.png){ align=center }
 
-    ![Clase NameSpaceForNewModule — estructura completa](../assets/cp365/Instalador/namespace_clase_03.png){ align=center }
+    ![Clase NameSpaceForNewModule — estructura completa](../../assets/cp365/Instalador/namespace_clase_03.png){ align=center }
 
 ### 📍 Acceso desde el menú del sistema
 
@@ -60,23 +60,23 @@ Los módulos se entregan como comprimidos `.zip` y el instalador gestiona autom�
 
     **Menú → Datos Generales → Instalar plugin/módulo**
 
-    ![Menú del sistema — opción instalar plugin/módulo](../assets/cp365/Instalador/menu_opcion_instalar.png){ align=center }
+    ![Menú del sistema — opción instalar plugin/módulo](../../assets/cp365/Instalador/menu_opcion_instalar.png){ align=center }
 
 ### 🆕 Instalación nueva (desde cero)
 
 !!! note "Modo instalación nueva"
     Al seleccionar la instalación nueva, el sistema instala el módulo desde cero. Si detecta una instalación anterior, informa al usuario y permite continuar con la instalación limpia.
 
-    ![Instalación nueva — formulario inicial](../assets/cp365/Instalador/instalacion_nueva_01.png){ align=center }
+    ![Instalación nueva — formulario inicial](../../assets/cp365/Instalador/instalacion_nueva_01.png){ align=center }
 
-    ![Instalación nueva — detección de instalación anterior](../assets/cp365/Instalador/instalacion_nueva_02.png){ align=center }
+    ![Instalación nueva — detección de instalación anterior](../../assets/cp365/Instalador/instalacion_nueva_02.png){ align=center }
 
 ### 🔄 Actualización de módulo existente
 
 !!! note "Modo actualización"
     Al seleccionar actualizar, el sistema detecta la instalación existente y aplica los cambios del nuevo compilado `.app` sobre la versión instalada.
 
-    ![Actualización de módulo — formulario](../assets/cp365/Instalador/actualizacion_modulo.png){ align=center }
+    ![Actualización de módulo — formulario](../../assets/cp365/Instalador/actualizacion_modulo.png){ align=center }
 
 ---
 
@@ -125,12 +125,12 @@ Los módulos se entregan como comprimidos `.zip` y el instalador gestiona autom�
         - :material-check-circle: Detección de instalación anterior: **funcional**
         - :material-check-circle: Actualización de módulo existente: **confirmada**
 
-        ![Test instalador — proceso (1)](../assets/cp365/Instalador/test_instalador_01.png){ align=center }
+        ![Test instalador — proceso (1)](../../assets/cp365/Instalador/test_instalador_01.png){ align=center }
 
-        ![Test instalador — proceso (2)](../assets/cp365/Instalador/test_instalador_02.png){ align=center }
+        ![Test instalador — proceso (2)](../../assets/cp365/Instalador/test_instalador_02.png){ align=center }
 
-        ![Test instalador — proceso (3)](../assets/cp365/Instalador/test_instalador_03.png){ align=center }
+        ![Test instalador — proceso (3)](../../assets/cp365/Instalador/test_instalador_03.png){ align=center }
 
-        ![Test instalador — proceso (4)](../assets/cp365/Instalador/test_instalador_04.png){ align=center }
+        ![Test instalador — proceso (4)](../../assets/cp365/Instalador/test_instalador_04.png){ align=center }
 
 ---
