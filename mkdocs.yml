@@ -31,9 +31,10 @@ theme:
 nav:
   - Inicio: index.md
   - Módulos:
-      - Bancos: 
+      - 🏦Bancos: 
         - Conciliación Bancaria: modulos/bancos/Conciliacionbancaria.md
-      - Factura:
+        - Transferencias Bancarias: modulos/bancos/transferenciasBancarias.md
+      - 📑Facturación:
         - Dual: modulos/facturacion/facturacion_dual.md
         - Multilínea: modulos/facturacion/facturacion_lineas_multiples.md
         - Personalizar secuencia de generación DTE: modulos/facturacion/personalizar_secuencia_gen_dte.md
@@ -42,32 +43,54 @@ nav:
           - Wompi: modulos/facturacion/linksPago/wompi/linkPagoWompi.md
         - Gestión de CXC: modulos/facturacion/gestion_cuentas_por_cobrar.md
         - Configurar Email para envio de DTE o cotización: modulos/facturacion/configMultiProvEmail.md 
-      - Compras:
+        - Activar autorización al aplicar descuentos por item y globales: modulos/facturacion/bloqueo_descuentos.md 
+        - Personaliza nomenclatura para archivos del DTE al exportarlos: modulos/facturacion/nomenclatura_dte.md
+        - Creación de correlativos automaticos: modulos/facturacion/correlativosAutomaticos.md
+        - Creación de Apendices VN: modulos/facturacion/apendicesVN.md
+      - 🛒Compras (OG Y OC):
         - Gestión de CXP: modulos/compras/gestion_cuentas_por_pagar.md
-      - Inventario:
+        - Importar Json del DTE en OG: modulos/compras/importJsonOG.md
+        - Registrar OG de vehiculos: modulos/compras/OG_mantenimiento_vehiculos.md
+      - 📦Inventario:
         - Gestión de familias de inventario: modulos/inventario/FamiliaInventario.md
-        - Gastos de Importación (OEC): modulos/inventario/GastosImportacion.md
-        - Retaceos: modulos/inventario/Retaceo.md
-      - Contabilidad:
-        - Reportes Contables: modulos/contabilidad/ReportesContables.md
-      - Reportes: 
+      - 📘Contabilidad:
+        - Contabilización Automática: modulos/contabilidad/contabilizacion_automatica.md
+      - 📊Reportes: 
         - Introducción: Reports/reportes.md
         - Clientes: 
           - Reportes de clientes: Reports/categorias/clientes.md
           - Interfaz de gestión y envío de avisos de cobro: Reports/categorias/CLI1H.md
         - Inventario: Reports/categorias/inventario.md
         - Impuestos: Reports/categorias/impuestos.md
-      - Informes(Anexos):
-        - F07: modulos/Informes_anexos/anexos_f07.md
+        - 📈Reportes Gerenciales:
+            - Reporte de mantenimiento de vehiculos: Reports/reportesGerenciales/reporte_mantenimiento_vehiculos.md
+      - 🧾Informes(Anexos):
+        - F07:
+          - Generales: modulos/Informes_anexos/F07/anexos_f07.md
+          - Reportes: modulos/Informes_anexos/F07/reportes.md
+          - Agrupar CSV de anexo vtas Consu. Final: modulos/Informes_anexos/F07/agrupacionAnexoConsumidorFinal.md
         - F14: 
-          - Anexo de retenciones de renta: modulos/Informes_anexos/anexos_f14.md
-          - Anexo de pago de quincena 25: modulos/Informes_anexos/anexos_f14Q25.md
-      - Planillas: 
+          - Anexo de retenciones de renta: modulos/Informes_anexos/F14/anexos_f14.md
+          - Anexo de pago de quincena 25: modulos/Informes_anexos/F14/anexos_f14Q25.md
+        - Importacion de Json Optimizada: modulos/Informes_anexos/importacionJsonAnexos.md
+      - 👥Planillas: 
         - Módulo de planillas: modulos/planillas/planillas.md
         - Quincena 25: modulos/planillas/planillas_Q25.md
-      - Parametros en Contaportable:
-        - Facturación: Parametros/Modulos/Facturación/ParametrosEnFacturacion.md
-        - Informes Anexos: Parametros/Modulos/Informes_anexos/ParametrosEnAnexos.md
+      - 📥Visor Json:
+        - Visor Json: modulos/VisorJson/visor_json.md
+        - Formulario:  modulos/VisorJson/Formulario.md
+        - Clase ytbjson: modulos/VisorJson/Codigo_visor_json.md
+        - Clase DteHub: modulos/VisorJson/Clase_DteHub.md
+        - Pruebas Unitarias: modulos/VisorJson/PruebasUnitarias_DteHub.md
+      - ⚙️Parámetros en Contaportable:
+        - Informes/Anexos: Parametros/Modulos/Informes_anexos/ParametrosEnAnexos.md
+        - Generales: Parametros/ParametrosGenerales.md
+        - Activar Informes/Anexos en sistemas de facturación: Parametros/Modulos/Facturación/activarModInformes.md
+  - CP365 (Otros Módulos):
+    - 📦Instalador de otros modulos: other_modules/instaladorModulesCp365.md 
+    - 💧ConAgua: other_modules/ConAgua/conAgua.md
+      
+
 
 repo_url: https://github.com/contaportable/CPDOCS
 repo_name: Documentación de ContaPortable

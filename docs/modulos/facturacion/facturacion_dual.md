@@ -179,8 +179,5 @@ La actualización RGDUAL, nace de la necesidad de poder configurar y utilizar mu
         - desde la RG se puede acceder a los parametros configurados del formato por medio del objeto oConfigFormat
         - Ejemplo: Configurar código QR1 — oConfigFormat.linkqr1
         - Ejemplo: Mostrar etiqueta para el código QR1  — oConfigFormat.lblinkqr1
-        - Tambien puedes agregar información extra de facturacion, forma de pago, contactos de clientes, proyectos, departamentos (centro de costo) usando los objetos: [oContacClie](https://github.com/YECAPP/CP2025/issues/293) y [oFactFpagoProy](https://github.com/YECAPP/CP2025/issues/294)
-    !!! tip "+ Video explicativo"
-        [▶️ Reproducir video explicativo sobre la actualización](https://www.loom.com/share/27f34d15f82a4572a7c826106d09220e)     
-        
+        - Tambien puedes agregar información extra de facturacion, forma de pago, contactos de clientes, proyectos, departamentos (centro de costo) usando los objetos: [oContacClie](https://github.com/YECAPP/CP2025/issues/293) y [oFactFpagoProy](https://github.com/YECAPP/CP2025/issues/294)    
                
