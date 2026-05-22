@@ -83,8 +83,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - attr_list
   - pymdownx.emoji:
-        emoji_index: material.extensions.emoji.twemoji
-        emoji_generator: material.extensions.emoji.to_svg # Base de datos de emojis
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg # Base de datos de emojis
   - md_in_html
   - pymdownx.blocks.caption
   - pymdownx.keys # Para dibujar teclas dentro de las páginas
@@ -93,7 +93,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid  # Sirve para implementar diagramas por medio de sintaxis Mermaid
           class: mermaid
-          format: !!python/object:pymdownx.superfences.fence_code_format 
+          format: !!python/name:pymdownx.superfences.fence_code_format 
 
   - pymdownx.tabbed:
       alternate_style: true   
