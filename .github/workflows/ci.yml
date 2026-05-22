@@ -7,6 +7,7 @@ on:
 permissions:
   contents: write
 jobs:
+  cname: docs.contaportable.com
   deploy:
     runs-on: ubuntu-latest
     steps:
