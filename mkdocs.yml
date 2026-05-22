@@ -1,7 +1,6 @@
-site_name: CP2025 Docs
+site_name: ContaPortable Docs
 site_description: Documentación de ContaPortable 
-site_url: https://yecapp.github.io/CPDOCS/
-#site_url: ""
+site_url: https://docs.contaportable.com
 
 theme:
   name: material
@@ -84,8 +83,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - attr_list
   - pymdownx.emoji:
-        emoji_index: !!python/name:material.extensions.emoji.twemoji
-        emoji_generator: !!python/name:material.extensions.emoji.to_svg # Base de datos de emojis
+        emoji_index: material.extensions.emoji.twemoji
+        emoji_generator: material.extensions.emoji.to_svg # Base de datos de emojis
   - md_in_html
   - pymdownx.blocks.caption
   - pymdownx.keys # Para dibujar teclas dentro de las páginas
@@ -94,7 +93,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid  # Sirve para implementar diagramas por medio de sintaxis Mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format 
+          format: !!python/object:pymdownx.superfences.fence_code_format 
 
   - pymdownx.tabbed:
       alternate_style: true   
@@ -111,5 +110,11 @@ extra:
       link: https://youtube.com/contaportable
     - icon: simple/facebook
       link: https://facebook.com/contaportable
+    - icon: simple/instagram
+      link: https://www.instagram.com/contaportablesv/
+    - icon: simple/tiktok
+      link: https://www.tiktok.com/@contaportable
+    - icon: simple/linkedin
+      link: https://www.linkedin.com/company/contaportable
 
 copyright: Copyright &copy; 2026 ContaPortable - Yuri Ernesto Calderón Rodríguez
