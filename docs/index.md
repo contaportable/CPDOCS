@@ -1,31 +1,30 @@
-# CP2025 — Documentación
+# ContaPortable - Centro de Ayuda
 
-> Contaportable/CP2025 — App de escritorio en **Visual FoxPro 9.0** con control de versiones en **GitHub** y conversión binario⇄texto mediante **foxbin2prg**.
+## Bienvenido
 
-!!! tip "Lectura rápida"
-    - **Repo:** [YECAPP/CP2025](https://github.com/YECAPP/CP2025)  
-    - **Rama de trabajo:** `DESARROLLO` · **Releases:** `main`  
-    - **Conversión:** bin→texto antes de *push*, texto→bin después de *pull*
+Este portal reúne guías prácticas para ayudarte a usar ContaPortable en tu trabajo diario.
 
-## ¿Qué es CP2025?
+Aquí encontrarás documentación organizada por módulos, procesos y reportes para facilitar tu operación contable y administrativa.
 
-Software contable y de facturación. El código principal está en Visual FoxPro 9.0; para poder versionar en Git se convierten los binarios (formularios/clases/reportes) a texto con **foxbin2prg**.
+## Qué es ContaPortable
 
-## Formatos de archivos
+ContaPortable es una plataforma orientada a contabilidad, facturación y gestión operativa para empresas y despachos contables.
 
-| Binario (VFP) | Texto (foxbin2prg) | Descripción                                    |
-| --- | --- | --- |
-| `.vcx` | `.vc2` | Contenedor de clases |
-| `.scx` | `.sc2` | Formularios |
-| `.prg` | `.prg` | Código (ya es texto) |
+## Qué puedes consultar en esta documentación
 
-## Flujo de ramas
+- Guías por módulo (Facturación, Compras, Inventario, Planillas, Contabilidad y más)
+- Procedimientos paso a paso para tareas frecuentes
+- Configuraciones funcionales y parámetros de uso
+- Reportes y material de apoyo
 
-- **`DESARROLLO`**: rama principal de trabajo.
-- **`main`**: se usa para publicar **releases** estables.
+## Accesos rápidos
 
-### Enlaces útiles
+- Sitio oficial: <https://www.contaportable.com>
+- Descargas: <https://www.contaportable.com/vip/public/descargas/>
+- Membresía: <https://www.contaportable.com/vip/public/login>
 
-1. Contaportable.com :  
-        1.  Descarga: <https://www.contaportable.com/vip/public/descargas/>  
-        2.  Membresía: <https://www.contaportable.com/vip/public/login>
+## Recomendaciones para aprovechar mejor el sitio
+
+- Usa el menú lateral para navegar por categoría o módulo.
+- Usa la búsqueda para encontrar rápidamente una función o proceso.
+- Si no encuentras una guía específica, solicita apoyo al equipo interno de soporte.
