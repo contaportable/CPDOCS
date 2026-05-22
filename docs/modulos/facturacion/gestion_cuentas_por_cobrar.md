@@ -12,20 +12,17 @@ A continuación se detalla el proceso para utilizar la opción de gestión de CX
         C[2. Ventana de Gestión de CXC]
         D[3. Gestión de abonos]
         E[4. Detalles del documento]
-        F[5. Gestión de Bancos]
       end
 
       A --> B
       A --> C
       A --> D
       A --> E
-      A --> F
 
     click B "#1-acceso-desde-facturacion" "Ir al acceso desde facturación"
     click C "#2-ventana-de-gestion-de-cxc" "Ir a la ventana de gestión de CXC"
     click D "#3-gestion-de-abonos" "Ir a la gestión de abonos"
     click E "#4-detalles-del-documento" "Ir a detalles del documento"
-    click F "#5-gestion-de-bancos" "Ir a la gestión de bancos"
     ```
 ---
 
@@ -78,22 +75,3 @@ Al hacer clic en la opción **"Ver detalles del documento"**, el sistema despleg
     Aquí podrá visualizar el saldo pendiente, el total abonado y otros datos relevantes de la CXC para el documento que está siendo gestionado.
 
 ![Detalles de la CXC](../../assets/Facturacion/gestionCuentasPorCobrar/CXCDocumentDetails.png)
-
----
-
-## 5. Gestión de Bancos
-
-!!! info "Disponibilidad"
-    Esta funcionalidad está disponible para las instalaciones que utilizan la versión de facturación **INVFACT2**. Si no ve la opción en su sistema, consulte con su administrador.
-
-La toolbar de la versión "_ContaPortable PRO_" incluye acceso directo a la gestión de **bancos y cuentas bancarias** de la empresa, sin necesidad de salir del módulo. Esto le permite mantener actualizados los datos de sus cuentas mientras trabaja con sus documentos.
-
-### ¿Qué puede hacer desde aquí?
-
-- **Consultar** las cuentas bancarias registradas en el sistema.
-- **Agregar** nuevas cuentas bancarias o bancos.
-- **Modificar** los datos de una cuenta existente (número de cuenta, banco, moneda, etc.).
-
-> Cualquier cambio realizado en esta sección se refleja de inmediato al momento de registrar un abono, ya que el listado de cuentas disponibles se actualiza automáticamente.
-
-![Acceso a gestión de bancos y cuentas bancarias desde la toolbar de facturación ](../../assets/Facturacion/gestionCuentasPorCobrar/BankAccountManagement.png)

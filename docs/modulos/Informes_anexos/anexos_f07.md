@@ -2,6 +2,17 @@
 
 # Anexos F07 - Documentación <!-- Subtítulo de nivel 1 -->
 
+## 📚 USO GENERAL
+
+!!! Tip "Permite Generar los CSV de los distintos anexos correspondientes al informe F07 (Clasificarlos en proceso, presentados y eliminados), también permite generar los libros de IVA en base a los anexos y contabilizarlos"
+    - Ingresar comprobantes al anexos manualmente
+    - Importar Dte al anexo
+    - Cargar Dte´s emitidos desde contaportable
+    ![parametro "VALIDATEISRFIELDSANEXOS"](../../assets/Informes_anexos/F07/anexosF07ScreenPrincipal.png){.align=center}
+    ![parametro "VALIDATEISRFIELDSANEXOS"](../../assets/Informes_anexos/F07/anexosF07.png){.align=center}
+
+---
+
 ## ⚙️ Parámetros / Configuraciones
 
 !!! Note "VALIDATEISRFIELDSANEXOS"
@@ -30,17 +41,6 @@
 
         ??? Tip "Definir cuantas contables de compras"
             ![parametro "VALIDATEISRFIELDSANEXOS"](../../assets/Informes_anexos/F07/ConfigContableCompras.png){.align=center}
----
-
-## 📚 USO GENERAL
-
-!!! Tip "Permite Generar los CSV de los distintos anexos correspondientes al informe F07 (Clasificarlos en proceso, presentados y eliminados), también permite generar los libros de IVA en base a los anexos y contabilizarlos"
-    - Ingresar comprobantes al anexos manualmente
-    - Importar Dte al anexo
-    - Cargar Dte´s emitidos desde contaportable
-    ![parametro "VALIDATEISRFIELDSANEXOS"](../../assets/Informes_anexos/F07/anexosF07ScreenPrincipal.png){.align=center}
-    ![parametro "VALIDATEISRFIELDSANEXOS"](../../assets/Informes_anexos/F07/anexosF07.png){.align=center}
-
 ---
 
 ## 📄 Reportes
