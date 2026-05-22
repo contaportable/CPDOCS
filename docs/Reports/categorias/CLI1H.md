@@ -46,10 +46,16 @@
 ### Configuración y envío de correos
 
 1. **Configuración de cuenta:** Mediante el botón de cuenta, puede seleccionar si desea enviar los correos usando la cuenta de DTE o configurar una cuenta exclusiva para cobros (vía OAuth2). *Precaución: Es probable que en ciertos dominios con restricciones de Outlook el envío de correos requiera configuraciones adicionales de administrador en su cuenta.*
-2. **Editar mensaje:** Puede modificar el asunto y el cuerpo del correo que recibirá el cliente haciendo clic en el botón de editar mensaje.
-3. **Envio individual:** Puede enviar el aviso uno a uno usando el botón de acción en la parte izquierda de cada registro.
-4. **Envio masivo:** Al hacer clic en "Enviar pendientes", se enviarán los avisos a todos los registros con estado pendiente (y correo configurado).
-5. Si el envío es exitoso, al cliente le llegará un correo con un formato de PDF detallando los pagos pendientes.
+2. **Límites diarios por cuenta:** Dentro de la misma pantalla de configuración se muestra un panel único de límites de envío, con valores separados para la cuenta de Cobros y la cuenta DTE.
+3. **Alertas y bloqueo diario:** Puede definir desde qué cantidad de correos debe alertar el sistema y cuál es el límite máximo diario permitido por cuenta.
+4. **Confirmación antes de enviar:** El sistema solicita confirmación tanto en el envío individual como en el envío masivo antes de procesar correos.
+5. **Editar mensaje:** Puede modificar el asunto y el cuerpo del correo que recibirá el cliente haciendo clic en el botón de editar mensaje.
+6. **Envio individual:** Puede enviar el aviso uno a uno usando el botón de acción en la parte izquierda de cada registro.
+7. **Envio masivo:** Al hacer clic en "Enviar pendientes", se enviarán los avisos a todos los registros con estado pendiente (y correo configurado).
+8. Si el envío es exitoso, al cliente le llegará un correo con un formato de PDF detallando los pagos pendientes.
+
+> [!NOTE]
+> La pantalla de configuración presenta primero los datos de cuenta y, debajo, el panel de límites. Esta separación busca evitar superposición de controles y facilitar la revisión rápida antes de enviar.
 
 !!! note "Configuración y envío de correos en imágenes"
     <p style="text-align:center">

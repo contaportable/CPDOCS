@@ -1,18 +1,29 @@
 # Reportes
 
-Se explica uso y organización de reportes en **contaportable**.
+En esta sección encontrarás los reportes organizados para que puedas ubicar rápidamente la información que necesitas según tu actividad diaria.
 
-## Archivos
+## Clasificaciones para usuarios
 
-1. **Definereport.prg**: Se creó para poder iniciar el traslado de todos los reportes a código.
-2. Contiene dos clases principales: Reportes.
+### 1. Reportes de clientes
 
-!!! note "**Clases Statement contenidas en DefineReport.prg**"
-    1. StatementSTM: Reportes de sistema.
-    2. StatementINV: [Reportes de inventario](categorias/inventario.md){ .md-button--primary }
-    3. StatementCLI: [Reportes de clientes](categorias/clientes.md){ .md-button--primary }
-    4. StatementIVA: [Reportes de impuestos](categorias/impuestos.md){ .md-button--primary }
-    5. StatementReportListener: Actúa como controlador de errores, al mismo tiempo, valida los tamaños adecuados para la impresión de reportes
+Ideales para seguimiento de cuentas por cobrar, estados de cuenta, gestión de cobros y control de saldos pendientes.
 
-??? info "**Reports** es el formulario principal que utiliza las clases"  
-    FORMS\Report.sc2 Se usa para invocar las clases Statement y setear la parametrería de los reportes
+**Ir a la categoría:** [Reportes de clientes](categorias/clientes.md){ .md-button--primary }
+
+### 2. Reportes de inventario
+
+Enfocados en existencias, movimientos de productos, alertas de mínimos y análisis de rotación para apoyar compras y abastecimiento.
+
+**Ir a la categoría:** [Reportes de inventario](categorias/inventario.md){ .md-button--primary }
+
+### 3. Reportes de impuestos
+
+Orientados al control tributario y apoyo en la preparación de declaraciones y anexos fiscales.
+
+**Ir a la categoría:** [Reportes de impuestos](categorias/impuestos.md){ .md-button--primary }
+
+## Recomendaciones de uso
+
+1. Define primero el objetivo del reporte (cobro, inventario o cumplimiento fiscal).
+2. Aplica filtros por fecha, cliente, producto o documento para obtener resultados más útiles.
+3. Exporta o imprime únicamente cuando hayas validado que los datos correspondan al período correcto.

@@ -371,7 +371,7 @@ Vista previa del reporte **![Reporte de gestión y envío de email de avisos de 
     - Códigos de inventario (Todos o bloques)
     - Clientes (Todos o bloques)
 
-    **![Reporte de productos vendidos agrupados por familia de inventario](../../assets/reportes/clientes/1.18-CLI1I-FILTER.png){ align= center }**
+    **![Reporte de productos vendidos agrupados por familia de inventario](../../assets/reportes/clientes/1.18-CLI1I-FILTER.png){ align= center }** 
 
     Es posible exportarlo a formato Excel ya sea de forma consolidada o detallada.
 

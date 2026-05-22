@@ -1,48 +1,18 @@
-# CP2025 Docs - MkDocs Material
+# Centro de Documentación ContaPortable
 
-Documentación del proyecto CP2025 desplegada con MkDocs Material en Docker.
+Bienvenido al portal de ayuda de ContaPortable.
 
-### 1. Monitoreo
-**Iniciar servicio:**
-docker compose up -d
-**Apagar servicio:**
-docker compose down
-**Reiniciar servicio:**
-docker compose restart
+Este sitio está pensado para usuarios, equipos de operación y personal administrativo que necesitan consultar procesos, módulos y guías de uso del sistema.
 
+## Qué encontrarás aquí
 
-### 2. Monitoreo
-**Ver logs en tiempo real:**
-docker compose logs -f
-**Ver estado de contenedores:**
-docker ps
+- Guías por módulo (Facturación, Compras, Inventario, Planillas, Contabilidad y más)
+- Manuales de configuración y parámetros
+- Reportes y anexos de apoyo
+- Ejemplos de uso y referencias operativas
 
-## Despliegue en Otro Servidor
-### 1. Instalar Docker Desktop
-https://www.docker.com/products/docker-desktop/
+## Recomendaciones para usuarios
 
-### 2. Clonar o copiar archivos del proyecto
-# Opción A: Clonar repositorio completo
-git clone https://github.com/YECAPP/CPDOCS
-cd CPDOCS
-
-### 3. Iniciar el servicio
-docker compose up -d
-
-### 4. Verificar despliegue
-## URLs de Acceso
-Una vez iniciado el servicio, la documentación estará disponible en el host del servicio:
-- **Principal:** [http://[NOMBRE_EQUIPO]:8005/CPDOCS/](http://[NOMBRE_EQUIPO]:8005/CPDOCS/)
-- **Alternativa:** [http://{IP_EQUIPO}:8005/CPDOCS/](http://{IP_EQUIPO}:8005/CPDOCS/)
-
-## Notas
-- El servicio se ejecuta en el puerto **8005** del host
-- Los cambios en archivos `.md` se reflejan automáticamente (hot reload)
-- La imagen incluye plugins: mkdocs-macros-plugin, mkdocs-glightbox, pymdown-extensions, mkdocs-material
-- Se debe estar en la red contaportableDesign
-- Se debe tener docker desktop instalado y corriendo para que funcione "Docker compose up -d"
-
-### Archivos mínimos requeridos para despliegue:
-- `docker-compose.yml`
-- `docs/` (toda la carpeta)
-- `mkdocs.yml`# CPDOCS
+- Usa el menú lateral para navegar por módulos.
+- Usa la búsqueda para encontrar rápidamente un tema.
+- Si una página no carga o está desactualizada, repórtalo al equipo de soporte interno.
