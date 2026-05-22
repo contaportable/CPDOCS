@@ -1,4 +1,4 @@
-# Interfaz gestión y Envío de Avisos de Cobro (CLI1H)
+# Interfaz gestión y Envío de Avisos de Cobro
 
 - Interfaz dedicada para la gestión y envío de avisos de cobro por correo electrónico a clientes.
 - Permite visualizar saldos, antigüedad de deuda, confirmar correos destino y revisar el estado previo de los envíos.
@@ -13,6 +13,9 @@
 2. Seleccione el reporte **Gestión y envío de email de avisos de cobro**.
 3. Defina los filtros requeridos (clientes, fecha de corte, cuentas bancarias a mostrar en el reporte, etc.).
 4. Ejecute el reporte para abrir la interfaz de gestión de envíos de aviso de cobro.
+
+> [!NOTE]
+> Desde esta misma pantalla puede definir un telefono de contacto personalizado para el reporte. En este reporte ese telefono se usa en el PDF y en el contenido del correo enviado; en el aviso de cobro se reutiliza el mismo teléfono personalizado junto con el correo personalizado. El cambio solo aplica a la sesión actual y no modifica la configuración general del sistema.
 
 !!! note "Acceso y selección en imágenes"
     <p style="text-align:center">
@@ -53,6 +56,7 @@
 6. **Envio individual:** Puede enviar el aviso uno a uno usando el botón de acción en la parte izquierda de cada registro.
 7. **Envio masivo:** Al hacer clic en "Enviar pendientes", se enviarán los avisos a todos los registros con estado pendiente (y correo configurado).
 8. Si el envío es exitoso, al cliente le llegará un correo con un formato de PDF detallando los pagos pendientes.
+9. **Telefono personalizado:** Si necesita mostrar un telefono distinto al general, puede escribirlo en la pantalla previa del reporte antes de abrir la gestión. Ese valor también se incorpora al correo HTML enviado al cliente.
 
 > [!NOTE]
 > La pantalla de configuración presenta primero los datos de cuenta y, debajo, el panel de límites. Esta separación busca evitar superposición de controles y facilitar la revisión rápida antes de enviar.
