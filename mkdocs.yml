@@ -62,6 +62,7 @@ nav:
         - Gestión de formas de pago: modulos/forma_pago/forma_pago.md
       - 📦Inventario:
         - Gestión de familias de inventario: modulos/inventario/FamiliaInventario.md
+        - Requisiciones y mermas: modulos/inventario/requisiciones-mermas-y-perdidas.md
       - 🧾Informes (Anexos):
         - F07:
           - Generales: modulos/Informes_anexos/F07/anexos_f07.md
