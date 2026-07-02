@@ -1,30 +1,26 @@
-# ContaPortable - Documentación Oficial
+# <img src="assets/ContaPortable/logo-CP.png" alt="ContaPortable Logo" style="height: 36px;"> ContaPortable - Documentación Oficial
 
-## Bienvenido
+## 👋 Bienvenido
 
-Este portal reúne guías prácticas para ayudarte a usar ContaPortable en tu trabajo diario.
+Esta documentación reúne guías prácticas para ayudarte a operar ContaPortable de forma más rápida, ordenada y consistente en tu trabajo diario.
 
-Aquí encontrarás documentación organizada por módulos, procesos y reportes para facilitar tu operación contable y administrativa.
+Aquí encontrarás información organizada por módulos, procesos, parámetros y reportes para apoyar la operación contable y administrativa de tu empresa o despacho.
 
-## Qué es ContaPortable
+## 📚 ¿Qué encontrarás aquí?
 
-ContaPortable es una plataforma orientada a contabilidad, facturación y gestión operativa para empresas y despachos contables.
+- Guías por módulo: facturación, compras, inventario, planillas, contabilidad y más.
+- Procedimientos paso a paso para tareas frecuentes.
+- Configuraciones funcionales y parámetros de uso.
+- Reportes y material de apoyo para la operación diaria.
 
-## Qué puedes consultar en esta documentación
+## ⚡ Accesos rápidos
 
-- Guías por módulo (Facturación, Compras, Inventario, Planillas, Contabilidad y más)
-- Procedimientos paso a paso para tareas frecuentes
-- Configuraciones funcionales y parámetros de uso
-- Reportes y material de apoyo
+- 🌐 Sitio oficial: <https://www.contaportable.com>
+- ⏬ Descargas: <https://www.contaportable.com/vip/public/descargas/>
+- 👤 Membresía: <https://www.contaportable.com/vip/public/login>
 
-## Accesos rápidos
+## ☝️ Consejos para navegar mejor
 
-- Sitio oficial: <https://www.contaportable.com>
-- Descargas: <https://www.contaportable.com/vip/public/descargas/>
-- Membresía: <https://www.contaportable.com/vip/public/login>
-
-## Recomendaciones para aprovechar mejor el sitio
-
-- Usa el menú lateral para navegar por categoría o módulo.
-- Usa la búsqueda para encontrar rápidamente una función o proceso.
-- Si no encuentras una guía específica, solicita apoyo al equipo interno de soporte.
+- Usa el menú lateral para ir directamente a la categoría o módulo que necesitas.
+- Usa la búsqueda si buscas una función, un proceso o un reporte específico.
+- Si no encuentras una guía concreta, puedes solicitar apoyo al equipo de soporte interno.

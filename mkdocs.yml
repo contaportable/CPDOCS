@@ -1,9 +1,11 @@
 site_name: ContaPortable Docs
 site_description: Documentación de ContaPortable 
 site_url: https://docs.contaportable.com
+favicon: assets/ContaPortable/logo-CP.png
 
 theme:
   name: material
+  logo: assets/ContaPortable/logo-CP.png
   language: es
   palette:
     - scheme: default
@@ -27,7 +29,7 @@ theme:
     - search.suggest
     - search.highlight
   icon: 
-      repo: fontawesome/brands/gitkraken
+      repo: fontawesome/brands/github
 nav:
   - Inicio: index.md
   - Módulos:
@@ -87,8 +89,6 @@ nav:
     - 📦Instalador de otros módulos: modulos/cp365/instaladorModulesCp365.md 
     - 💧ConAgua: modulos/cp365/ConAgua/conAgua.md
       
-
-
 repo_url: https://github.com/contaportable/CPDOCS
 repo_name: Documentación de ContaPortable
 
@@ -126,6 +126,8 @@ plugins:
   - glightbox  # Plugin para manejar imágenes con zoom
   - search     # Plugin de búsqueda
 
+extra_css:
+  - assets/ContaPortable/branding.css
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js  # Para renderizar fórmulas matemáticas
 
