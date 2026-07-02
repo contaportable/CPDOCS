@@ -36,7 +36,6 @@ Pasos para revisar o ajustar la configuración:
 2. Rango permitido: número de años anteriores permitidos (0 = solo periodo activo).
 3. Duración: `PERMANENTE` o rango temporal con fecha de activación/expiración.
 4. Fecha de activación / Fecha de expiración: opcionales, usadas para vigencia automática.
-5. Usuarios/perfiles autorizados: perfiles que pueden activar o modificar la política.
 
 ## 🚫 **4. Comportamiento al bloquear**
 
@@ -44,7 +43,7 @@ Pasos para revisar o ajustar la configuración:
 
 Cuando una fecha está fuera del rango autorizado:
 
-1. En pantallas de edición: la acción de guardar queda bloqueada y la UI puede abrir en solo lectura.
+1. En pantallas de edición: la acción de guardar queda bloqueada y la interfaz puede abrir únicamente en modo de lectura. (No permite modificar, eliminar ni crear registros nuevos).
 2. En procesos masivos (importaciones, contabilizaciones por lote): el sistema valida cada registro y detiene el proceso o marca los documentos inválidos.
 3. En la generación de partidas resumen o anexos: se evita crear asientos inválidos y se informa al usuario.
 
