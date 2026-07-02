@@ -35,6 +35,7 @@ nav:
         - Gestión de bancos, cuentas y chequeras: modulos/bancos/mantenimiento_bancos_cuentas_chequeras.md
         - Conciliación Bancaria: modulos/bancos/Conciliacionbancaria.md
         - Transferencias Bancarias: modulos/bancos/transferenciasBancarias.md
+        - Depósitos Bancarios: modulos/bancos/depositos_documentos_multiples.md
       - 📑Facturación:
         - Dual: modulos/facturacion/facturacion_dual.md
         - Multilínea: modulos/facturacion/facturacion_lineas_multiples.md
