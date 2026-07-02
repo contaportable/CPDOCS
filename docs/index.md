@@ -1,4 +1,4 @@
-# <img src="assets/ContaPortable/logo-CP.png" alt="ContaPortable Logo" style="height: 36px;"> ContaPortable - Documentación Oficial
+# <img src="assets/ContaPortable/logo.png" alt="ContaPortable Logo" style="height: 36px;"> ContaPortable - Documentación Oficial
 
 ## 👋 Bienvenido
 

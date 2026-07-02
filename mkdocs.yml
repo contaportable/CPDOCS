@@ -1,12 +1,12 @@
 site_name: ContaPortable Docs
 site_description: Documentación de ContaPortable 
 site_url: https://docs.contaportable.com
-favicon: assets/ContaPortable/logo-CP.png
 
 theme:
   name: material
-  logo: assets/ContaPortable/logo-CP.png
+  logo: assets/ContaPortable/logo.png
   language: es
+  favicon: assets/ContaPortable/logo.png
   palette:
     - scheme: default
       toggle:
@@ -38,6 +38,13 @@ nav:
         - Conciliación Bancaria: modulos/bancos/Conciliacionbancaria.md
         - Transferencias Bancarias: modulos/bancos/transferenciasBancarias.md
         - Depósitos Bancarios: modulos/bancos/depositos_documentos_multiples.md
+      - 🛒Compras (OG Y OC):
+        - Gestión de CXP: modulos/compras/gestion_cuentas_por_pagar.md
+        - Importar Json del DTE en OG: modulos/compras/importJsonOG.md
+        - Registrar OG de vehículos: modulos/compras/OG_mantenimiento_vehiculos.md
+      - 📘Contabilidad:
+        - Contabilización Automática: modulos/contabilidad/contabilizacion_automatica.md
+        - Control de períodos contables: modulos/contabilidad/control_periodos_usuario.md
       - 📑Facturación:
         - Dual: modulos/facturacion/facturacion_dual.md
         - Multilínea: modulos/facturacion/facturacion_lineas_multiples.md
@@ -51,10 +58,8 @@ nav:
         - Personaliza nomenclatura para archivos del DTE al exportarlos: modulos/facturacion/nomenclatura_dte.md
         - Creación de correlativos automáticos: modulos/facturacion/correlativosAutomaticos.md
         - Creación de Apéndices VN: modulos/facturacion/apendicesVN.md
-      - 🛒Compras (OG Y OC):
-        - Gestión de CXP: modulos/compras/gestion_cuentas_por_pagar.md
-        - Importar Json del DTE en OG: modulos/compras/importJsonOG.md
-        - Registrar OG de vehículos: modulos/compras/OG_mantenimiento_vehiculos.md
+      - 💳Formas de pago: 
+        - Gestión de formas de pago: modulos/forma_pago/forma_pago.md
       - 📦Inventario:
         - Gestión de familias de inventario: modulos/inventario/FamiliaInventario.md
       - 📘Contabilidad:
