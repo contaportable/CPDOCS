@@ -42,11 +42,9 @@ Si necesita actualizar un registro existente:
 
 1. Seleccione la forma de pago en la lista.
 2. En los botones de acción rápida, de click en el botón de modificar.
-
 ![Modificar una forma de pago](../../assets/Forma_pago/031_modificar_forma_pago.png)
 
 3. Ajuste los campos necesarios, notando que la etiqueta superior indica el modo de edición.
-
 ![Modificar una forma de pago](../../assets/Forma_pago/032_modificar_forma_pago.png)
 
 4. Guarde los cambios.
@@ -60,13 +58,11 @@ Para eliminar un registro:
 
 1. Seleccione la forma de pago que desea eliminar.
 2. Use la opción de eliminar.
-
 ![Eliminar una forma de pago](../../assets/Forma_pago/041_eliminar_forma_pago.png)
 
 3. Confirme la acción cuando el sistema lo solicite.
 
 ![Eliminar una forma de pago](../../assets/Forma_pago/042_eliminar_forma_pago.png)
-
 
 !!! warning "Validación previa"
     Antes de eliminar, verifique que el registro no esté asociado a procesos o documentos que aún dependan de él.

@@ -75,6 +75,7 @@ Esta página reúne el detalle de los reportes incluídos en la categoría de in
 
     - Fecha
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Bodega 
 
     Es posible exportarlo a formato Excel, ya sea de forma consolidada o detallada (Plano).
@@ -97,6 +98,7 @@ Puedes encontrar más información en el sitio oficial de **ContaPortable** **[E
 
     - Fecha
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Bodega 
 
     Es posible exportarlo a formato Excel, ya sea de forma consolidada o detallada (Plano).
@@ -127,6 +129,7 @@ Puedes encontrar más información en el sitio oficial de **ContaPortable** **[E
 
     - Rango de fechas
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Bodega
     - Departamento
 
@@ -145,7 +148,8 @@ Vista previa del reporte **![Reporte de salidas por clientes](../../assets/repor
 
     - Fecha
     - Código (Todos o bloques)
-    - Bodega 
+    - Familia (Todas o bloques)
+    - Bodega
 
     Es posible exportarlo a formato Excel, ya sea de forma consolidada o detallada (Plano).
 
@@ -191,6 +195,7 @@ Vista previa del reporte **![Reporte de existencias (Alerta de mínimos)](../../
 
     - Fecha
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Bodega
     - Departamento
 
@@ -214,6 +219,7 @@ Puedes encontrar más información en el sitio oficial de **ContaPortable** **[E
 
     - Fecha
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Bodega
     - Departamento
 
@@ -237,6 +243,7 @@ Puedes encontrar más información en el sitio oficial de **ContaPortable** **[E
 
     - Fecha
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Bodega
     - Departamento
 
@@ -299,6 +306,7 @@ Puedes encontrar más información en el sitio oficial de **ContaPortable** **[E
 
     - Fecha
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Incluir recetas y kits
 
     Es posible exportarlo a formato Excel, ya sea de forma consolidada o detallada (Plano).
@@ -321,6 +329,7 @@ Puedes encontrar más información en el sitio oficial de **ContaPortable** **[E
 
     - Fecha
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Incluir o no recetas y kits
 
     Es posible exportarlo a formato Excel, ya sea de forma consolidada o detallada (Plano).
@@ -343,6 +352,7 @@ Puedes encontrar más información en el sitio oficial de **ContaPortable** **[E
 
     - Fecha
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Incluir o no recetas y kits
 
     Es posible exportarlo a formato Excel, ya sea de forma consolidada o detallada (Plano).
@@ -365,6 +375,7 @@ Puedes encontrar más información en el sitio oficial de **ContaPortable** **[E
 
     - Fecha
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Incluir o no recetas y kits
 
     Es posible exportarlo a formato Excel, ya sea de forma consolidada o detallada (Plano).
@@ -387,6 +398,7 @@ Puedes encontrar más información en el sitio oficial de **ContaPortable** **[E
 
     - Fecha
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Incluir o no recetas y kits
 
 Vista previa del reporte **![Reporte de análisis de inventario costeado](../../assets/reportes/inventario/3.5-Inventory-analisis-report.png){ align=left }**
@@ -405,6 +417,7 @@ Puedes encontrar más información en el sitio oficial de **ContaPortable** **[E
 
     - Fecha
     - Código (Todos o bloques)
+    - Familia (Todas o bloques)
     - Incluir o no recetas y kits
 
     Es posible exportarlo a formato Excel, ya sea de forma consolidada o detallada (Plano).

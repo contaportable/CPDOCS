@@ -231,8 +231,7 @@ Si Liquidación ≤ 0 → Remanente para el próximo periodo = |Liquidación|
 
 #### Vista previa del reporte
 
-<!-- PLACEHOLDER: Insertar captura completa del reporte de liquidación de IVA -->
-Vista previa del reporte **![Resumen de liquidación de IVA — Vista completa](../../assets/reportes/impuestos/IVA15.png){ align=left }**
+Vista previa del reporte **![Resumen de liquidación de IVA — Vista completa](../../assets/reportes/impuestos/1.15-IVA-15-SUMMARY.png){ align=left }**
 
 ??? abstract "1.5 Resumen de liquidación de IVA - Descargas de ejemplo"
     - **[Descargar versión PDF :fontawesome-regular-file-pdf:](../../assets/reportes/impuestos/IVA15.PDF){ .md-button }**

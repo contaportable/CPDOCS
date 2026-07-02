@@ -1,5 +1,12 @@
-# ¿Qué es la contabilización automática en ContaPortable?
-Es el proceso por el cual el sistema convierte los documentos en asientos contables, codificando el contenido de los documentos con el catálogo de cuentas de la empresa. Para ello el sistema usa una configuración de cuentas contables, ahi se define como se tendrán que codificar las operaciones para que las partidas cuadren y se apliquen las cuentas correctamente; esta configuración no puede ser la misma para cada empresa; diferentes empresas poseen diferentes catálogos de cuentas, diferentes formas de codificar las operaciones, Ejemplo :
+# Contabilización automática en ContaPortable
+
+La contabilización automática es el proceso mediante el cual el sistema convierte documentos operativos en asientos contables, aplicando la configuración de cuentas de la empresa. En términos prácticos, permite que movimientos como ventas, pagos, depósitos, cheques o retaceos queden reflejados en contabilidad sin necesidad de capturar cada asiento manualmente.
+
+## ¿Qué necesita saber sobre este proceso?
+
+El resultado de la contabilización depende de la configuración contable de cada empresa. No existe una regla única para todas, porque cada organización puede usar un catálogo de cuentas distinto y codificar los movimientos de forma diferente.
+
+Por ejemplo:
 
 - En una empresa la cuenta del iva podrá estar en la cuenta 110401 Credito fiscal compras, pero en otra esa misma cuenta podría estar en la 11901 Iva Compras
 - En una empresa los gastos de ventas podrán estar en la cuenta 4201 y en otra esos mismos gastos peuden estar en la 5101

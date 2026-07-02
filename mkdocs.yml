@@ -44,7 +44,7 @@ nav:
         - Registrar OG de vehículos: modulos/compras/OG_mantenimiento_vehiculos.md
       - 📘Contabilidad:
         - Contabilización Automática: modulos/contabilidad/contabilizacion_automatica.md
-        - Control de períodos contables: modulos/contabilidad/control_periodos_usuario.md
+        - Control de períodos contables: modulos/contabilidad/control_periodos.md
       - 📑Facturación:
         - Dual: modulos/facturacion/facturacion_dual.md
         - Multilínea: modulos/facturacion/facturacion_lineas_multiples.md
@@ -62,18 +62,6 @@ nav:
         - Gestión de formas de pago: modulos/forma_pago/forma_pago.md
       - 📦Inventario:
         - Gestión de familias de inventario: modulos/inventario/FamiliaInventario.md
-      - 📘Contabilidad:
-        - Contabilización Automática: modulos/contabilidad/contabilizacion_automatica.md
-        - Control de períodos contables: modulos/contabilidad/control_periodos_usuario.md
-      - 📊Reportes:
-        - Introducción: Reports/reportes.md
-        - Clientes: 
-          - Reportes de clientes: Reports/categorias/clientes.md
-          - Interfaz de gestión y envío de avisos de cobro: Reports/categorias/CLI1H.md
-        - Inventario: Reports/categorias/inventario.md
-        - Impuestos: Reports/categorias/impuestos.md
-        - 📈Reportes Gerenciales:
-            - Reporte de mantenimiento de vehículos: Reports/reportesGerenciales/reporte_mantenimiento_vehiculos.md
       - 🧾Informes (Anexos):
         - F07:
           - Generales: modulos/Informes_anexos/F07/anexos_f07.md
@@ -90,6 +78,16 @@ nav:
         - Informes/Anexos: Parametros/Modulos/Informes_anexos/ParametrosEnAnexos.md
         - Generales: Parametros/ParametrosGenerales.md
         - Activar Informes/Anexos en sistemas de facturación: Parametros/Modulos/Facturación/activarModInformes.md
+      - 📊Reportes:
+        - Introducción: Reports/reportes.md
+        - Clientes: 
+          - Reportes de clientes: Reports/categorias/clientes.md
+          - Gestión y envío de avisos de cobro: Reports/categorias/CLI1H.md
+        - Inventario: Reports/categorias/inventario.md
+        - Bancos: Reports/categorias/bancos.md
+        - Impuestos: Reports/categorias/impuestos.md
+        - 📈Reportes Gerenciales:
+            - Reporte de mantenimiento de vehículos: Reports/reportesGerenciales/reporte_mantenimiento_vehiculos.md
   - CP365 (Otros Módulos):
     - 📦Instalador de otros módulos: modulos/cp365/instaladorModulesCp365.md 
     - 💧ConAgua: modulos/cp365/ConAgua/conAgua.md
