@@ -4,9 +4,12 @@
 
 El módulo de **Conciliación Bancaria** permite gestionar y cruzar los movimientos bancarios registrados en el sistema con los estados de cuenta proporcionados por el banco. Su objetivo es identificar las diferencias entre los saldos del sistema y los saldos reportados por la institución bancaria, facilitando la detección de cualquier discrepancia financiera en los registros existentes.
 
-> **Acceso:** Menú Datos → **BANCOS** → **Conciliación Bancaria**
+> **Acceso:** Panel **Archivos** → **Conciliación bancaria**
 
-![TODO: Insertar Imagen - Acceso a Conciliación Bancaria desde el Menú Principal](../../assets/Bancos/conciliacionBancaria/BankConciliationAccess.png)
+!!! tip "¿No encuentra la opción?"
+    La conciliación bancaria se abre desde el panel de **Archivos**. Si acostumbraba llegar por la ruta *Datos → Bancos*, busque la opción en Archivos: es la única ubicación desde la que se accede al módulo.
+
+![Acceso a Conciliación Bancaria desde el panel de Archivos](../../assets/Bancos/conciliacionBancaria/BankConciliationAccess.png){ align=center }
 
 ---
 
