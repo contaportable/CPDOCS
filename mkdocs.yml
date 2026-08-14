@@ -61,6 +61,9 @@ nav:
       - 💳Formas de pago: 
         - Gestión de formas de pago: modulos/forma_pago/forma_pago.md
       - 📦Inventario:
+        - Gestión de Inventario: modulos/inventario/GestionInventario.md
+        - Ficha de Inventario: modulos/inventario/FichaInventario.md
+        - Edición del listado de inventario: modulos/inventario/ListadoInventario.md
         - Gestión de familias de inventario: modulos/inventario/FamiliaInventario.md
         - Requisiciones y mermas: modulos/inventario/requisiciones-mermas-y-perdidas.md
       - 🧾Informes (Anexos):

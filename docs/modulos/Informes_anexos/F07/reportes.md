@@ -43,8 +43,12 @@ El reporte toma como base la información registrada en los anexos del F07:
         | **Ventas con crédito fiscal** | Ventas realizadas a contribuyentes (facturas de crédito fiscal). |
         | **Ventas consumidor final** | Ventas realizadas a consumidores finales. |
         | **Ventas con facturas de exportación** | Ventas de exportación registradas en el periodo. |
+        | **Ventas no sujetas** | Ventas no sujetas a IVA, presentadas en su propia columna dentro de la liquidación. |
         | **Notas de crédito (ventas)** | Notas de crédito emitidas — se **restan** del total de ventas. |
         | **Total Débito Fiscal** | Suma neta del IVA generado por ventas. |
+
+        !!! info "Notas de crédito y anexo de la casilla 162"
+            Las notas de crédito de ventas se restan del total, incluso cuando la información proviene del anexo de la **casilla 162**.
 
     <!-- Sección de ventas del resumen de liquidación de IVA -->
     **![Sección de ventas del resumen de liquidación de IVA](../../../assets/reportes/impuestos/1.15-IVA-15-SALES.png){ align=left }**

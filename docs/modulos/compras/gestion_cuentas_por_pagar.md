@@ -1,6 +1,20 @@
-# Gestión de Cuentas por Pagar (CXP)
+---
+description: Guía de la gestión de Cuentas por Pagar (CXP) — registro de abonos, consulta de saldos y detalle de documentos desde Órdenes de Compra, Quedans y Órdenes de Gasto.
+---
 
-A continuación se detalla el proceso para utilizar la opción de gestión de CXP directamente desde los documentos de compras. Esta funcionalidad permite registrar, modificar y eliminar pagos, así como visualizar el estado de la cuenta por pagar.
+# 💰 **Gestión de Cuentas por Pagar (CXP)**
+
+La gestión de CXP es la interfaz con la que se registran, modifican y eliminan los pagos aplicados a un documento de compras, y desde la que se consulta en todo momento su saldo pendiente.
+
+Es la misma ventana para los tres documentos que generan una cuenta por pagar en el sistema: **Órdenes de Compra**, **Quedans** y **Órdenes de Gasto**.
+
+!!! tip "¿Busca cómo registrar una Orden de Gasto?"
+    Esta página cubre la gestión de pagos sobre un documento ya guardado. Para registrar el encabezado, el detalle y los impuestos de una Orden de Gasto nueva, vea [Registro de Órdenes de Gasto (OG)](registro_ordenes_gasto.md).
+
+!!! tip "¿Cuándo usar esta función?"
+    - Cuando necesite **registrar un abono** (pago total o parcial) a un proveedor sobre una orden de compra, un quedan o una orden de gasto.
+    - Cuando necesite **modificar o eliminar** un abono ya registrado.
+    - Cuando quiera **consultar rápidamente** el saldo pendiente, el total pagado o la fecha del último abono de un documento, sin tener que buscarlo en un reporte.
 
 !!! tip " **Compras - Gestión de CXP**"
     ``` mermaid

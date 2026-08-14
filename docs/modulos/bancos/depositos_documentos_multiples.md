@@ -6,6 +6,11 @@ description: Guía de usuario para registrar depósitos bancarios, asociar docum
 
 El módulo de depósitos bancarios permite registrar los ingresos recibidos en una cuenta bancaria y vincularlos con los documentos que deben quedar compensados.
 
+!!! tip "Qué esperar de la pantalla de depósitos"
+    - No es posible continuar sin haber seleccionado al menos un documento.
+    - El **total final** se actualiza solo al agregar, quitar o modificar documentos del detalle; no hace falta recalcular manualmente.
+    - La captura de montos admite hasta **6 decimales**, igual que en [Órdenes de Gasto](../compras/registro_ordenes_gasto.md#5-precision-de-decimales) y cheques.
+
 !!! tip "Flujo de depósito en ContaPortable"
     ``` mermaid
     flowchart LR
@@ -69,6 +74,9 @@ En esta etapa se registran los documentos que se están cobrando o compensando c
 
 !!! tip "Selección de documentos"
     La ventana de búsqueda permite revisar varios documentos y seleccionarlos de forma masiva. Si el listado es amplio, use filtros de fecha o cliente para reducirlo.
+
+!!! info "El buscador filtra los documentos invalidados"
+    El buscador excluye las ventas **revertidas o invalidadas** con monto negativo y no permite agregar al depósito un documento de venta ya invalidado, de modo que el depósito no quede descuadrado por documentos que ya no deben compensarse.
 
 ![Búsqueda y selección de documentos para el depósito](../../assets/Bancos/depositos/03_buscar_documentos.png)
 
