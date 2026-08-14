@@ -3,7 +3,7 @@
 Esta guía explica cómo usar el módulo de formas de pago para registrar, consultar, modificar y eliminar los métodos de pago que se emplean en facturación, órdenes de compra y otros procesos del sistema.
 
 !!! tip "Objetivo del módulo"
-    El módulo permite mantener un catálogo ordenado de formas de pago con información útil para la emisión de documentos y para los procesos operativos que requieren este dato, además permite emparejar la información con los catálogos DTE para que la facturación .
+    El módulo permite mantener un catálogo ordenado de formas de pago con información útil para la emisión de documentos y para los procesos operativos que requieren este dato, además permite emparejar la información con los catálogos DTE para que la facturación electrónica se emita con valores válidos ante el Ministerio de Hacienda.
 
 ## 1. Acceso al módulo
 
@@ -13,7 +13,8 @@ Para abrir el módulo:
 2. Abra la opción de formas de pago.
 3. Revise la lista de registros disponibles en la pantalla principal, cree uno nuevo o modifique uno existente.
 
-![TODO: Insertar Imagen - Acceso al módulo de formas de pago](../../assets/Forma_pago/01_acceso_modulo.png)
+![Acceso al módulo de formas de pago](../../assets/Forma_pago/01_acceso_modulo.png){ align=center }
+![Acceso al módulo de formas de pago](../../assets/Forma_pago/01_acceso_modulo2.png){ align=center }
 
 !!! tip "Qué observar al abrir la lista"
     La pantalla principal debe mostrar el catálogo activo de formas de pago, con los registros disponibles para facturación y otros procesos.
@@ -31,7 +32,7 @@ Para crear un nuevo registro:
     - Periodo.
 4. Guarde los cambios.
 
-![TODO: Insertar Imagen - Crear una forma de pago](../../assets/Forma_pago/02_crear_forma_pago.png)
+![Crear una forma de pago](../../assets/Forma_pago/02_crear_forma_pago.png){ align=center }
 
 !!! tip "Datos esenciales al crear un registro"
     Cuando agregue una forma de pago nueva, revise la descripción, el plazo y la información relacionada con DTE para que el registro sea consistente con los documentos que se emitirán.
@@ -79,6 +80,9 @@ El módulo también permite registrar información vinculada con documentos trib
 ![Datos relacionados con DTE](../../assets/Forma_pago/05_datos_dte.png)
 
 Estos datos deben ser consistentes con la configuración del catálogo y con el tipo de documento que se vaya a emitir.
+
+!!! info "Catálogo de Plazos (CAT-018)"
+    El campo **Plazo** se selecciona desde el catálogo **CAT-018**, alineado con el catálogo oficial de Plazos del Ministerio de Hacienda. Al elegirlo de la lista, el valor enviado en los DTE corresponde siempre a una opción válida.
 
 !!! tip "Validación de datos DTE"
     Si el sistema exige información tributaria para la forma de pago, revise que los datos sean correctos antes de guardar el registro, especialmente si el cambio se aplicará a documentos ya programados.

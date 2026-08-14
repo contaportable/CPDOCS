@@ -16,94 +16,120 @@ Es la misma ventana para los tres documentos que generan una cuenta por pagar en
     - Cuando necesite **modificar o eliminar** un abono ya registrado.
     - Cuando quiera **consultar rápidamente** el saldo pendiente, el total pagado o la fecha del último abono de un documento, sin tener que buscarlo en un reporte.
 
-!!! tip " **Compras - Gestión de CXP**"
-    ``` mermaid
-    graph TD
-      A[Índice de contenidos]:::root
+!!! tip "Flujo rápido"
+    1. Ingresar al listado de órdenes de compra, órdenes de gasto o quedans.
+    2. Ubicar el registro (fila) del documento en el listado correspondiente.
+    3. Hacer clic derecho sobre el registro.
+    4. Elegir la opción **"Gestionar CXP"** del menú contextual.
+    5. Registrar o ajustar abonos y revisar los detalles del documento.
 
-      subgraph "Subcategorías"
-        B[1. Acceso desde compras]
-        C[2. Ventana de Gestión de CXP]
-        D[3. Gestión de pagos]
-        E[4. Detalles del documento]
-        F[5. Gestión de Bancos]
-      end
+``` mermaid
+graph TD
+  A[Inicio]:::root
+  B[1. Acceso desde OC, Quedans u OG]
+  C[2. Ventana de gestión de CXP]
+  D[3. Registrar y gestionar abonos]
+  E[4. Detalles del documento]
 
-      A --> B
-      A --> C
-      A --> D
-      A --> E
-      A --> F
+  A --> B --> C --> D --> E
 
-    click B "#1-acceso-desde-compras" "Ir al acceso desde compras"
-    click C "#2-ventana-de-gestion-de-cxp" "Ir a la ventana de gestión de CXP"
-    click D "#3-gestion-de-pagos" "Ir a la gestión de pagos"
-    click E "#4-detalles-del-documento" "Ir a detalles del documento"
-    click F "#5-gestion-de-bancos" "Ir a la gestión de bancos"
-    ```
----
-
-## 1. Acceso desde Órdenes de compra
-
-Para comenzar, diríjase al módulo de órdenes de compras.
-
-1. Localice la orden de compra a la cuál se le estará gestionando la cuenta por pagar desde el listado.
-2. Haga **clic derecho** sobre el documento.
-3. Seleccione la opción de **Gestionar CXP** en el menú contextual que se despliega.
-
-![Menú contextual en compras](../../assets/Compras/gestionCuentasPorPagar/PurchaseContextMenu.png)
+  click B "#1-acceso-desde-ordenes-de-compra-quedans-y-ordenes-de-gasto" "Acceso desde órdenes de compra, quedans y órdenes de gasto"
+  click C "#2-ventana-de-gestion-de-cxp" "Ir a la ventana de gestión de CXP"
+  click D "#3-registrar-y-gestionar-abonos" "Ir a registrar y gestionar abonos"
+  click E "#4-detalles-del-documento" "Ir a detalles del documento"
+```
 
 ---
 
-## 2. Ventana de Gestión de CXP
+## 🚪 **1. Acceso desde Órdenes de Compra, Quedans y Órdenes de Gasto**
 
-Al seleccionar la opción, se abrirá la ventana emergente **Gestión de Cuentas por Pagar**.
+El acceso a la gestión de CXP se realiza de la misma forma en las tres interfaces del módulo de compras:
 
-* **Funcionalidad:** Esta interfaz permite añadir, modificar y eliminar los pagos o abonos efectuados al documento seleccionado. En la parte izquierda, se podría ubicar un listado de las cuentas bancarias de la empresa desde las cuales se pueden emitir los pagos.
+- **Órdenes de compra.**
+- **Quedans.**
+- **Órdenes de gasto.**
 
-![Ventana de gestión de pagos](../../assets/Compras/gestionCuentasPorPagar/CXPWindow.png)
+En cada caso, el proceso es idéntico:
 
----
+1. Localice el documento en la lista correspondiente.
+2. Haga clic derecho sobre el registro.
+3. Seleccione la opción **"Gestionar CXP"** en el menú contextual.
 
-## 3. Gestión de Pagos
+![Menú contextual con la opción Gestionar CXP en el listado de órdenes de compra](../../assets/Compras/gestionCuentasPorPagar/PurchaseContextMenu.png){ align=center }
 
-Dentro del listado de pagos existentes en la ventana de gestión, es posible desplegar opciones adicionales para cada registro.
+![Menú contextual Gestionar CXP en el listado de quedans](../../assets/Compras/gestionCuentasPorPagar/QuedanContextMenu.png){ align=center }
 
-1. Localice el pago específico que desea gestionar.
-2. Expanda la **botonera de acciones** (Por medio de un botón al inicio del registro).
-
-![Botonera de acciones en pagos](../../assets/Compras/gestionCuentasPorPagar/CXPButtons.png)
-
-3. Se mostrarán los botones de acción disponibles, que usualmente son:
-    * ✏️ **Modificar**
-    * 🗑️ **Eliminar**
-    * 📄 **Ver detalles**
-
-![Botonera de acciones expandida](../../assets/Compras/gestionCuentasPorPagar/CXPButtonsExpanded.png)
+![Menú contextual Gestionar CXP en el listado de órdenes de gasto](../../assets/Compras/gestionCuentasPorPagar/ExpenseContextMenu.png){ align=center }
 
 ---
 
-## 4. Detalles del Documento
+## 🖥️ **2. Ventana de gestión de CXP**
 
-Al hacer clic en una opción para **ver los detalles del documento**, el sistema debería desplegar información específica sobre el estado financiero del mismo.
+Al seleccionar la opción, se abre la ventana de gestión de cuentas por pagar. Es la misma ventana sin importar desde cuál de los tres documentos se haya invocado; solo cambia el documento que se está gestionando.
 
-!!! note "Información Visible"
-    Aquí podrá visualizar el saldo pendiente de pago, el total abonado y otros datos relevantes de la CXP para el documento que está siendo gestionado.
-    
-    ![Detalles de la CXP](../../assets/Compras/gestionCuentasPorPagar/CXPDocumentDetails.png)
+La ventana se organiza en dos pestañas:
+
+- **Abonos** — listado de los abonos ya registrados al documento, con acceso para agregar uno nuevo.
+- **Detalles del documento** — resumen financiero del documento (ver [sección 4](#4-detalles-del-documento)).
+
+En el panel izquierdo se muestra un árbol con los **bancos y cuentas bancarias** de la empresa, del cual se elige la cuenta desde la que se realizará el pago. Este árbol únicamente permite **seleccionar** una cuenta ya existente; si necesita crear o modificar bancos y cuentas, hágalo desde la [gestión de bancos, cuentas y chequeras](../bancos/mantenimiento_bancos_cuentas_chequeras.md).
+
+![Ventana de gestión de CXP, con el árbol de bancos y cuentas a la izquierda y el listado de abonos a la derecha](../../assets/Compras/gestionCuentasPorPagar/CXPWindow.png)
 
 ---
 
-## 5. Gestión de Bancos
+## 💰 **3. Registrar y gestionar abonos**
 
-Dentro del módulo de compras, también puede administrar sus **bancos y cuentas bancarias** sin necesidad de moverse a otro módulo. Esto es útil para mantener al día las cuentas desde las cuales se registran los pagos a proveedores.
+### Registrar un nuevo abono
 
-### ¿Qué puede hacer desde aquí?
+1. En la pestaña **Abonos**, seleccione el banco y la cuenta desde la que se pagará (panel izquierdo).
+2. Indique el monto del abono.
+3. Confirme el registro.
 
-- **Consultar** las cuentas bancarias disponibles para registrar pagos.
-- **Agregar** nuevas cuentas bancarias o bancos.
-- **Modificar** la información de una cuenta existente (número de cuenta, banco, tipo, etc.).
+El abono aparece de inmediato en el listado y el saldo pendiente del documento se actualiza.
 
-> El listado de cuentas en la ventana de gestión de CXP se actualiza automáticamente al guardar cualquier cambio realizado desde aquí.
+### Modificar, eliminar o ver detalles de un abono existente
 
-![TODO: Insertar Imagen - Opción de gestión de bancos en el panel de compras](../../assets/Compras/gestionCuentasPorPagar/GestionBancos.png)
+1. Localice el abono que desea gestionar dentro del listado.
+2. Expanda la botonera de acciones del registro (botón al inicio de la fila).
+3. Elija entre las opciones disponibles:
+    - ✏️ **Modificar**
+    - 🗑️ **Eliminar**
+    - 📄 **Ver detalles**
+
+![Botonera de acciones en el historial de abonos](../../assets/Compras/gestionCuentasPorPagar/CXPButtons.png){ align=center }
+
+![Botonera de acciones expandida, con las opciones de modificar, eliminar y ver detalles](../../assets/Compras/gestionCuentasPorPagar/CXPButtonsExpanded.png){ align=center }
+
+---
+
+## 📄 **4. Detalles del documento**
+
+Desde la pestaña **Detalles del documento** (o desde la opción "Ver detalles" de un abono) el sistema muestra el estado financiero completo del documento:
+
+- **Monto total del documento**
+- **N° de documento**
+- **Fecha de emisión**
+- **Saldo pendiente**
+- **N° de abonos efectuados**
+- **Fecha del último abono**
+- **Monto total de abonos**
+
+Un botón **"Regresar a abonos"** permite volver al listado de abonos sin cerrar la ventana.
+
+![Vista de detalles del documento en la gestión de CXP](../../assets/Compras/gestionCuentasPorPagar/CXPDocumentDetails.png){ align=center }
+
+---
+
+## 📌 **5. Buenas prácticas**
+
+- Confirme el banco y la cuenta antes de registrar el abono, ya que determinan el movimiento bancario asociado.
+- Revise el saldo pendiente después de cada abono para verificar que el documento quede correctamente aplicado.
+- Elimine un abono únicamente cuando se trate de un registro erróneo; si el pago cambió de monto, prefiera modificarlo.
+
+## 🔗 **6. Páginas relacionadas**
+
+- [Gestión de Cuentas por Cobrar (CXC)](../facturacion/gestion_cuentas_por_cobrar.md) — la misma lógica de abonos, aplicada del lado de facturación.
+- [Gestión de bancos, cuentas y chequeras](../bancos/mantenimiento_bancos_cuentas_chequeras.md) — para crear o modificar los bancos y cuentas que aparecen en el selector de esta ventana.
+- [Registro de Órdenes de Compra (OC) y Ajuste (OA)](registro_ordenes_compra.md)
+- [Registro de Órdenes de Gasto (OG)](registro_ordenes_gasto.md)
