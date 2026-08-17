@@ -94,7 +94,7 @@ nav:
             - Reporte de mantenimiento de vehículos: Reports/reportesGerenciales/reporte_mantenimiento_vehiculos.md
   - CP365 (Otros Módulos):
       - 📦Instalador de otros módulos: modulos/cp365/instaladorModulesCp365.md 
-      - 💧ConAgua - Gestión por Consumo de Agua:
+      - 💧ConAgua - Control y facturación por consumo de agua:
         - 📌Introducción y Configuración del módulo: modulos/cp365/ConAgua/conAgua.md
         - 🧭 Facturación de lecturas: modulos/cp365/ConAgua/conAgua_procesamientoLecturas.md
         - 💵 Gestion de Cobros con plataformas de pago: 
