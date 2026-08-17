@@ -17,7 +17,27 @@ Para abrir la función:
 
 ![Acceso a requisiciones, mermas y pérdidas](../../assets/Inventario/requisiciones-merma/01_acceso_requisiciones_merma.png){ align=center }
 
-## 📊 **3. Entender el estado de los documentos**
+## 🔎 **3. Búsqueda de productos por código de barras**
+
+Tanto en requisiciones como en mermas y pérdidas, el sistema permite alternar la forma en que se busca un producto en el detalle del documento: por su **código de inventario** o por su **código de barras**.
+
+Para activar o desactivar la búsqueda por código de barras:
+
+1. Dentro del formulario de requisición o merma, dé clic derecho sobre la sección de detalle para abrir el menú contextual.
+2. Seleccione la opción **"Búsqueda de inventario por código de barra"**. Un ícono de check indica si la opción está activa o no.
+3. Un rótulo en la parte superior del detalle le confirma en todo momento el modo de búsqueda activo: *"La búsqueda de inventario se realiza por medio de código"* (o *"...de código de barras"* cuando la opción está activada).
+
+Con la búsqueda por código de barras activada, puede:
+
+- **Escribir o escanear directamente** el código de barras en la línea de detalle para que el sistema localice el producto.
+- **Buscar desde el listado desplegable**: al abrir el buscador de productos del detalle, también puede escribir o escanear el código de barras para filtrar y seleccionar el producto, igual que si buscara por código de inventario.
+
+!!! tip "Lector de código de barras"
+    Esta opción es especialmente útil si cuenta con un lector de código de barras físico, ya que agiliza la captura de productos evitando digitar el código de inventario manualmente.
+
+---
+
+## 📊 **4. Entender el estado de los documentos**
 
 El árbol de navegación suele organizar los documentos por tipo y estado:
 
@@ -28,7 +48,7 @@ El árbol de navegación suele organizar los documentos por tipo y estado:
 
 ![Acceso a requisiciones, mermas y pérdidas](../../assets/Inventario/requisiciones-merma/02_requisiciones_merma_estado.png){ align=center }
 
-## 📝 **4. Crear una requisición**
+## 📝 **5. Crear una requisición**
 
 Para registrar una requisición:
 
@@ -44,9 +64,9 @@ Para registrar una requisición:
 
 - Indique claramente el motivo de la solicitud.
 - Revise la bodega y la cantidad antes de guardar.
-- Si cuenta con lector de código de barra, puede usarlo para agilizar la captura de productos.
+- Si cuenta con lector de código de barras, puede activar la búsqueda por código de barras (ver [sección 3](#3-busqueda-de-productos-por-codigo-de-barras)) para agilizar la captura de productos.
 
-## 📝 **5. Registrar una merma o pérdida**
+## 📝 **6. Registrar una merma o pérdida**
 
 Para registrar una salida por merma o pérdida:
 
@@ -69,7 +89,7 @@ Incluya datos claros sobre la causa en la observación, como:
 - Error de manejo.
 - Pérdida por traslado o almacenamiento.
 
-## 📄 **6. Consultar documentos aplicados**
+## 📄 **7. Consultar documentos aplicados**
 
 Para revisar el historial:
 
@@ -79,7 +99,7 @@ Para revisar el historial:
 
 Esto permite verificar qué salidas ya fueron procesadas y confirmar el impacto en el inventario.
 
-## 📌 **7. Buenas prácticas**
+## 📌 **8. Buenas prácticas**
 
 - Revise la bodega y la cantidad antes de aplicar un documento.
 - Use observaciones claras para facilitar la auditoría.
