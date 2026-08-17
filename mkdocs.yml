@@ -93,9 +93,16 @@ nav:
         - 📈Reportes Gerenciales:
             - Reporte de mantenimiento de vehículos: Reports/reportesGerenciales/reporte_mantenimiento_vehiculos.md
   - CP365 (Otros Módulos):
-    - 📦Instalador de otros módulos: modulos/cp365/instaladorModulesCp365.md 
-    - 💧ConAgua: modulos/cp365/ConAgua/conAgua.md
-      
+      - 📦Instalador de otros módulos: modulos/cp365/instaladorModulesCp365.md 
+      - 💧ConAgua - Gestión por Consumo de Agua:
+        - 📌Introducción y Configuración del módulo: modulos/cp365/ConAgua/conAgua.md
+        - 🧭 Facturación de lecturas: modulos/cp365/ConAgua/conAgua_procesamientoLecturas.md
+        - 💵 Gestion de Cobros con plataformas de pago: 
+            - Aki Pago: modulos/cp365/ConAgua/conAgua_gestionCobros.md
+        - 📈 Reportes:
+            - Consumo de agua por periodo: modulos/cp365/ConAgua/conAgua_reportes.md
+        - ✉️ Envío masivo de emails: modulos/cp365/ConAgua/conAgua_senEmails.md
+
 repo_url: https://github.com/contaportable/CPDOCS
 repo_name: Documentación de ContaPortable
 

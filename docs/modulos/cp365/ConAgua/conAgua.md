@@ -2,13 +2,13 @@
 description: Documentación del módulo/plugin ConAgua para facturación por consumo de agua potable. Activado mediante el parámetro ACTIVATEMODCONAGUA. Issue #566.
 --->
 
-# Modulo / Plugin : ConAgua — Facturación por Consumo de Agua
+# Módulo / Plugin : ConAgua — Facturación por Consumo de Agua
 
-El módulo ConAgua extiende el sistema ContaPortable con un flujo completo para el registro de lecturas de consumo de agua, cálculo automático de montos en base a parametros y formulas, asi como la generación masiva de facturas electrónicas por proyecto.
+El módulo ConAgua extiende el sistema ContaPortable como módulo independiente con un flujo  para el registro y control de lecturas por consumo de agua, permitiendola generación masiva de facturas electrónicas por proyectos, y envio masivo de correos por entregas de DTE, asi como la gestion de cobros con la plataforma de pago AKI PAGO .
 
 ---
 
-## 📌 Introducción
+## 📌 Generales, Instalación y Configuración del módulo -
 
 !!! abstract "Módulo ConAgua"
      **[Ver instalación del módulo ConAgua :material-arrow-right-bold-box-outline:](../instaladorModulesCp365.md){ .md-button }**
@@ -60,50 +60,27 @@ El módulo ConAgua extiende el sistema ContaPortable con un flujo completo para 
 
     ![Configuración de proyectos y clientes — vista 2](../../../assets/cp365/ConAgua/config_proyecto_clientes_02.png){ align=center }
 
-### 🚿 Pestaña 1 — Registro de lecturas
+### DASBOARD - MENU DEL MODULO
 
 !!! note "Registro de consumo"
-    En la primera pestaña el operador registra la lectura actual para calcular el consumo y los demás parámetros de facturación. Puede elegir entre:
+    Al ingresar al módulo encontra el menu de navegación con las siguientes opciones:
+    - Procesamiento de lecturas
+        -- Registrar Consumo / Geneerar Plantilla de lectura
+        -- Facturar Consumo / Importar Plantilla
+    - Gestión de Cobros con Plataformas de pago
+        -- AKI PAGO
+            --- Generar Archivo Colector
+            --- Importar Pagos
+    -Reportes
+        --Consumo de Agua en m3
 
-    - Trabajar directamente desde el sistema
-    - Descargar la plantilla Excel (con fórmulas incluidas) para completar lecturas fuera del sistema
+    ![Dasboard](../../../assets/cp365/ConAgua/conaguaDasboard.png){ align=center }
 
-    El registro se organiza por proyecto y puede buscarse por cliente. Los datos se guardan para facturar posteriormente.
+    El Dasboard permite conocer rapidamente datos como el total de lecturas, facturas generadas sin transmitir, facturas transmitidas, facturas pendientes, m3 consumidos y monto total facturado por cada proyecto
+     
+     Tambien permite conocer las lecturas y facturas por proyecto, filtrarlas por periodo y por estado
 
-    ![Opciones: descargar plantilla o trabajar desde sistema](../../../assets/cp365/ConAgua/opciones_lectura.png){ align=center }
-
-    ![Grid de registro de lecturas por proyecto](../../../assets/cp365/ConAgua/registro_lecturas_grid.png){ align=center }
-
-### 📊 Plantilla Excel con fórmulas
-
-!!! note "Plantilla Excel"
-    El sistema genera una plantilla Excel con las fórmulas necesarias para calcular el consumo y los cargos. El cliente puede completar las lecturas en campo y luego importarla al sistema para generar las facturas.
-
-    ![Plantilla Excel con fórmulas incluidas](../../../assets/cp365/ConAgua/plantilla_excel.png){ align=center }
-
-### 📄 Pestaña 2 — Facturación automática
-
-!!! note "Generación de facturas"
-    En la segunda pestaña el operador puede:
-
-    - **Importar desde sistema:** traslada automáticamente las lecturas registradas en la Pestaña 1.
-    - **Importar desde Excel:** carga la plantilla completada externamente.
-
-    Al ejecutar **Convertir a facturas**, el sistema crea todas las facturas automáticamente en estado **Generado**, listas para transmisión masiva posterior. Los registros con consumo igual a cero se omiten — no se generan facturas invalidadas ni generadas para ellos.
-
-    El ítem **Canon** se agrega como **No Sujeto** en el detalle de la factura.
-
-    ![Pestaña 2 — grid de facturación](../../../assets/cp365/ConAgua/tab2_facturacion_grid.png){ align=center }
-
-    ![Pestaña 2 — importar lecturas desde sistema](../../../assets/cp365/ConAgua/tab2_importar_sistema.png){ align=center }
-
-    ![Pestaña 2 — convertir lecturas a facturas (1)](../../../assets/cp365/ConAgua/tab2_convertir_facturas_01.png){ align=center }
-
-    ![Pestaña 2 — grid post conversión a facturas](../../../assets/cp365/ConAgua/tab2_convertir_facturas_02.png){ align=center }
-
-    ![Factura generada — vista detalle](../../../assets/cp365/ConAgua/tab2_factura_generada.png){ align=center }
-
-    ![Facturas en estado Generado — listas para transmisión](../../../assets/cp365/ConAgua/tab2_facturas_transmision.png){ align=center }
+     Acceso rapido a las opciones de transmitir DTES por proyectos y Reenvio de correos del DTE por proyectos, Consultar y visualizar facturas por proyectos
 
 ### 🔒 Comportamiento con módulo desactivado
 

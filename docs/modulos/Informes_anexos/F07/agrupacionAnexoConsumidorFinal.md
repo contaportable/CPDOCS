@@ -90,11 +90,6 @@ El anexo de ventas consumidor final incorpora la opción de generar el CSV en do
         4. En el menú de opciones, seleccionar **Anexo detallado**.
         5. El CSV generado mantiene una fila por cada documento individual.
 
-    === "3️⃣ Contabilización agrupada"
-        1. Ir a Informes → Anexo de ventas consumidor final.
-        2. Cargar los documentos del período a contabilizar.
-        3. Ejecutar la contabilización — el sistema aplica la lógica agrupada para generar los asientos contables consolidados por día y tipo.
-
 ---
 
 ## ☑️ Validaciones y Pruebas Realizadas 🧪
