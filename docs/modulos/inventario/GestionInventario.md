@@ -73,9 +73,9 @@ Desde el listado, con **clic derecho sobre un producto**, dispone de las siguien
 !!! tip "Doble clic para modificar"
     También puede hacer doble clic sobre una fila del listado para abrir directamente la ficha del producto seleccionado.
 
-## 💡 **5. ¿Ficha o edición directa del listado?**
+## 💡 **5. ¿Ficha, edición directa del listado o importación desde excel?**
 
-ContaPortable ofrece dos formas de editar los productos, según lo que necesite:
+ContaPortable ofrece tres formas de editar los productos, según lo que necesite:
 
 - Use la **[Ficha de Inventario](FichaInventario.md)** cuando necesite dar de alta un producto nuevo o revisar y completar toda su información: precios de venta, impuestos aplicables, ubicación física, historial de compras y bitácora de notas.
 - Use la **[Edición del listado de inventario](ListadoInventario.md)** cuando solo necesite corregir uno o varios datos puntuales (nombre, precios, mínimos y máximos, etc.) en varios productos a la vez, sin abrir cada ficha individualmente.
