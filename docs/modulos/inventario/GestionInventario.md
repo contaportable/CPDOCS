@@ -53,7 +53,8 @@ graph TD
 | ----------- | ------------- |
 | Dar de alta un producto nuevo, o revisar y editar todos sus datos (precios, impuestos, ubicación, historial de compras, etc.) | Clic derecho sobre el listado → **Nuevo** o **Modificar**, para abrir la [Ficha de Inventario](FichaInventario.md). |
 | Activar o desactivar un producto sin eliminarlo | Clic derecho sobre el listado → **Cambiar Estado**. |
-| Corregir rápidamente varios productos a la vez (nombre, precios, mínimos/máximos, etc.) sin abrir cada ficha | Botón **Editar listado de inventario**, ver [Edición del listado de inventario](ListadoInventario.md). |
+| Corregir rápidamente varios productos a la vez (nombre, precios, mínimos/máximos, etc.) sin abrir cada ficha | Botón **Edición masiva** → **Habilitar edición directa en listado de inventario**, ver [Edición del listado de inventario](ListadoInventario.md). |
+| Actualizar los nombres y los precios de venta de muchos productos a partir de un archivo de Excel | Botón **Edición masiva** → **Importar nombres y precios desde plantilla de Excel...**, ver [Importar nombres y precios desde Excel](ImportarPreciosExcel.md). |
 | Crear, renombrar o eliminar una familia de inventario | Botón **Familias de inventario** o clic derecho sobre el árbol, ver [Gestión de familias de inventario](FamiliaInventario.md). |
 | Registrar una salida de inventario por requisición, merma o pérdida | Ver [Gestión de requisiciones, mermas y pérdidas](requisiciones-mermas-y-perdidas.md). |
 
@@ -78,6 +79,7 @@ ContaPortable ofrece dos formas de editar los productos, según lo que necesite:
 
 - Use la **[Ficha de Inventario](FichaInventario.md)** cuando necesite dar de alta un producto nuevo o revisar y completar toda su información: precios de venta, impuestos aplicables, ubicación física, historial de compras y bitácora de notas.
 - Use la **[Edición del listado de inventario](ListadoInventario.md)** cuando solo necesite corregir uno o varios datos puntuales (nombre, precios, mínimos y máximos, etc.) en varios productos a la vez, sin abrir cada ficha individualmente.
+- Use **[Importar nombres y precios desde Excel](ImportarPreciosExcel.md)** cuando el cambio abarque muchos productos y los datos ya vengan en un archivo (por ejemplo, la lista de precios que envía un proveedor). Actualiza únicamente el nombre y los tres precios de venta de productos que ya existen.
 
 ## 📌 **6. Buenas prácticas**
 
@@ -89,6 +91,7 @@ ContaPortable ofrece dos formas de editar los productos, según lo que necesite:
 
 - [Ficha de Inventario](FichaInventario.md)
 - [Edición del listado de inventario](ListadoInventario.md)
+- [Importar nombres y precios desde Excel](ImportarPreciosExcel.md)
 - [Gestión de familias de inventario](FamiliaInventario.md)
 - [Requisiciones, mermas y pérdidas](requisiciones-mermas-y-perdidas.md)
 - [Reportes de inventario](../../Reports/categorias/inventario.md)

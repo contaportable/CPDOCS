@@ -49,7 +49,7 @@ En la misma pestaña se configuran los precios del producto:
 - Un calculador de **Precio sin IVA / Precio con IVA**, para obtener uno a partir del otro automáticamente.
 - Casillas para indicar si el producto aplica **IVA**, **Retención de IVA** y **Retención de Renta**.
 
-![TODO: Insertar Imagen - Sección de precios de la ficha de inventario](../../assets/Inventario/ficha/03_ficha_precios.png){ align=center }
+![Sección de precios de la ficha de inventario](../../assets/Inventario/ficha/03_ficha_precios.png){ align=center }
 
 !!! tip "Búsqueda dentro de la ficha"
     En la parte superior de esta pestaña puede buscar otro producto sin cerrar la ficha actual, lo que resulta útil para revisar varios ítems de forma consecutiva.
@@ -63,7 +63,7 @@ Permite registrar hasta **cuatro niveles de ubicación física** del producto en
 
 Esto facilita encontrar físicamente el producto al momento de despacharlo o de hacer un conteo de inventario.
 
-![TODO: Insertar Imagen - Pestaña Ubicación de la ficha de inventario](../../assets/Inventario/ficha/04_ficha_ubicacion.png){ align=center }
+![Pestaña Ubicación de la ficha de inventario](../../assets/Inventario/ficha/04_ficha_ubicacion.png){ align=center }
 
 ## 🕘 **4. Pestaña "Historial"**
 
@@ -72,7 +72,7 @@ Muestra el historial de movimientos del producto:
 - Un listado de los documentos donde participa el producto (compras, ajustes, etc.), con la opción de **incluir o no las cotizaciones** y de **exportarlo a Excel**.
 - Un resumen de **balance de cuentas por pagar** asociado al producto: compras al crédito, pagos realizados y saldo actual.
 
-![TODO: Insertar Imagen - Pestaña Historial de la ficha de inventario](../../assets/Inventario/ficha/05_ficha_historial.png){ align=center }
+![Pestaña Historial de la ficha de inventario](../../assets/Inventario/ficha/05_ficha_historial.png){ align=center }
 
 !!! info "Lote y fecha de vencimiento"
     En productos configurados bajo el perfil **FactStyle MEDICA**, el historial incluye además las columnas de **lote** y **fecha de vencimiento** de cada movimiento.
@@ -81,7 +81,7 @@ Muestra el historial de movimientos del producto:
 
 Permite llevar notas manuales sobre el producto: eventos importantes, acuerdos con proveedores, observaciones de calidad, entre otros. Use los botones **"+"** y **"-"** para agregar o quitar una nota del listado.
 
-![TODO: Insertar Imagen - Pestaña Bitácora de la ficha de inventario](../../assets/Inventario/ficha/06_ficha_bitacora.png){ align=center }
+![Pestaña Bitácora de la ficha de inventario](../../assets/Inventario/ficha/06_ficha_bitacora.png){ align=center }
 
 !!! info "Diferencia con la bitácora del sistema"
     Estas notas son de uso libre para el usuario y se guardan junto al producto. Son independientes del registro automático de auditoría del sistema (creación, modificación, etc.), que se consulta desde la bitácora general de ContaPortable.
@@ -97,7 +97,7 @@ Reúne la configuración de facturación del producto:
 - **Asignación del producto**: a un vendedor, proyecto y/o departamento específico por defecto.
 - **Unidad de salida y factor de conversión**: cuando el producto se vende en una unidad distinta a la de su existencia (por ejemplo, comprar por caja y vender por unidad).
 
-![TODO: Insertar Imagen - Pestaña Venta de la ficha de inventario](../../assets/Inventario/ficha/07_ficha_venta.png){ align=center }
+![Pestaña Venta de la ficha de inventario](../../assets/Inventario/ficha/07_ficha_venta.png){ align=center }
 
 ## ⛽ **7. Pestaña "Impuestos"**
 
@@ -110,7 +110,7 @@ Permite configurar los **impuestos adicionales** aplicables al producto, utiliza
 
 Cada uno se activa de forma independiente y admite un **monto por unidad**. Además, existe la opción de configurar **otro impuesto** personalizado, indicando su nombre, código de tributo, tipo de cálculo (porcentaje o valor fijo) y el monto o porcentaje correspondiente.
 
-![TODO: Insertar Imagen - Pestaña Impuestos de la ficha de inventario](../../assets/Inventario/ficha/08_ficha_impuestos.png){ align=center }
+![Pestaña Impuestos de la ficha de inventario](../../assets/Inventario/ficha/08_ficha_impuestos.png){ align=center }
 
 ## 📌 **8. Buenas prácticas**
 

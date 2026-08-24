@@ -7,7 +7,7 @@ description: Guía del modo de edición directa en el listado de productos y mat
 El **modo de edición directa** permite modificar o corregir varios datos de inventario desde la misma cuadrícula, sin necesidad de abrir la ficha de cada producto de forma individual. Es la vía más rápida para poner al día nombres, precios o existencias mínimas y máximas en un grupo de productos.
 
 !!! abstract "Parte del módulo de Inventario"
-    Esta página forma parte de la [Gestión de Inventario](GestionInventario.md). Para dar de alta un producto nuevo o completar toda su información (precios, impuestos, ubicación, historial), use la [Ficha de Inventario](FichaInventario.md).
+    Esta página forma parte de la [Gestión de Inventario](GestionInventario.md). Para dar de alta un producto nuevo o completar toda su información (precios, impuestos, ubicación, historial), use la [Ficha de Inventario](FichaInventario.md). Si los datos a corregir vienen en un archivo de Excel, use [Importar nombres y precios desde Excel](ImportarPreciosExcel.md).
 
 ## 📋 **1. El listado de inventario**
 
@@ -35,16 +35,25 @@ Al abrir la gestión de inventario, junto al [árbol de familias](FamiliaInventa
 
 ## ✏️ **2. Activar el modo de edición**
 
+Todas las acciones que afectan a varios productos a la vez se agrupan en el botón **Edición masiva** de la barra de herramientas superior, que despliega el siguiente menú:
+
+| Opción | Qué hace |
+| ------ | -------- |
+| **Habilitar edición directa en listado de inventario** | Activa la edición sobre la cuadrícula, que es lo que describe esta página. |
+| **Importar nombres y precios desde plantilla de Excel...** | Abre la [actualización masiva de nombres y precios](ImportarPreciosExcel.md) a partir de un archivo de Excel. |
+| **Descargar plantilla de importación...** | Descarga la plantilla oficial de inventario y le permite elegir en qué carpeta guardarla. |
+| **Nuevo** / **Modificar** | Abren la [Ficha de Inventario](FichaInventario.md) en blanco o con el producto seleccionado. |
+
 Para editar directamente sobre la cuadrícula:
 
-1. En la barra de herramientas superior del listado, presione el botón **Editar listado de inventario**.
+1. Presione **Edición masiva** y elija **Habilitar edición directa en listado de inventario**.
 2. La cuadrícula habilita la edición únicamente sobre las columnas permitidas (ver [sección 3](#3-columnas-editables)); el resto de columnas permanece bloqueado.
 3. Modifique los valores necesarios directamente sobre las celdas.
 4. Al terminar, presione el mismo botón —ahora identificado como **Finalizar edición**— y elija una de las dos opciones del menú:
     - **Guardar cambios**: aplica todas las modificaciones realizadas.
     - **Descartar cambios**: solicita confirmación y, si se acepta, revierte el listado a su estado original sin guardar nada.
 
-![Botón Editar listado de inventario](../../assets/Inventario/listado/02_activar_modo_edicion.png){ align=center }
+![Botón Edición masiva del listado de inventario](../../assets/Inventario/listado/02_activar_modo_edicion.png){ align=center }
 
 ![Menú Finalizar edición con Guardar y Descartar cambios](../../assets/Inventario/listado/03_finalizar_edicion.png){ align=center }
 
@@ -93,4 +102,5 @@ Al finalizar la edición:
 
 - [Gestión de Inventario](GestionInventario.md)
 - [Ficha de Inventario](FichaInventario.md)
+- [Importar nombres y precios desde Excel](ImportarPreciosExcel.md)
 - [Gestión de familias de inventario](FamiliaInventario.md)
