@@ -61,9 +61,6 @@ Desde el modo de edición se pueden modificar directamente:
 - Marca
 - Existencia mínima
 - Existencia máxima
-- Tipo
-- Departamento
-- Precio de referencia
 - Precios de venta 1, 2 y 3
 
 Las columnas **Selección**, **Unidad**, **Código de familia** y **Proveedor** permanecen de solo lectura desde este listado. Para modificarlas debe abrirse la [Ficha de Inventario](FichaInventario.md) del producto.

@@ -34,16 +34,19 @@ graph TD
   D[Crear / modificar un producto]
   E[Editar varios productos a la vez]
   F[Organizar productos por familia]
+  G[Actualizar nombres y precios desde Excel]
 
   A --> B
   A --> C
   C --> D
   C --> E
+  C --> G
   B --> F
 
   click D "FichaInventario.md" "Ir a Ficha de Inventario"
   click E "ListadoInventario.md" "Ir a Edición del listado de inventario"
   click F "FamiliaInventario.md" "Ir a Gestión de Familias de Inventario"
+  click G "ImportarPreciosExcel.md" "Ir a Importar nombres y precios desde Excel"
 ```
 
 | Necesito... | Dónde hacerlo |
