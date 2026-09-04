@@ -104,6 +104,7 @@ nav:
             - Consumo de agua por periodo: modulos/cp365/ConAgua/conAgua_reportes.md
         - ✉️ Envío masivo de emails: modulos/cp365/ConAgua/conAgua_senEmails.md
 
+# Note: The repository URL and name are commented out for now. No volver a agregar y requiere supervisión.
 #repo_url: https://github.com/contaportable/CPDOCS
 #repo_name: Documentación de ContaPortable
 
