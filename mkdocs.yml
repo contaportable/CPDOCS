@@ -65,6 +65,7 @@ nav:
         - Gestión de Inventario: modulos/inventario/GestionInventario.md
         - Ficha de Inventario: modulos/inventario/FichaInventario.md
         - Edición del listado de inventario: modulos/inventario/ListadoInventario.md
+        - Importar nombres y precios desde Excel: modulos/inventario/ImportarPreciosExcel.md
         - Gestión de familias de inventario: modulos/inventario/FamiliaInventario.md
         - Requisiciones y mermas: modulos/inventario/requisiciones-mermas-y-perdidas.md
       - 🧾Informes (Anexos):
@@ -104,8 +105,9 @@ nav:
             - Consumo de agua por periodo: modulos/cp365/ConAgua/conAgua_reportes.md
         - ✉️ Envío masivo de emails: modulos/cp365/ConAgua/conAgua_senEmails.md
 
-repo_url: https://github.com/contaportable/CPDOCS
-repo_name: Documentación de ContaPortable
+# Note: The repository URL and name are commented out for now. No volver a agregar y requiere supervisión.
+#repo_url: https://github.com/contaportable/CPDOCS
+#repo_name: Documentación de ContaPortable
 
 markdown_extensions:
   - admonition

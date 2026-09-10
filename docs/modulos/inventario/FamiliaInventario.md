@@ -57,7 +57,7 @@ Puede editar los nombres, descripciones y clasificaciones existentes:
 3. **Actualice**: El sistema habilitará la modificación directa del texto desde el árbol. Escriba el nuevo nombre de la familia y presione Enter para guardar, el sistema mostrará un mensaje de confirmación para proceder con el cambio de nombre del elemento de la familia.
 
 !!! info "Nota de Seguridad"
-    Los elementos  **"Todos"**, **"Crear nueva familia"**, **"Cambiar código"**,  **"Sin Familia"**, son nodos creados automáticamente, por esta razón están protegidos por el sistema y no pueden ser renombrados ni eliminados, si lo intentara el sistema mostrará un mensaje de advertencia y restringirá la acción.
+    Los elementos  **"Todos"**, **"Crear nueva familia"**, **"Cambiar código"**,  **"Sin Familia"** e **"Importar nombres y precios desde Excel"**, son nodos creados automáticamente, por esta razón están protegidos por el sistema y no pueden ser renombrados ni eliminados, si lo intentara el sistema mostrará un mensaje de advertencia y restringirá la acción.
 
 !!! note "Modificación de nombre de familia desde el árbol"
     <p style="text-align:center">
