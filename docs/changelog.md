@@ -1,7 +1,5 @@
 # Changelog ContaPortable
 
-Extracto de mejoras reales construido desde commits recientes asociados a issues cerrados.
-
 ## 2026-09-08
 
 - Issue #973
