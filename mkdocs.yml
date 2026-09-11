@@ -58,6 +58,7 @@ nav:
         - Personaliza nomenclatura para archivos del DTE al exportarlos: modulos/facturacion/nomenclatura_dte.md
         - Creación de correlativos automáticos: modulos/facturacion/correlativosAutomaticos.md
         - Creación de Apéndices VN: modulos/facturacion/apendicesVN.md
+        - Configurar Abreviaturas en cód Generación y múmero de control: modulos/facturacion/configAbrevCodGen.md
       - 💳Formas de pago: 
         - Gestión de formas de pago: modulos/forma_pago/forma_pago.md
       - 📦Inventario:
