@@ -59,6 +59,7 @@ nav:
         - Creación de correlativos automáticos: modulos/facturacion/correlativosAutomaticos.md
         - Creación de Apéndices VN: modulos/facturacion/apendicesVN.md
         - Configurar Abreviaturas en cód Generación y múmero de control: modulos/facturacion/configAbrevCodGen.md
+        - Envío de Recibos de Ingreso por correo electrónico: modulos/facturacion/EnviarRecibosIngresosPorEmail.md
       - 💳Formas de pago: 
         - Gestión de formas de pago: modulos/forma_pago/forma_pago.md
       - 📦Inventario:
@@ -104,6 +105,10 @@ nav:
         - 📈 Reportes:
             - Consumo de agua por periodo: modulos/cp365/ConAgua/conAgua_reportes.md
         - ✉️ Envío masivo de emails: modulos/cp365/ConAgua/conAgua_senEmails.md
+  - 🧾DTE Normativa V2:
+      - Fase 1: modulos/dteNormativaV2/fase1.md
+      - Fase 2: modulos/dteNormativaV2/fase2.md
+      - Fase 3: modulos/dteNormativaV2/fase3.md
 
 # Note: The repository URL and name are commented out for now. No volver a agregar y requiere supervisión.
 #repo_url: https://github.com/contaportable/CPDOCS
