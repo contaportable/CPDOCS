@@ -14,6 +14,6 @@
 
 ## 🚀 Implementación
 
- ![FASE1](../../assets/dteNormativaV2/Fase1_DTENormv2.png){ align=center }
+ ![FASE1](../../assets/dteNormativaV2/Fase1_DTENormv2.png){ width="480" align=center }
 
 ---

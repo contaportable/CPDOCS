@@ -41,6 +41,6 @@
     - Mejoras al formulario de instalación de fases de implementación de la Normativa V2.
     - Corrección de bugs reportados y optimización de procesos en general.
 
- ![FASE2](../../assets/dteNormativaV2/Fase2_DTENormv2.png){ align=center }
+ ![FASE2](../../assets/dteNormativaV2/Fase2_DTENormv2.png){ width="480" align=center }
 
 ---

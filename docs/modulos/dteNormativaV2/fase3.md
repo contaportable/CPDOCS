@@ -50,6 +50,6 @@
     - Corrección del bug al guardar la actividad económica en clientes no contribuyentes.
     - Corrección de bugs reportados y optimización de procesos en general.
   
-![FASE3](../../assets/dteNormativaV2/Fase3_DTENormv2.png){ align=center }
+![FASE3](../../assets/dteNormativaV2/Fase3_DTENormv2.png){ width="480" align=center }
 
 ---
