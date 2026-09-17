@@ -2,32 +2,19 @@
 
 ## 2026-09-08
 
-- Issue #973
-- Commit: 6d661e8
-- Cambio: correccion del reporte de salidas por cliente.
-- Archivos: REPORTS/Inv24.FRT, REPORTS/Inv24.FRX
+- Cambio: Corrección del reporte de salidas por cliente.
+- Descripción: Se muestra el nombre de cliente para las requisiciones en el reporte, además de las observaciones que ya se incluían.
 
 ## 2026-09-01
 
-- Issue #391
-- Commit: d40a95f
-- Cambio: correccion del error en contabilizacion de depositos bancarios.
-- Archivos: FORMS/Cnpda.sc2, LIB1.0/_conta.vc2
+- Cambio: Corrección del error en contabilización de depósitos bancarios.
+- Descripción: Se mejora la forma en que se contabilizan los depósitos bancarios en el sistema.
 
 ## 2026-08-28
 
-- Issue #939
-- Commit: 37e8c30
-- Cambio: correccion de desorden en lineas de partida por secuencia.
-- Archivos: FORMS/Cnpda.sc2, LIB1.0/Ycomapps.vc2, LIB1.0/_conta.vc2
+- Cambio: Corrección de ordenamiento de líneas de partida por secuencia.
+- Descripción: Con esto se logra un orden correcto de las líneas de partida según su secuencia, mejorando la claridad y consistencia en los reportes y así mismo en la interfaz de partidas
 
-## 2026-08-24
+## Nota importante:
 
-- Commit: 8b6a6fb
-- Cambio: actualizacion de URL de descarga de plantilla en Google Docs.
-- Archivo: LIB1.0/Defineinv.prg
-
-## Nota
-
-- En los ultimos 60 commits no se detectaron mensajes con issue cerrado que mencionen explicitamente updater, rollback, membresia, preview o changelog.
-- Cuando exista pagina publica de changelog en docs.contaportable.com, este extracto puede publicarse tal cual.
+Por favor estar pendiente de los canales oficiales de ContaPortable, para verificar nuevos cambios.
