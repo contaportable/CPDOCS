@@ -124,7 +124,7 @@ El **Actualizador de ContaPortable** es la herramienta oficial diseñada para ma
 ## ❓ Preguntas Frecuentes
 
 ??? info "¿Por qué el actualizador indica que hay una nueva versión pero no me permite descargarla?"
-    Esto ocurre cuando su suscripción de membresía no se encuentra activa o ha vencido. El actualizador le informa con transparencia que existe una mejora disponible, pero la descarga requiere activar su membresía. Presione **Contactar Ventas** para regularizar su servicio.
+    Esto ocurre cuando su suscripción de membresía no se encuentra activa o ha vencido. El actualizador le informa con transparencia que existe una mejora disponible, pero la descarga requiere activar su membresía. Presione **Contactar Ventas** para ponerse en contacto con representantes de ContaPortable y poder adquirir o renovar su membresía.
 
 ??? info "¿Puedo volver a la versión estable si instalé una versión beta?"
     Sí. Si se encuentra en el canal **Preview Release (Beta)** y desea regresar a la versión estable, puede seleccionar **Versión Estable** y consultar la versión correspondiente, o bien presionar **Revertir Versión** para restaurar el respaldo previo generado automáticamente.
@@ -136,34 +136,3 @@ El **Actualizador de ContaPortable** es la herramienta oficial diseñada para ma
     Puede acceder a la documentación web oficial en [docs.contaportable.com/changelog](https://docs.contaportable.com/changelog) directamente desde el botón de novedades en el actualizador.
 
 ---
-
-## ☑️ Validaciones y Pruebas Realizadas 🧪
-
-!!! info "Certificación de Calidad"
-    Las pruebas de aseguramiento de calidad del actualizador se validaron de forma automatizada y manual:
-
-!!! example "Batería de Pruebas Unitarias e Integración"
-    ??? example "Pruebas de Repositorios Duales y Canales"
-        - :material-check-circle: Conmutación de canal **Estable** :material-arrow-right: enrutamiento a repositorio oficial de producción.
-        - :material-check-circle: Conmutación de canal **Preview Release (Beta)** :material-arrow-right: enrutamiento a repositorio beta.
-        - :material-check-circle: Normalización automática de URL y sobreescritura de repositorios cruzados.
-
-        ![Prueba de selección de repositorio por canal](../../assets/actualizador/test_canales_09.png){ align=center }
-
-    ??? example "Pruebas de Seguridad en Respaldos y Rollback"
-        - :material-check-circle: Creación de snapshots en `BACKUP\` con estampado temporal `AAAAMMDD_HHMMSS`.
-        - :material-check-circle: Rotación FIFO estricta (máximo 3 respaldos conservados).
-        - :material-check-circle: Verificación de exclusión de archivos `.dbf` y `.cdx` durante el rollback.
-
-        ![Prueba de respaldo y reversión](../../assets/actualizador/test_rollback_10.png){ align=center }
-
----
-
-## 📝 Historial de Actualizaciones
-
-??? example "Registro de Cambios del Módulo Actualizador"
-    - **Septiembre 2026:**
-        - Incorporación de repositorios duales de descarga: canal Estable (`public_imgs/`) y canal Beta (`public_imgs_beta/`).
-        - Unificación de consulta de versiones hacia endpoint centralizado con parámetro dinámico de canal.
-        - Mejoras en la barra de progreso animada y porcentaje de descarga en tiempo real.
-        - Respaldo rotativo FIFO y blindaje contra modificación de tablas de datos contables.
