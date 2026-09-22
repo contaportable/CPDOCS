@@ -1,4 +1,4 @@
-site_name: ContaPortable Docs
+﻿site_name: ContaPortable Docs
 site_description: Documentación de ContaPortable 
 site_url: https://docs.contaportable.com
 
@@ -109,6 +109,7 @@ nav:
       - Fase 1: modulos/dteNormativaV2/fase1.md
       - Fase 2: modulos/dteNormativaV2/fase2.md
       - Fase 3: modulos/dteNormativaV2/fase3.md
+  - 🔄Actualizador: modulos/actualizador/actualizador_contaportable.md
 
 # Note: The repository URL and name are commented out for now. No volver a agregar y requiere supervisión.
 #repo_url: https://github.com/contaportable/CPDOCS
