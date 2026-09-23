@@ -1,43 +1,42 @@
 <!---
-description: Documentación oficial de usuario para el Actualizador de ContaPortable (updater.exe / updater.scx). Canales Estable y Preview (Beta), validación de membresía activa, respaldos automáticos y reversión de versiones.
+description: Documentación oficial de usuario para el Actualizador de ContaPortable (updater.exe / updater.scx / Defineupdater.prg). Canales Estable y Preview (Beta), validación de membresía activa, respaldos automáticos y reversión de versiones.
 --->
 
 # Actualizador de ContaPortable
 
-El **Actualizador de ContaPortable** es la herramienta oficial diseñada para mantener el sistema al día con las últimas mejoras, corrección de errores reportados, funcionalidades y nuevas características, garantizando la continuidad de su trabajo y apegandonos a las disposiciones del Ministerio de Hacienda.
+El **Actualizador de ContaPortable** es la herramienta oficial diseñada para mantener el sistema al día con las últimas mejoras, corrección de errores reportados, funcionalidades y nuevas características, garantizando la continuidad de su trabajo y apegandonos a las disposiciones más recientes del Ministerio de Hacienda.
 
 ---
 
 ## 📌 Introducción
 
-!!! abstract "Propósito del Actualizador"
-    El actualizador centraliza la verificación, descarga, descompresión e instalación de nuevos compilados ejecutables y componentes del sistema. Además, incluye un sistema automático de respaldo previo a cada instalación que permite restaurar la versión anterior en caso de ser necesario.
+!!! abstract ""
+    El actualizador centraliza la verificación, descarga, descompresión e instalación de nuevos ejecutables y componentes del sistema. Además, incluye un sistema automático de respaldo previo a cada instalación que permite restaurar la versión anterior en caso de ser necesario.
 
-    El actualizador opera de manera autónoma, notificando si el sistema se encuentra al día o si existe una nueva versión lista para su descarga según el canal de distribución seleccionado.
+    El actualizador notifica si el sistema se encuentra al día o si existe una nueva versión lista para su descarga según el canal de distribución seleccionado (Versión estable o beta).
 
-    ![Pantalla principal del Actualizador de ContaPortable](../../assets/actualizador/interfaz_principal_01.png){ align=center }
+    ![Pantalla principal del Actualizador de ContaPortable](../../assets/Actualizador/interfaz_principal_01.png){ align=center}
 
 ---
 
 ## 📦 Requisitos y Membresía Activa
 
 !!! info "Requisitos Previos"
-    - **Conexión a Internet:** Requerida para verificar versiones y descargar paquetes de actualización.
+    - **Conexión a Internet:** Requerida para verificar versiones y descargar paquetes de actualización, esto es muy importante.
     - **Membresía activa de ContaPortable:** Es indispensable contar con una suscripción a la membresía vigente asociada a la clave de licencia registrada en el sistema para disponer de acceso a las nuevas actualizaciones del software.
-    - **Permisos de escritura:** Acceso de escritura en el directorio principal de instalación de ContaPortable para actualizar ejecutables y librerías.
-    - **Cierre de módulos:** Asegurarse de que ContaPortable y sus módulos asociados se encuentren cerrados antes de iniciar la instalación.
+    - **Cierre de módulos:** Asegurarse de que ContaPortable y sus módulos asociados se encuentren cerrados antes de iniciar la instalación, para evitar conflictos durante el proceso de actualización.
 
 ### 🔒 Política de Membresía
 
 !!! note "Validación de Licencia"
-    El actualizador consulta en tiempo real el estado de su membresía con los servidores centrales:
+    El actualizador consulta en tiempo real el estado de su membresía :
 
     - **Membresía Activa:** Se muestra el distintivo verde :material-check-circle: **Membresía Activa** indicando la fecha de vigencia. Permite descargar e instalar actualizaciones tanto en canal **Estable** como **Preview Release (Beta)**.
     - **Membresía Inactiva o Vencida:** El actualizador muestra el distintivo amarillo/rojo :material-alert-circle: **Membresía Requerida**. El sistema le permitirá verificar si existen versiones nuevas disponibles para su conocimiento, pero el botón de descarga e instalación permanecerá bloqueado.
 
     ![Estado de Membresía Activa vs Inactiva](../../assets/actualizador/membresia_estado_02.png){ align=center }
 
-    Si requiere renovar o activar su plan comercial, presione el botón **Contactar Ventas** para comunicarse directamente con el equipo de soporte comercial vía WhatsApp.
+    Si requiere renovar o activar su membresía, presione el botón **Contactar Ventas** para comunicarse directamente con el equipo de ventas de ContaPortable vía WhatsApp.
 
 ---
 
@@ -102,22 +101,22 @@ El **Actualizador de ContaPortable** es la herramienta oficial diseñada para ma
 
 ---
 
-## 🔁 Reversión de Versión (Rollback)
+## 🔁 Reversión de Versión
 
 !!! note "Seguridad y Tranquilidad Operativa"
     El actualizador incorpora una política de protección basada en **snapshots de respaldo**:
 
-    - Cada vez que instala una actualización, se respalda la versión anterior en una carpeta identificada con fecha y hora dentro de `BACKUP\`.
+    - Cada vez que instala una actualización, se respalda la versión anterior en un archivo comprimido identificado con fecha y hora dentro de `BACKUP\`.
     - Se conservan rotativamente los últimos **3 respaldos**, eliminando automáticamente los más antiguos para ahorrar espacio en disco.
 
     ![Diálogo de Reversión de Versión](../../assets/actualizador/dialogo_rollback_08.png){ align=center }
 
-### 🛡️ Regla de Oro: Protección de Tablas DBF
+### 🛡️ Protección de base de datos
 
 !!! danger "Preservación Absoluta de la Información Contable"
-    El proceso de reversión de versión (**Rollback**) restaura únicamente los ejecutables (`.exe`), librerías (`.dll`) y reportes (`.frx`/`.frt`).
+    El proceso de **reversión de versión** restaura únicamente los ejecutables (`.exe`), librerías (`.dll`) y reportes (`.frx`/`.frt`).
 
-    **BAJO NINGUNA CIRCUNSTANCIA se tocan, reemplazan ni modifican las tablas de datos (`.dbf`), índices (`.cdx`) o archivos de texto contables.** Su información contable, partidas, facturas y registros tributarios permanecen 100% intactos y protegidos.
+    **BAJO NINGUNA CIRCUNSTANCIA se tocan, reemplazan ni modifican archivos de bases de datos,** Su información contable, partidas, facturas y demás registros permanecen 100% intactos y protegidos.
 
 ---
 
