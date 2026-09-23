@@ -34,7 +34,8 @@ El **Actualizador de ContaPortable** es la herramienta oficial diseñada para ma
     - **Membresía Activa:** Se muestra el distintivo verde :material-check-circle: **Membresía Activa** indicando la fecha de vigencia. Permite descargar e instalar actualizaciones tanto en canal **Estable** como **Preview Release (Beta)**.
     - **Membresía Inactiva o Vencida:** El actualizador muestra el distintivo amarillo/rojo :material-alert-circle: **Membresía Requerida**. El sistema le permitirá verificar si existen versiones nuevas disponibles para su conocimiento, pero el botón de descarga e instalación permanecerá bloqueado.
 
-    ![Estado de Membresía Activa vs Inactiva](../../assets/actualizador/membresia_estado_02.png){ align=center }
+    ![Estado de Membresía Activa ](../../assets/Actualizador/membresia_estado_02.png){ align=center }
+    ![Estado de Membresía Inactiva](../../assets/Actualizador/membresia_estado_02_1.png){ align=center }
 
     Si requiere renovar o activar su membresía, presione el botón **Contactar Ventas** para comunicarse directamente con el equipo de ventas de ContaPortable vía WhatsApp.
 
