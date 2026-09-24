@@ -56,10 +56,10 @@ El **Actualizador de ContaPortable** es la herramienta oficial diseñada para ma
 !!! tip "Gestión de Descargas y Repositorios Oficiales por Canal"
     El actualizador conecta con dos repositorios dedicados para garantizar descargas aisladas y seguras:
 
-    | Canal | Repositorio Oficial de Descarga | Contenido y Empaquetado |
-    | :--- | :--- | :--- |
-    | **Versión Estable** | `http://www.tiservicios.net/webservice/public_imgs/` | Paquetes oficiales probados y compilados para producción general. |
-    | **Preview Release (Beta)** | `http://www.tiservicios.net/webservice/public_imgs_beta/` | Compilados preliminares con las funciones más recientes para pruebas. |
+    | Canal | Contenido y Empaquetado |
+    | :--- | :--- |
+    | **Versión Estable** | Paquetes oficiales probados y compilados para producción general. |
+    | **Preview Release (Beta)** | Compilados preliminares con las funciones más recientes para pruebas. |
 
     Al conmutar entre **Versión Estable** y **Preview Release (Beta)**, el actualizador consulta y descarga directamente desde el repositorio correspondiente al canal elegido, evitando descargas cruzadas o versiones incompatibles. Ambos canales exigen contar con membresía activa de ContaPortable.
 
