@@ -46,11 +46,11 @@ El **Actualizador de ContaPortable** es la herramienta oficial diseñada para ma
 !!! info "Selector de Canales"
     ContaPortable ofrece dos canales de actualización oficiales para adaptarse a sus necesidades:
 
-    ![Selector de Canales: Versión Estable vs Preview Beta](../../assets/actualizador/selector_canales_03.png){ align=center }
+    ![Selector de Canales: Versión Estable vs Preview Beta](../../assets/Actualizador/selector_canales_03.png){ align=center }
 
 | Canal | Tipo de Distribución | Recomendado para | Características |
 | :--- | :--- | :--- | :--- |
-| **Versión Estable (Recomendada)** | Oficial de Producción | Trabajo contable y fiscal diario | Máxima estabilidad probada y certificada para declaraciones fiscales y contabilidad oficial. |
+| **Versión Estable (Recomendada)** | Oficial de Producción | Usar las funciones de ContaPortable con la mayor estabilidad posible | Máxima estabilidad probada y certificada para sus procesos diarios. |
 | **Preview Release (Beta)** | Acceso Anticipado | Pruebas de nuevas funciones | Novedades, pre-lanzamientos y optimizaciones antes de su publicación general. |
 
 !!! tip "Gestión de Descargas y Repositorios Oficiales por Canal"
@@ -61,7 +61,7 @@ El **Actualizador de ContaPortable** es la herramienta oficial diseñada para ma
     | **Versión Estable** | Paquetes oficiales probados y compilados para producción general. |
     | **Preview Release (Beta)** | Compilados preliminares con las funciones más recientes para pruebas. |
 
-    Al conmutar entre **Versión Estable** y **Preview Release (Beta)**, el actualizador consulta y descarga directamente desde el repositorio correspondiente al canal elegido, evitando descargas cruzadas o versiones incompatibles. Ambos canales exigen contar con membresía activa de ContaPortable.
+    Al cambiar entre **Versión Estable** y **Preview Release (Beta)**, el actualizador consulta y descarga directamente desde el repositorio correspondiente al canal elegido, así se pueden descargar dos versiones diferentes de forma aislada. Ambos canales exigen contar con membresía activa de ContaPortable.
 
 ---
 
@@ -73,7 +73,8 @@ El **Actualizador de ContaPortable** es la herramienta oficial diseñada para ma
     - **Escenario A (Actualización disponible):** Muestra la versión instalada actual y la nueva versión disponible (ej. `5.0.0.0` :material-arrow-right: `5.0.7.7`). El botón **Bajar e Instalar** se habilita.
     - **Escenario B (Sistema al día):** Si ya cuenta con la versión más reciente, se indicará el mensaje **Sistema al día** y se deshabilitará la descarga innecesaria.
 
-    ![Tarjeta de Versión Disponible vs Sistema al Día](../../assets/actualizador/tarjeta_versiones_04.png){ align=center }
+    ![Tarjeta de Versión Disponible](../../assets/Actualizador/tarjeta_versiones_04.png){align=center}
+    ![Tarjeta de "Sistema al Día"](../../assets/Actualizador/tarjeta_versiones_04_1.png){align=center}
 
 === "2️⃣ Revisión de novedades"
     Antes de instalar, puede consultar los cambios incluidos presionando **Ver notas de versión / Novedades**:
@@ -81,7 +82,7 @@ El **Actualizador de ContaPortable** es la herramienta oficial diseñada para ma
     - Se desplegará el panel lateral con el resumen de mejoras, correcciones y ajustes tributarios.
     - Opcionalmente puede presionar **Abrir en el Navegador** para consultar el registro detallado en la documentación oficial en línea.
 
-    ![Panel interno de Novedades y Notas de Versión](../../assets/actualizador/panel_novedades_05.png){ align=center }
+    ![Panel interno de Novedades y Notas de Versión](../../assets/Actualizador/panel_novedades_05.png){ align=center }
 
 === "3️⃣ Descarga e instalación"
     1. Presione el botón **Bajar e Instalar**.
