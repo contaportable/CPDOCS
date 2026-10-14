@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 780" font-family="Arial, Helvetica, sans-serif">
+  <rect x="0" y="0" width="520" height="780" rx="18" fill="#ffffff" stroke="#e5e0f0" stroke-width="2"/>
+  <rect x="0" y="0" width="520" height="150" rx="18" fill="#9B6FD6"/>
+  <rect x="0" y="120" width="520" height="30" fill="#9B6FD6"/>
+  <circle cx="80" cy="75" r="44" fill="#ffffff"/>
+  <text x="80" y="90" font-size="46" font-weight="bold" fill="#9B6FD6" text-anchor="middle">3</text>
+  <text x="150" y="60" font-size="26" font-weight="bold" fill="#ffffff">FASE 3</text>
+  <text x="150" y="90" font-size="17" fill="#ffffff">Control de Versiones de</text>
+  <text x="150" y="112" font-size="17" fill="#ffffff">Esquemas DTE</text>
+  <rect x="380" y="18" width="118" height="24" rx="12" fill="#ffffff" opacity="0.85"/>
+  <text x="439" y="35" font-size="11.5" font-weight="bold" fill="#9B6FD6" text-anchor="middle">PRÓXIMA A DESPLEGAR</text>
+
+  <text x="40" y="195" font-size="16" font-weight="bold" fill="#333333">Síntesis de la fase</text>
+  <line x1="40" y1="205" x2="480" y2="205" stroke="#eeeeee" stroke-width="2"/>
+
+  <g font-size="15.5" fill="#333333">
+    <circle cx="50" cy="238" r="6" fill="#9B6FD6"/>
+    <text x="70" y="244">Abreviar código de generación y</text>
+    <text x="70" y="264">número de control (longitud configurable)</text>
+
+    <circle cx="50" cy="296" r="6" fill="#9B6FD6"/>
+    <text x="70" y="302">Columnas de código de generación /</text>
+    <text x="70" y="322">número de control en resumen de ventas</text>
+
+    <circle cx="50" cy="354" r="6" fill="#9B6FD6"/>
+    <text x="70" y="360">Nuevo esquema/versión para FE, CFE,</text>
+    <text x="70" y="380">NCE, NDE, FSEE, FEXE, NRE, CRE, CDE</text>
+    <text x="70" y="400">y evento de contingencia</text>
+
+    <circle cx="50" cy="432" r="6" fill="#9B6FD6"/>
+    <text x="70" y="438">RG compatibles entre versiones de</text>
+    <text x="70" y="458">esquema del DTE</text>
+
+    <circle cx="50" cy="490" r="6" fill="#9B6FD6"/>
+    <text x="70" y="496">Nueva vista al facturar FEXE: tipo de</text>
+    <text x="70" y="516">exportación, régimen y recinto fiscal</text>
+
+    <circle cx="50" cy="548" r="6" fill="#9B6FD6"/>
+    <text x="70" y="554">Evento de retorno en contingencia +</text>
+    <text x="70" y="574">política de reintentos</text>
+
+    <circle cx="50" cy="606" r="6" fill="#9B6FD6"/>
+    <text x="70" y="612">Lector JSON actualizado (esquemas</text>
+    <text x="70" y="632">11/ago/2026) y control de vencimiento</text>
+    <text x="70" y="652">de token al transmitir</text>
+  </g>
+
+  <rect x="40" y="680" width="440" height="70" rx="10" fill="#F1E9FB"/>
+  <text x="60" y="705" font-size="14" font-weight="bold" fill="#9B6FD6">Impacto principal</text>
+  <text x="60" y="729" font-size="14" fill="#555555">Compatibilidad multi-versión de esquemas</text>
+  <text x="60" y="745" font-size="14" fill="#555555">DTE y mejoras de transmisión/control.</text>
+
+  <text x="260" y="770" font-size="12" fill="#aaaaaa" text-anchor="middle">ContaPortable · Normativa DTE V2.0</text>
+</svg>

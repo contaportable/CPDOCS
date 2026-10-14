@@ -1,0 +1,11 @@
+/* branding.css — Ajustes de branding para ContaPortable */
+/* Ajusta el tamaño del logo en la cabecera y manejo básico en modo oscuro */
+.md-logo img,
+.md-header-nav__title img {
+  max-height: 36px;
+  object-fit: contain;
+}
+
+
+/* Evitar que el logo desborde en móviles */
+.md-header-nav__title { overflow: hidden; }
