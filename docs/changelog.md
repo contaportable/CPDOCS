@@ -1,6 +1,214 @@
 ﻿# Changelog ContaPortable
 ---
 
+## 2026-10-13
+
+### 📝 Nuevas Características
+- Cambio: Aviso de nuevas versiones más informativo.
+- Descripción: El aviso muestra la versión instalada y la nueva, el canal (Estable o Beta) y la fecha de publicación; ya no interrumpe lo que está escribiendo, permanece abierto mientras el mouse está encima e incluye el botón "Recordar mañana" para no volver a avisar esa versión hasta el día siguiente.
+- Cambio: Novedades más legibles en el actualizador.
+- Descripción: La sección de novedades muestra cada fecha completa, las secciones resaltadas y cada cambio con viñeta y su descripción, con letra de mayor tamaño.
+- Cambio: Activación de la Normativa DTE 2.0 desde el actualizador.
+- Descripción: Al terminar la actualización se activan las fases pendientes de la Normativa DTE 2.0 cuando aplica, y el resultado queda registrado en el archivo de registro de la actualización.
+- Cambio: Resumen único de la activación de la Normativa DTE 2.0 al iniciar.
+- Descripción: En lugar de un mensaje por cada esquema, se muestra un solo resumen con el estado de cada fase y del distrito del emisor; lo pendiente se vuelve a intentar en el siguiente ingreso.
+- Cambio: Tope de aguinaldo exento de renta actualizado a $1,500.00.
+- Descripción: Se actualiza el parámetro del aguinaldo exento de renta al nuevo tope de $1,500.00 y se ajusta el cálculo del primer día considerado en planillas.
+- Cambio: Agrupación de cuentas de resultados en el catálogo de cuentas.
+- Descripción: Los nodos COSTOS Y GASTOS e INGRESOS del catálogo de cuentas ahora incluyen las cuentas configuradas como gasto, costo o ingreso del Estado de Resultados (por ejemplo, las cuentas 6), y el nodo TODOS respeta el texto escrito en el recuadro de búsqueda.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Impresión del libro de compras consolidado.
+- Descripción: Se corrige el error que impedía imprimir el libro de compras desde los reportes consolidados de Informes.
+- Cambio: Quedans aplicados parcialmente en documentos de bancos.
+- Descripción: El buscador de quedans ya no oculta los quedans aplicados parcialmente en otros documentos; solo se excluyen los que ya no tienen saldo pendiente.
+- Cambio: Creación de órdenes de compra desde la referencia del depósito.
+- Descripción: Al crear una orden de compra desde el menú contextual de la referencia de un depósito, ahora se agrega correctamente al detalle en lugar de abrir el buscador sin resultados.
+- Cambio: Etiqueta de saldos en el catálogo de cuentas.
+- Descripción: Se corrige la etiqueta "Sin Definir" que se mostraba en los saldos del catálogo de cuentas.
+- Cambio: Activación automática de la Normativa DTE 2.0 en todos los estilos de facturación electrónica.
+- Descripción: La activación automática ahora también se realiza en empresas con estilos de facturación DTE distintos al estándar (por ejemplo, ventas no sujetas) y en ContaPortable 365; además, ya no se detiene si falta alguno de los esquemas.
+- Cambio: Error al crear el acceso directo al terminar la actualización.
+- Descripción: Se corrige el error que podía mostrarse al finalizar la actualización mientras se revisaba o creaba el acceso directo en el escritorio.
+- Cambio: Aviso de nuevas versiones que no se mostraba.
+- Descripción: Se corrige que el aviso en pantalla no apareciera y solo se mostrara el globo de Windows.
+
+---
+
+## 2026-10-12
+
+### 📝 Nuevas Características
+- Cambio: Acceso directo en el escritorio al terminar la actualización.
+- Descripción: El actualizador revisa los accesos directos de la instalación; retira los que apuntan a un programa que ya no existe y, si no queda ninguno funcional, crea uno nuevo con la fecha de actualización (por ejemplo, "Contaportable Actualizado 12-10-2026").
+- Cambio: Activación automática de la Normativa DTE 2.0 después de actualizar.
+- Descripción: Al iniciar el sistema tras una actualización se verifican y activan las fases pendientes de la Normativa DTE 2.0 para las empresas que emiten DTE, solicitando el distrito del emisor si aún no está configurado.
+- Cambio: Nuevos botones en el panel de Contabilidad de ContaPortable Avanzado.
+- Descripción: Se agregan los accesos Contabilizar Planilla, Documentos Contables y Actualizar Catálogo en la barra de herramientas del panel de Contabilidad.
+
+---
+
+## 2026-10-09
+
+### 📝 Nuevas Características
+- Cambio: Bloqueo de casillas de impuestos según el tipo de DTE.
+- Descripción: La casilla de Retención de Renta solo se habilita en la Factura de Sujeto Excluido; en la Factura de Sujeto Excluido se bloquean IVA, Exento, No sujeto y otros impuestos, y en el Comprobante de Donación se bloquean IVA, Exento y Renta.
+- Cambio: Número de documento sin guion en Factura de Sujeto Excluido.
+- Descripción: Conforme a la validación vigente del Ministerio de Hacienda, al transmitir una Factura de Sujeto Excluido con DUI el número de documento se envía sin guion.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Envío por correo del evento de invalidación con adjuntos personalizados.
+- Descripción: Se corrige el error "La ruta o el nombre de archivo no es válido" al generar y enviar la representación gráfica y el JSON del evento de invalidación cuando hay adjuntos personalizados configurados.
+- Cambio: Creación de quedans para proveedores del exterior.
+- Descripción: Se corrige la omisión del quedan en el nodo de Proveedores Exterior y la asignación de su cuenta contable.
+- Cambio: Contabilización desde Anexos.
+- Descripción: Se ajusta la contabilización de documentos realizada desde el módulo de Anexos.
+
+---
+
+## 2026-10-08
+
+### 📝 Nuevas Características
+- Cambio: Asignación masiva de los campos de renta en anexos de compras y ventas a contribuyentes.
+- Descripción: Se pueden asignar automáticamente y reemplazar de forma masiva el tipo de operación, tipo de ingreso, tipo de costo, sector y clasificación en el anexo de compras y en el anexo de ventas a contribuyentes.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Fecha del CFE en el libro de IVA de contribuyentes.
+- Descripción: Se corrige la fecha que mostraba el libro de contribuyentes para los CFE importados desde el anexo de anulados.
+- Cambio: Mensaje de error durante la actualización de la base de datos.
+- Descripción: Se evita un mensaje de error que podía mostrarse al actualizar la estructura de datos después de instalar una nueva versión; el proceso se completa normalmente.
+
+---
+
+## 2026-10-07
+
+### 📝 Nuevas Características
+- Cambio: Datos de licencia y tipo de sistema en el actualizador.
+- Descripción: El actualizador muestra los primeros 5 caracteres de la licencia (el resto oculto por seguridad) y la descripción del sistema instalado.
+- Cambio: Recuperación del ejecutable del sistema al actualizar.
+- Descripción: Si el ejecutable del sistema fue eliminado o renombrado, el actualizador lo vuelve a crear con el nombre correspondiente al sistema instalado.
+- Cambio: Asignación masiva en el anexo de ventas a consumidor final.
+- Descripción: Se agrega la asignación automática y el reemplazo masivo del tipo de operación y tipo de ingreso en el anexo de ventas a consumidor final, disponible desde el menú contextual.
+- Cambio: Propuesta de traslado entre familias en requisiciones y devoluciones.
+- Descripción: Se incorpora la propuesta de traslado de productos entre familias en el proceso de requisiciones y devoluciones.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Opciones disponibles para DTE en contingencia.
+- Descripción: En las facturas en contingencia se habilitan las opciones de enviar el DTE y extraer el JSON, sin permitir eliminar el JSON.
+
+---
+
+## 2026-10-06
+
+### 📝 Nuevas Características
+- Cambio: Menú contextual para crear órdenes de gasto y de compra desde la referencia de depósitos.
+- Descripción: Se reestructura el menú contextual del campo referencia en depósitos para crear órdenes de gasto (OG) y órdenes de compra (OC) directamente.
+- Cambio: Funciones de INVFACT25 equiparadas con INVFACT2.
+- Descripción: INVFACT25 habilita Informes, Planillas, Formas de Pago y Actualizar Catálogo igual que INVFACT2, con la diferencia de los retaceos.
+- Cambio: Distrito para receptores del extranjero.
+- Descripción: Se agrega el distrito "00" para departamentos y municipios de receptores del extranjero.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Doble descargo de inventario al relacionar Nota de Remisión.
+- Descripción: Se evita el doble descargo de inventario al relacionar una Nota de Remisión con una Factura o un Comprobante de Crédito Fiscal (y viceversa), y se valida que los productos de inventario coincidan con el documento relacionado.
+- Cambio: Total en la representación gráfica de la Nota de Débito.
+- Descripción: El total de las representaciones gráficas incluidas por defecto para la Nota de Débito ahora descuenta la retención del 1%.
+- Cambio: Botones de JSON en facturas en contingencia.
+- Descripción: Se corrige el ocultamiento de los botones de JSON en facturas en contingencia y la información que quedaba al eliminar una factura sin sello.
+- Cambio: Posición en la lista de cotizaciones.
+- Descripción: El cursor y la lista ahora se ubican en la última cotización al refrescar o al seleccionar el nodo.
+- Cambio: Botón de envío de vouchers en planillas.
+- Descripción: El botón de envío de vouchers por correo se muestra únicamente cuando la función está activada en parámetros.
+
+---
+
+## 2026-10-05
+
+### 📝 Nuevas Características
+- Cambio: Envío de vouchers de planilla por correo electrónico.
+- Descripción: Se pueden enviar los comprobantes de pago de planilla por correo de forma masiva o individual. La función se activa desde parámetros y tiene acceso directo en la barra de herramientas; al enviar se puede actualizar el correo del empleado en su ficha.
+- Cambio: Mejoras al invalidar documentos.
+- Descripción: Al importar un evento de invalidación que no trae su propio sello se conserva el sello del DTE invalidado, y al elaborar el quedan se informa el depósito relacionado solicitando una segunda confirmación.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Envío de correos en ConAgua.
+- Descripción: Se corrige la columna de correo que no mostraba direcciones válidas, la falla en el reenvío masivo de facturas DTE y los mensajes de error al enviar correos; ahora se muestra el mensaje real del servicio de correo.
+- Cambio: Bloqueo de la actualización por un componente del sistema.
+- Descripción: Se evita que la actualización se detenga por restricciones de un componente de Windows utilizado por el sistema.
+- Cambio: Margen en el reporte CLI12.
+- Descripción: Se ajusta la posición de la fecha y hora en el reporte CLI12 para dejar margen inferior.
+
+---
+
+## 2026-10-01
+
+### 📝 Nuevas Características
+- Cambio: Aviso de nuevas versiones en la bandeja del sistema.
+- Descripción: Al iniciar ContaPortable se verifica si existe una versión más reciente; si la hay, se muestra un aviso y un ícono en la bandeja del sistema que abre el actualizador.
+- Cambio: Validación de membresía en el actualizador.
+- Descripción: Con la membresía inactiva, el actualizador muestra las versiones disponibles pero bloquea la instalación.
+
+---
+
+## 2026-09-29
+
+### 📝 Nuevas Características
+- Cambio: Importación de eventos de invalidación y retorno de DTE emitidos.
+- Descripción: Al importar el JSON de DTE emitidos desde el resumen de ventas se incluyen los eventos de invalidación y de retorno, con manejo de documentos invalidados y flujos separados por parámetros para devoluciones, incluyendo quedans.
+- Cambio: Consulta pública de DTE en ambiente de pruebas.
+- Descripción: La consulta pública de DTE ahora también está disponible en ambiente de pruebas.
+- Cambio: PIN de soporte desde el actualizador.
+- Descripción: Si la membresía no aparece activa por no estar vinculada a la licencia, el actualizador muestra un enlace para generar un PIN de soporte.
+- Cambio: Mejor compatibilidad del actualizador con antivirus.
+- Descripción: El actualizador reintenta la instalación cuando el antivirus analiza los archivos y, si los bloquea, cancela de forma segura sin dejar el sistema a medio actualizar.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Importación de JSON de eventos.
+- Descripción: Se corrige un error al importar el JSON de un evento.
+
+---
+
+## 2026-09-28
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Etiquetas de filtros en reportes de gastos.
+- Descripción: Se corrigen las etiquetas de los filtros de códigos de cuentas en los reportes de gastos.
+
+---
+
+## 2026-09-25
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Importación de JSON de DTE incompletos en órdenes de gasto y compra.
+- Descripción: Al importar DTE con campos incompletos enviados por algunos proveedores, se validan los campos requeridos para evitar errores.
+- Cambio: Duplicación de líneas al invalidar con factura negativa.
+- Descripción: Se evita la duplicación de líneas al confirmar la invalidación de un DTE de un periodo anterior mediante factura negativa.
+- Cambio: Total en la representación gráfica de la Nota de Crédito.
+- Descripción: El total de la representación gráfica de la Nota de Crédito ahora descuenta la retención del 1%, coincidiendo con el documento emitido.
+
+---
+
+## 2026-09-24
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Clientes con caracteres especiales en su código.
+- Descripción: Se limpian caracteres especiales como el apóstrofe en el código de cliente generado automáticamente, evitando errores al seleccionar el cliente.
+
+---
+
+## 2026-09-23
+
+### 📝 Nuevas Características
+- Cambio: Agregar órdenes de compra y de gasto al crear depósitos.
+- Descripción: Se agrega un menú contextual para incluir órdenes de compra y de gasto desde la creación de depósitos.
+- Cambio: Catálogo de municipios versión 1.1 del Ministerio de Hacienda.
+- Descripción: Se actualiza el catálogo de municipios publicado por el Ministerio de Hacienda, corrigiendo la transmisión con los municipios de Cabañas.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Importación de JSON con estructura anidada.
+- Descripción: Se corrige la importación en órdenes de gasto de JSON con estructura anidada, como los emitidos por algunos facturadores.
+
+---
+
 ## 2026-09-22
 
 ### 📝 Nuevas Características
