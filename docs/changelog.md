@@ -1,6 +1,128 @@
 ﻿# Changelog ContaPortable
 ---
 
+## 2026-10-23
+
+### 📝 Nuevas Características
+- Cambio: Partidas: nueva línea con la flecha abajo en la partida única.
+- Descripción: Al pulsar la flecha abajo en la última línea de la cuadrícula se agrega una línea nueva y el cursor queda en la fecha; si la última línea está en blanco no agrega otra, y si la cuenta de esa línea no existe o no es de detalle avisa y no la agrega.
+- Cambio: Partidas: vista previa de varias partidas en un solo reporte.
+- Descripción: Al marcar varias partidas y elegir «Vista previa de Partida» se muestran todas en un solo reporte, ordenadas por fecha y número, cada una con su encabezado, subtotal y página; respeta la opción de mantener el orden exacto de las líneas y avisa cuántas partidas sin líneas se omitieron.
+
+---
+
+## 2026-10-22
+
+### 📝 Nuevas Características
+- Cambio: Bancos: el botón «Cheques» ahora se llama «Egresos Bancarios» y «Transf Banc» ahora se llama «Traslado de fondos».
+- Descripción: Los botones de Bancos, sus opciones de menú y la pantalla de traslados entre cuentas usan los nombres nuevos; las funciones no cambian. «Egresos Bancarios» agrupa los cheques y las notas de cargo, y «Traslado de fondos» registra los movimientos entre cuentas bancarias.
+- Cambio: Partidas: mantener el orden exacto de las líneas al imprimir la partida única.
+- Descripción: Se puede imprimir la partida única respetando el orden en que se digitaron las líneas, sin alterar el ordenamiento por fecha.
+- Cambio: Comprobante de Retención: código de retención según la tasa.
+- Descripción: El código de retención del Ministerio de Hacienda se asigna automáticamente según la tasa de retención (por ejemplo, 1% o 13%), en lugar de usar siempre el código del 1%, evitando rechazos por cálculo incorrecto.
+- Cambio: Comprobante de Retención: número de documento del receptor sin guion.
+- Descripción: Conforme a las nuevas validaciones del Ministerio de Hacienda, el número de documento del receptor con DUI se envía sin guion para evitar el rechazo del comprobante.
+- Cambio: Anexos F07 y F14: validación de fechas con año inválido.
+- Descripción: Se valida la fecha de los documentos al guardar, al salir de la celda de la fecha y al generar el CSV, para evitar años inválidos en los anexos F07 y F14.
+- Cambio: Inicio del sistema más rápido.
+- Descripción: Se optimiza la carga de datos al arrancar el sistema.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Descuento global en la Nota de Crédito.
+- Descripción: Se corrige la inconsistencia entre el monto total de la operación y el total a pagar al aplicar un descuento global en la Nota de Crédito.
+- Cambio: Descuento global en la Nota de Débito.
+- Descripción: Se corrige el descuadre entre el monto total de la operación y el total a pagar al aplicar un descuento global en la Nota de Débito.
+
+---
+
+## 2026-10-21
+
+### 📝 Nuevas Características
+- Cambio: Partidas: mantener el orden al imprimir en partidas individuales.
+- Descripción: Se agrega la opción de mantener el orden de las líneas al imprimir una partida individual, y se mejora el control de cierres de periodos en la partida única.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Municipio y distrito incoherentes en proveedores y clientes.
+- Descripción: La ficha de proveedores y clientes limpia el distrito que ya no pertenece al departamento y municipio elegidos y no permite guardar combinaciones incoherentes; Facturas avisa antes de emitir. Evita el rechazo del receptor por distrito no permitido (aplica con la Normativa 2.0).
+- Cambio: Error al generar el CSV de anexos de compras con fechas de año 0026.
+- Descripción: Una fecha con año incorrecto ya no provoca error al generar el CSV; el periodo se toma solo de fechas a partir del 01/01/2000.
+- Cambio: Cálculo del ISSS en planillas.
+- Descripción: El techo mensual del ISSS se aplica una sola vez por empleado y el acumulado considera todas las planillas del mes, para no superar el techo.
+- Cambio: Descuadre en órdenes de gasto de combustible importadas desde JSON.
+- Descripción: Se corrige el descuadre de $2.94 en el total de la orden de gasto por omisión de los tributos FOVIAL y COTRANS al importar el JSON.
+
+---
+
+## 2026-10-20
+
+### 📝 Nuevas Características
+- Cambio: Partida única: numeración correlativa continua.
+- Descripción: La partida única se numera de forma correlativa continua en lugar de reiniciar la numeración cada día.
+- Cambio: Depósitos: sugerencia de descripciones ingresadas previamente.
+- Descripción: El formulario de depósito autocompleta y sugiere las descripciones que ya se habían escrito antes.
+
+---
+
+## 2026-10-19
+
+### 📝 Nuevas Características
+- Cambio: Inventario: filtro por tipo de documento en el reporte de salidas INV34.
+- Descripción: El formulario del reporte de salidas INV34 permite filtrar por tipo de documento.
+
+---
+
+## 2026-10-16
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Depósitos: documento escrito y elegido en el buscador.
+- Descripción: Al escribir el número de un documento y elegirlo en el buscador, el documento reemplaza la misma línea; antes quedaba otra línea con el número escrito.
+- Cambio: Visor de depósitos: centavos en el total.
+- Descripción: El total de cada depósito se muestra con 2 decimales para que no se aproxime el valor.
+- Cambio: Partidas: pérdida de líneas al cerrar la ventana.
+- Descripción: Si no se puede guardar el detalle al cerrar la ventana, esta ya no se cierra y se conservan las líneas en pantalla; además, al descartar una partida nueva que nunca se guardó ya no se borran líneas de otra partida con el mismo número.
+
+---
+
+## 2026-10-15
+
+### 📝 Nuevas Características
+- Cambio: Menú: se retira la opción Voucher de Planilla (legacy).
+- Descripción: Se elimina la opción antigua Voucher de Planilla, que ya no abría ningún formulario y fue sustituida por el envío de vouchers por correo.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Opción Devoluciones del menú Inventario.
+- Descripción: La opción ya no da error: ahora tiene dos opciones, Devoluciones de compras y Devoluciones de ventas, y los usuarios con acceso previo conservan el acceso a ambas.
+- Cambio: Opción Documentos del menú Datos Generales.
+- Descripción: Se corrige el error que impedía abrir el formulario de Documentos.
+- Cambio: Opciones Movimientos de Proveedores y Movimientos Clientes.
+- Descripción: Ahora abren sus reportes en lugar de dar error.
+- Cambio: Opción Estado de Cta del menú Bancos.
+- Descripción: Ahora abre el reporte de estado de cuenta bancario en lugar de dar error.
+- Cambio: Antigüedad de saldos de clientes con exportaciones invalidadas.
+- Descripción: En los reportes CLI21 a CLI25, una exportación invalidada en un mes posterior conserva su cargo en el periodo de origen y la reversión se muestra aparte; también se corrige el CLI21, que no mostraba ningún cargo.
+
+---
+
+## 2026-10-14
+
+### 📝 Nuevas Características
+- Cambio: Menú: se retira la opción del reporte de retenciones de IVA.
+- Descripción: Se elimina del menú y de los roles la opción del reporte de retenciones de IVA, por corresponder a un formulario que ya no se usa.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Importación de contribuyentes.
+- Descripción: Se corrige la importación de contribuyentes desde la plantilla y el menú contextual del listado.
+- Cambio: Reportes de deducciones de AFP (PLN12 y PLN22).
+- Descripción: Los grupos de AFP ya no se repiten cuando los empleados alternan de AFP.
+- Cambio: Validación del saldo de CXC en depósitos.
+- Descripción: El parámetro DEP_VALIDAR_SALDO_CXC se lee de su valor guardado en cada validación (Depósitos y Gestión de CXC), por lo que cambiarlo a NO surte efecto sin reiniciar el sistema.
+- Cambio: Descuadre de $0.01 en la partida diaria de ventas.
+- Descripción: Se corrige el descuadre en facturas con IVA retenido: el cuadre considera el total del cliente redondeado más las retenciones (IVA retenido y renta).
+- Cambio: Ajuste de inventario físico.
+- Descripción: Se corrige el error por variable no encontrada al aplicar el ajuste de inventario físico.
+
+---
+
 ## 2026-10-13
 
 ### 📝 Nuevas Características

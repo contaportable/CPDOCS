@@ -4,9 +4,9 @@ site_url: https://docs.contaportable.com
 
 theme:
   name: material
-  logo: assets/ContaPortable/logo.png
+  logo: assets/Actualizador/CPLogo.png
   language: es
-  favicon: assets/ContaPortable/logo.png
+  favicon: assets/Actualizador/CPLogo.png
   palette:
     - scheme: default
       toggle:
