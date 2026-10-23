@@ -9,6 +9,14 @@
 - Cambio: Partidas: vista previa de varias partidas en un solo reporte.
 - Descripción: Al marcar varias partidas y elegir «Vista previa de Partida» se muestran todas en un solo reporte, ordenadas por fecha y número, cada una con su encabezado, subtotal y página; respeta la opción de mantener el orden exacto de las líneas y avisa cuántas partidas sin líneas se omitieron.
 
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Rechazo de la Factura de Exportación (DTE 11) por tipo de ítem.
+- Descripción: Se corrige el rechazo «Bad Request 400» al transmitir la Factura de Exportación por un tipo de ítem con valor 3 en el cuerpo del documento.
+- Cambio: Copia de correo (CC) al enviar por Microsoft OAuth2.
+- Descripción: Se corrige la omisión del correo con copia al enviar por Microsoft OAuth2 cuando se especifica una sola dirección de correo en CC.
+- Cambio: Nota de Remisión para clientes con solo NIT.
+- Descripción: Se corrige que el código y la descripción de la actividad económica se enviaran vacíos en la Nota de Remisión de clientes que solo tienen NIT.
+
 ---
 
 ## 2026-10-22
@@ -26,12 +34,22 @@
 - Descripción: Se valida la fecha de los documentos al guardar, al salir de la celda de la fecha y al generar el CSV, para evitar años inválidos en los anexos F07 y F14.
 - Cambio: Inicio del sistema más rápido.
 - Descripción: Se optimiza la carga de datos al arrancar el sistema.
+- Cambio: Contribuyentes: importar y actualizar desde una plantilla de Excel.
+- Descripción: Se pueden agregar contribuyentes nuevos y actualizar los existentes por número de registro desde una plantilla de Excel. La opción está en la barra de herramientas y en el último nodo del árbol de clasificación; las filas duplicadas se marcan en rojo y todos los cambios quedan en la bitácora.
+- Cambio: Contribuyentes: edición directa del listado.
+- Descripción: El listado de contribuyentes se puede editar directamente para parametrizar de forma masiva sin abrir la ficha de cada uno; los cambios se registran en la bitácora y se resaltan los duplicados.
+- Cambio: Contribuyentes: reporte con vista previa, PDF y Excel.
+- Descripción: Nuevo reporte en la categoría 6 de Clientes con la información de los contribuyentes, con vista previa, envío a PDF y generación a Excel (que sirve de fuente para la importación). Se accede también desde el listado de contribuyentes y se agrega un buscador de contribuyentes.
+- Cambio: Persona natural: tipo de ingreso de renta.
+- Descripción: El formulario de persona natural permite parametrizar el tipo de ingreso de renta.
+- Cambio: Búsqueda más fluida en VisualYec.
+- Descripción: Se mejora el rendimiento del buscador para que la búsqueda sea más rápida.
 
 ### 🐞 Corrección de Errores (Bugs)
-- Cambio: Descuento global en la Nota de Crédito.
-- Descripción: Se corrige la inconsistencia entre el monto total de la operación y el total a pagar al aplicar un descuento global en la Nota de Crédito.
-- Cambio: Descuento global en la Nota de Débito.
-- Descripción: Se corrige el descuadre entre el monto total de la operación y el total a pagar al aplicar un descuento global en la Nota de Débito.
+- Cambio: Descuento global con retención del 1% en la Nota de Crédito.
+- Descripción: Se corrige el error de transmisión que se generaba al aplicar al mismo tiempo un descuento global y la retención del 1% en la Nota de Crédito (DTE 05), por la inconsistencia entre el monto total de la operación y el total a pagar.
+- Cambio: Descuento global con retención del 1% en la Nota de Débito.
+- Descripción: Se corrige el error de transmisión que se generaba al aplicar al mismo tiempo un descuento global y la retención del 1% en la Nota de Débito (DTE 06), por el descuadre entre el monto total de la operación y el total a pagar.
 
 ---
 
@@ -49,7 +67,7 @@
 - Cambio: Cálculo del ISSS en planillas.
 - Descripción: El techo mensual del ISSS se aplica una sola vez por empleado y el acumulado considera todas las planillas del mes, para no superar el techo.
 - Cambio: Descuadre en órdenes de gasto de combustible importadas desde JSON.
-- Descripción: Se corrige el descuadre de $2.94 en el total de la orden de gasto por omisión de los tributos FOVIAL y COTRANS al importar el JSON.
+- Descripción: Se corrige el descuadre de $2.94 en el total de la orden de gasto por omisión de los tributos FOVIAL y COTRANS al importar el JSON; además, la cantidad del detalle admite hasta 6 decimales para que no se redondee a 2 (por ejemplo, combustible con 9.7859).
 
 ---
 
@@ -100,6 +118,8 @@
 - Descripción: Ahora abre el reporte de estado de cuenta bancario en lugar de dar error.
 - Cambio: Antigüedad de saldos de clientes con exportaciones invalidadas.
 - Descripción: En los reportes CLI21 a CLI25, una exportación invalidada en un mes posterior conserva su cargo en el periodo de origen y la reversión se muestra aparte; también se corrige el CLI21, que no mostraba ningún cargo.
+- Cambio: Partidas contables: correcciones al guardar, borrar y cerrar.
+- Descripción: Al borrar una partida también se borran sus líneas; las líneas se renumeran en orden sin saltarse ninguna; una línea con monto y sin cuenta ya no se borra, se marca como error; el sistema detecta bien los cambios en las líneas para preguntar si se guarda al cerrar, y ya no se borra una partida nueva que ya fue guardada.
 
 ---
 
