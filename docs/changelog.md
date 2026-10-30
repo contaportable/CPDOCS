@@ -1,4 +1,76 @@
-﻿# Changelog ContaPortable
+# Changelog ContaPortable
+---
+
+## 2026-10-30
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Factura de Exportación: transmisión bajo Normativa DTE 2.0.
+- Descripción: Se corrige la validación del esquema para la Factura de Exportación Electrónica (DTE 11) bajo la Normativa DTE 2.0, asegurando una transmisión fluida y sin interrupciones al Ministerio de Hacienda.
+
+---
+
+## 2026-10-29
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Órdenes de Producción: filtro de búsqueda y términos con comillas.
+- Descripción: El cuadro de búsqueda de Órdenes de Producción ahora filtra los resultados correctamente incluso con la categoría «Todos» seleccionada. Además, permite buscar nombres o palabras que incluyan comillas simples o apóstrofes (como «O'Neil») sin generar errores de consulta.
+
+---
+
+## 2026-10-28
+
+### 📝 Nuevas Características
+- Cambio: Quedans: formatos de impresión en página completa y media página.
+- Descripción: Al presionar el botón Imprimir en la pantalla de Quedans se puede elegir entre dos formatos: página completa (para comprobantes detallados) o media página (formato compacto para ahorrar papel o usar talonarios de medio pliego).
+- Cambio: Quedans: selector de día de aviso de pago al proveedor.
+- Descripción: Se agrega en la parte superior del quedan un selector para indicar qué día de la semana (de lunes a domingo) se entregan los pagos. El día elegido se imprime en el quedan para orientar al proveedor sobre cuándo retirar su cheque.
+- Cambio: Contabilidad: cuentas contables para FOVIAL y COTRANS.
+- Descripción: En la configuración de cuentas contables de impuestos se pueden asignar cuentas específicas para FOVIAL y COTRANS, tanto para compras de combustible como para ventas, permitiendo que las partidas automáticas se generen con sus valores desglosados y cuadrados con exactitud.
+- Cambio: Facturación Electrónica: nuevo registro dinámico de eventos de transmisión.
+- Descripción: Se incorpora un panel de registro dinámico que muestra en tiempo real las fases y respuestas durante la transmisión de Documentos Tributarios Electrónicos, facilitando el seguimiento de cada envío.
+- Cambio: Inventario: corregir códigos de venta con espacios o caracteres ocultos con Ctrl+Shift+V.
+- Descripción: En la búsqueda de productos de facturación, al presionar Ctrl+Shift+V el sistema revisa si hay ventas guardadas con códigos que tengan espacios o caracteres invisibles que impidan cruzar las existencias con el inventario, permitiendo corregirlos en un solo paso tras confirmar el resumen.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Órdenes de Gasto: FOVIAL y COTRANS en compras de combustible importadas.
+- Descripción: Se corrige el descuadre en el total de la orden de gasto al importar comprobantes de combustible desde archivos JSON, sumando correctamente los tributos de FOVIAL y COTRANS.
+- Cambio: Contabilidad: descripción en partidas automáticas de clientes.
+- Descripción: Se corrige un error que impedía generar automáticamente la partida contable de cuentas por cobrar cuando el documento no tenía una descripción general asignada.
+- Cambio: Inventario: costo promedio en proyectos para artículos nuevos.
+- Descripción: Se corrige el cálculo del reporte de costo promedio en proyectos para productos que aún no registran movimientos de costo anteriores.
+- Cambio: Inicio del sistema: estabilidad en el arranque en producción.
+- Descripción: Se corrigen incidencias durante el proceso de inicio del sistema desde el ejecutable compilado, garantizando una carga estable y continua de los módulos operativos.
+
+---
+
+## 2026-10-27
+
+### 📝 Nuevas Características
+- Cambio: Actualizador: configuración de parámetros según la edición del sistema.
+- Descripción: Las actualizaciones ajustan automáticamente los parámetros necesarios para las nuevas funciones según la edición instalada de ContaPortable, respetando siempre las personalizaciones que el usuario haya configurado previamente.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Reportes: mensaje informativo al iniciar el visor de reportes.
+- Descripción: Si el visor de reportes presenta dificultades para inicializarse al arrancar el sistema, se muestra un mensaje informativo claro con los pasos a seguir para su resolución, evitando cierres inesperados del programa.
+
+---
+
+## 2026-10-26
+
+### 📝 Nuevas Características
+- Cambio: Actualizador: silenciar el aviso de una versión específica.
+- Descripción: El aviso de nueva versión incluye la casilla «No volver a mostrar este aviso de la versión X» y el botón «Entendido». Al marcarla, no se vuelve a mostrar el aviso ni el ícono de esa versión, pero sí se avisará cuando se publique una versión posterior. Además, en la ventana del Actualizador se agrega una casilla para activar o desactivar las notificaciones automáticas al iniciar el sistema.
+- Cambio: Actualizador: reconocimiento de actualizaciones manuales.
+- Descripción: Cuando el sistema se actualiza copiando los archivos manualmente, el actualizador detecta la versión instalada y deja de mostrar avisos reiterados de actualización pendiente.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Planillas: reporte sin logotipo de empresa.
+- Descripción: El reporte de planilla se puede previsualizar e imprimir con normalidad aunque no se haya configurado una imagen de logotipo para la empresa.
+- Cambio: Orden de Gasto: cuentas de mayor.
+- Descripción: La lista de cuentas de la Orden de Gasto ya no muestra cuentas de mayor. Si se escribe o se elige una cuenta de mayor, el sistema avisa, vacía el código y no avanza; al guardar con una cuenta de mayor en el detalle (por ejemplo, importada por JSON) lo bloquea indicando la línea. En el Traslado de fondos se valida la cuenta contable antes de crear la orden de gasto y, si es de mayor, avisa sin consumir numeración.
+- Cambio: Sujetos Excluidos duplicados en el F07 de compras y el Libro de Compras.
+- Descripción: Un Sujeto Excluido importado en una Orden de Gasto ya no se carga de nuevo en el anexo F07 de compras con «Cargar DTE's generados» ni se repite en el Libro de Compras cuando el mismo documento existe en facturación; queda una sola fila, como «No sujetos del IVA».
+
 ---
 
 ## 2026-10-23
