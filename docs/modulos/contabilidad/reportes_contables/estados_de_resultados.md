@@ -79,8 +79,7 @@
 
    ![Vista previa del Estado de Resultados Comparativo](../../../assets/contabilidad/reportes_contables/estado_resultados_comp_reporte_01.png){ align=center }
 
-!!! warning "Falta captura"
-    Filtros del **Estado de Resultados Comparativo**. Nombre sugerido: `estado_resultados_comp_filtros_01.png`.
+   ![Pantalla de filtros del Estado de Resultados Comparativo](../../../assets/contabilidad/reportes_contables/estado_resultados_comp_filtros_01.png){ align=center }
 
 ---
 
