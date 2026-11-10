@@ -11,6 +11,9 @@
 !!! note "Sin parametrización adicional"
     Activar fase3 desde el menu de instalación de implementación normativa v2
 
+!!! tip "Activación automática"
+    Si su empresa emite DTE, esta fase se activa automáticamente al terminar la actualización de ContaPortable o al iniciar el sistema. Consulte [Activación automática de la Normativa DTE 2.0](../actualizador/actualizador_contaportable.md#normativa-dte-20).
+
 !!! note "Abreviar código de generación y número de control"
     Desde la configuración de permisos/privilegios de facturación se agrega la opción de abreviar el código de generación y número de control, personalizando la longitud mostrada en las diferentes interfaces del sistema (por ejemplo, resumen de ventas y formularios de búsqueda de facturas al facturar y al aplicar depósitos).
 

@@ -11,6 +11,9 @@
 !!! note "Sin parametrización adicional"
     Activar fase2 desde el menu de instalación de implementación normativa v2
 
+!!! tip "Activación automática"
+    Si su empresa emite DTE, esta fase se activa automáticamente al terminar la actualización de ContaPortable o al iniciar el sistema. Consulte [Activación automática de la Normativa DTE 2.0](../actualizador/actualizador_contaportable.md#normativa-dte-20).
+
 !!! note "Nuevas Representaciones Gráfica (RG) del evento de retorno"
     Se incluye el formato de la RG del evento de retorno y su configuración respectiva desde la opción de configuración de formatos.
 
