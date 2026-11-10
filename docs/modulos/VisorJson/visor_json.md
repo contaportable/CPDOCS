@@ -8,7 +8,7 @@ Esta funcionalidad permite importar múltiples comprobantes de crédito desde ar
 
 Desde la pantalla de **Comprobante de crédito**, localice y haga clic en el botón **"Importar Json"** ubicado en la parte superior de la interfaz.
 
-![Botón Importar Json](../../../assets/contabilidad/VisorJson/paso1_boton_importar.png)
+![Botón Importar Json](../../assets/contabilidad/VisorJson/paso1_boton_importar.png)
 
 ### Paso 2: Seleccionar los archivos JSON
 
@@ -21,7 +21,7 @@ Se abrirá un cuadro de diálogo de **"Selección de múltiples archivos"** dond
    - **Fecha de modificación**: Última fecha de cambio
    - **Tipo**: Archivo JSON
 
-![Selección de archivos JSON](../../../assets/contabilidad/VisorJson/paso2_seleccion_archivos.png)
+![Selección de archivos JSON](../../assets/contabilidad/VisorJson/paso2_seleccion_archivos.png)
 
 **Nota:** El cuadro de diálogo permite visualizar diferentes ubicaciones:
 - Acceso rápido
@@ -42,7 +42,7 @@ El sistema procesará los archivos seleccionados y mostrará un mensaje de éxit
 
 **"DTE 5 incluidos21, sin observaciones"**
 
-![Mensaje de éxito](../../../assets/contabilidad/VisorJson/paso3_resultado_exito.png)
+![Mensaje de éxito](../../assets/contabilidad/VisorJson/paso3_resultado_exito.png)
 
 Este mensaje indica:
 - **Cantidad de DTEs procesados**: En este ejemplo, 21 documentos
@@ -61,7 +61,7 @@ En la parte izquierda de la pantalla, los DTE's se agrupan de la siguiente maner
 
 Esta estructura facilita la navegación y búsqueda de los comprobantes importados, permitiendo al usuario localizar rápidamente los documentos según su tipo, año y mes de emisión.
 
-![Agrupación de DTEs](../../../assets/contabilidad/VisorJson/paso4_agrupacion_dtes.png)
+![Agrupación de DTEs](../../assets/contabilidad/VisorJson/paso4_agrupacion_dtes.png)
 
 ## Notas Importantes
 

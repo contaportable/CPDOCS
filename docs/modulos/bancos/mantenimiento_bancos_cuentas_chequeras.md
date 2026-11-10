@@ -83,7 +83,7 @@ Esta interfaz se relaciona con distintos procesos del sistema, como:
 
 - [Depósitos](depositos_documentos_multiples.md).
 - [Conciliación bancaria](Conciliacionbancaria.md).
-- [Transferencias](../transferenciasBancarias).
+- [Transferencias](../bancos/transferenciasBancarias.md).
 - [Reportes bancarios](../../Reports/categorias/bancos.md).
 
 La correcta administración de bancos, cuentas y chequeras resulta fundamental para que el resto del módulo funcione con información correcta.
