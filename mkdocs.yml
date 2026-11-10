@@ -45,6 +45,7 @@ nav:
       - 📘Contabilidad:
         - Contabilización Automática: modulos/contabilidad/contabilizacion_automatica.md
         - Control de períodos contables: modulos/contabilidad/control_periodos.md
+        - Reportes Contables: modulos/contabilidad/ReportesContables.md
       - 📑Facturación:
         - Dual: modulos/facturacion/facturacion_dual.md
         - Multilínea: modulos/facturacion/facturacion_lineas_multiples.md
