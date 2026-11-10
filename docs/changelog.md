@@ -1,6 +1,18 @@
 # Changelog ContaPortable
 ---
 
+## 2026-11-03
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Bancos: estado de cuenta bancario.
+- Descripción: El reporte de estado de cuenta ya no muestra movimientos que fueron eliminados del detalle de cargos bancarios.
+- Cambio: Inventario: reporte de existencias.
+- Descripción: El reporte de Existencias (INV11 e INV31) ya no tarda varios minutos ni deja el aviso "Consolidando información" abierto. Termina de generarse de forma normal.
+- Cambio: Planillas: cálculo del ISSS.
+- Descripción: Se corrige el cálculo del ISSS en un caso particular de planilla.
+
+---
+
 ## 2026-10-30
 
 ### 🐞 Corrección de Errores (Bugs)
