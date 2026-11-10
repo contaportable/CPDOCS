@@ -1,6 +1,6 @@
----
+<!---
 description: Guía de los reportes de la pantalla Reportes Contables de ContaPortable: catálogo, libros, balances, estados de resultados y datos para análisis externo.
----
+-->
 
 # **Reportes contables**
 
@@ -14,8 +14,7 @@ Esta página describe los reportes de la pantalla **Reportes Contables** del sis
 
     Los botones **Copiar al portapapeles** y **CSV** están disponibles solo en **Libro Auxiliar** y en **Datos para análisis externo**.
 
-!!! warning "Falta captura"
-    Pantalla completa de **Reportes Contables** con la lista de reportes a la izquierda y los botones **Calcular**, **Imprimir**, **Excel**, **Copiar al portapapeles** y **CSV** visibles. Nombre sugerido: `assets/contabilidad/reportes_contables/pantalla_general_01.png`.
+   ![Pantalla general de Reportes Contables](../../assets/contabilidad/reportes_contables/pantalla_general_01.png){ align=center }
 
 !!! tip "Cambios recientes"
     - **Libro Auxiliar en Excel:** la columna **Saldo** ya no se suma hacia abajo. La fila final muestra el saldo final de la cuenta.
