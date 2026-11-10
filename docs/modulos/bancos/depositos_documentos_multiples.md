@@ -1,119 +1,140 @@
----
-description: Guía de usuario para registrar depósitos bancarios, asociar documentos y preparar su registro contable en ContaPortable.
----
+<!---
+description: Guía para registrar depósitos bancarios, aplicarles los documentos que compensan y registrar los cargos del banco en ContaPortable.
+--->
 
 # 💵 Depósitos bancarios
 
-El módulo de depósitos bancarios permite registrar los ingresos recibidos en una cuenta bancaria y vincularlos con los documentos que deben quedar compensados.
+Un depósito bancario registra el dinero que entra a una cuenta. Con este módulo también aplica el depósito a los documentos que cubre, por ejemplo facturas a crédito de clientes.
 
-!!! tip "Qué esperar de la pantalla de depósitos"
-    - No es posible continuar sin haber seleccionado al menos un documento.
-    - El **total final** se actualiza solo al agregar, quitar o modificar documentos del detalle; no hace falta recalcular manualmente.
-    - La captura de montos admite hasta **6 decimales**, igual que en [Órdenes de Gasto](../compras/registro_ordenes_gasto.md#5-precision-de-decimales) y cheques.
+!!! abstract "En esta guía aprenderá a"
+    - Registrar un depósito con su fecha, su referencia y su monto.
+    - Aplicar varios documentos pendientes en una sola operación.
+    - Registrar los cargos que aplicó el banco, como comisiones o retenciones.
+    - Guardar el depósito y corregir los avisos antes de hacerlo.
 
-!!! tip "Flujo de depósito en ContaPortable"
-    ``` mermaid
-    flowchart LR
-      A[Datos generales del depósito]:::root --> B[Documentos aplicados]
-      B --> C[Cargos para equilibrar]
-      C --> D[Validación y guardar]
+    ![Pantalla principal de depósitos bancarios](../../assets/Bancos/depositos/01_pantalla_principal.png){ align=center }
 
-      click A "#3-datos-generales-del-deposito" "Ir a sección de datos generales"
-      click B "#4-registrar-los-documentos-aplicados-abonos" "Ir a sección de documentos aplicados"
-      click C "#5-registrar-cargos-para-equilibrar-el-movimiento" "Ir a sección de cargos"
-      click D "#6-guardar-y-validar" "Ir a sección de validación y guardado"
-    ```
+---
 
-## 1. ¿Para qué sirve este módulo?
+## 📌 Antes de empezar
 
-Use este módulo para:
+!!! info "Requisitos"
+    - La **cuenta bancaria** donde se recibió el depósito debe estar creada. Si no lo está, revise [Mantenimiento de bancos, cuentas y chequeras](mantenimiento_bancos_cuentas_chequeras.md).
+    - Tenga a la mano la **boleta o referencia** del banco y el monto recibido.
+    - Si el depósito compensa documentos, estos deben estar pendientes de pago en el sistema.
 
-- Registrar un depósito con fecha, referencia, cuenta y monto.
-- Asociar varios documentos en una sola operación.
-- Registrar los documentos que se están aplicando al depósito.
-- Registrar cargos o deducciones aplicadas por el banco para equilibrar el movimiento.
-- Consultar y revisar el comprobante del depósito.
+---
 
-!!! tip "Pantalla principal"
-    La pantalla principal muestra el listado de depósitos registrados, los documentos aplicados y los botones para guardar, cancelar o buscar documentos.
+## 🚀 Registrar un depósito
 
-![Pantalla principal del flujo de depósitos](../../assets/Bancos/depositos/01_pantalla_principal.png)
+!!! example "Paso a paso"
+    1. Abra el módulo de **Depósitos bancarios**.
+    2. Seleccione la **cuenta** donde se recibió el depósito.
+    3. Presione **Nuevo**.
+    4. Escriba la **fecha**, la **referencia** o número de boleta, y el **monto** total.
+    5. Escriba una **descripción** si lo necesita.
+    6. Presione **Buscar documentos** y seleccione los documentos que cubre el depósito.
+    7. Si el banco cobró comisiones o retenciones, regístrelas en la sección de **cargos**.
+    8. Revise el total y presione **Guardar**.
 
-## 2. Flujo recomendado
+### 📝 Datos generales
 
-1. Ingrese al módulo de depósitos bancarios.
-2. Seleccione la cuenta donde se hizo el depósito.
-3. Cree un nuevo registro.
-4. Capture los datos generales: fecha, referencia, banco, cuenta y monto.
-5. Vincule los documentos que se van a aplicar.
-6. Registre los cargos si el banco aplicó comisiones o retenciones.
-7. Revise el saldo del movimiento y guarde.
+Estos son los datos que debe completar al crear el depósito.
 
-## 3. Datos generales del depósito
+| Campo | Qué escribir |
+| :--- | :--- |
+| **Cuenta bancaria** | La cuenta donde se recibió el dinero. |
+| **Fecha** | La fecha del movimiento en el banco. |
+| **Referencia** | El número de boleta o de operación. Use un dato que pueda buscar después. |
+| **Monto total** | El monto que recibió en la cuenta. |
+| **Descripción** | Un texto que explique el depósito. Es opcional. |
 
-Al crear un nuevo registro, complete la información básica del movimiento:
+![Cabecera y datos generales del depósito](../../assets/Bancos/depositos/02_cabecera_deposito.png){ align=center }
 
-- Cuenta bancaria.
-- Fecha del movimiento.
-- Referencia o número de boleta.
-- Monto total del depósito.
-- Descripción u observaciones.
+!!! tip "Sugerencias en la descripción"
+    Al escribir en **Descripción**, el sistema muestra las descripciones que ya usó en depósitos anteriores de la cuenta.
 
-!!! tip "Validación de datos"
-    Revise que la cuenta, la fecha y la referencia estén correctas antes de asociar los documentos.
+    - Siga escribiendo para filtrar la lista. No distingue entre mayúsculas, minúsculas ni tildes.
+    - Use las flechas **↑** y **↓** para recorrer la lista. Pulse **Enter** o **Tab** para elegir una. Pulse **Esc** para cerrarla.
+    - Si necesita una descripción nueva, escríbala con normalidad.
 
-![Cabecera y datos generales del depósito](../../assets/Bancos/depositos/02_cabecera_deposito.png)
+---
 
-## 4. Registrar los documentos aplicados (abonos)
+### 📑 Aplicar los documentos
 
-En esta etapa se registran los documentos que se están cobrando o compensando con el depósito. Este paso corresponde a los abonos del movimiento.
+Aplique los documentos que cubre el depósito. Así el sistema sabe qué saldos quedaron pagados.
 
-- Busque los documentos pendientes.
-- Seleccione los que corresponden al depósito.
-- Revise el monto pendiente y el valor que se aplica a cada uno.
+1. Presione **Buscar documentos**.
+2. Revise el listado. Si es largo, filtre por fecha o por cliente.
+3. Seleccione los documentos que corresponden al depósito. Puede marcar varios a la vez.
+4. Revise el **monto pendiente** y el **monto aplicado** de cada uno.
 
-!!! tip "Selección de documentos"
-    La ventana de búsqueda permite revisar varios documentos y seleccionarlos de forma masiva. Si el listado es amplio, use filtros de fecha o cliente para reducirlo.
+![Búsqueda y selección de documentos para el depósito](../../assets/Bancos/depositos/03_buscar_documentos.png){ align=center }
 
-!!! info "El buscador filtra los documentos invalidados"
-    El buscador excluye las ventas **revertidas o invalidadas** con monto negativo y no permite agregar al depósito un documento de venta ya invalidado, de modo que el depósito no quede descuadrado por documentos que ya no deben compensarse.
+Después de seleccionarlos, el detalle muestra cada documento aplicado. Revise que cada línea corresponda al documento correcto.
 
-![Búsqueda y selección de documentos para el depósito](../../assets/Bancos/depositos/03_buscar_documentos.png)
+![Detalle de abonos aplicados al depósito](../../assets/Bancos/depositos/04_detalle_abonos.png){ align=center }
 
-Una vez seleccionados, el sistema muestra el detalle del depósito con los documentos aplicados. Aquí se valida que cada registro quede asociado correctamente.
+!!! tip "Documento escrito y elegido en el buscador"
+    Si escribe el número de un documento en una línea del detalle y luego lo elige en el buscador, el documento **reemplaza esa misma línea**. No queda una línea adicional.
 
-![Detalle de abonos aplicados al depósito](../../assets/Bancos/depositos/04_detalle_abonos.png)
+!!! note "Documentos anulados"
+    El buscador no muestra las ventas invalidadas con monto negativo. Tampoco permite agregar una venta invalidada al depósito.
 
-## 5. Registrar cargos para equilibrar el movimiento
+!!! warning "Si el abono supera el saldo pendiente"
+    El sistema revisa que el abono no supere el saldo del documento. Según la configuración de su empresa, puede:
 
-Si el banco aplicó una comisión, retención u otro cargo en la misma operación, regístrelo en la sección de cargos. Este valor permite equilibrar el depósito para que el movimiento quede consistente al generar la partida contable.
+    - **Ajustar el abono al saldo disponible**, con un aviso. Así no se registra un sobreabono.
+    - **Pedir confirmación.** Si usted acepta, se registra el sobreabono y la autorización queda en la bitácora.
 
-- Revise el monto del cargo.
-- Use este valor para mantener la conciliación entre la operación bancaria y la contabilidad.
+    Quien administra el sistema define cuál de los dos comportamientos aplica.
 
-![Registro de cargos y deducciones del depósito](../../assets/Bancos/depositos/05_cargos_y_deducciones.png)
+---
 
-## 6. Guardar y validar
+### 🧾 Registrar los cargos del banco
 
-Antes de guardar, verifique:
+Si el banco cobró una comisión, una retención u otro cargo en la misma operación, regístrelo en la sección de cargos. Así el depósito cuadra con lo que llegó realmente a la cuenta.
 
-- Que el monto total del depósito esté correcto.
+1. Escriba el monto de cada cargo.
+2. Verifique que la suma de cargos y documentos aplicados concuerde con el depósito.
+
+![Registro de cargos y deducciones del depósito](../../assets/Bancos/depositos/05_cargos_y_deducciones.png){ align=center }
+
+---
+
+### ✅ Guardar y validar
+
+Antes de guardar, revise:
+
+- Que el monto total del depósito sea el que recibió en el banco.
 - Que los documentos aplicados estén asociados.
-- Que el cargo, si existe, esté registrado.
+- Que los cargos, si existen, estén registrados.
 
-> Si el sistema detecta una inconsistencia en el detalle o datos generales, no permitirá guardar el registro hasta solventar los avisos.
+!!! warning "El sistema no guarda con avisos pendientes"
+    Si hay una inconsistencia en el detalle o en los datos generales, el sistema no guarda el depósito. Corrija el aviso y vuelva a presionar **Guardar**.
 
-![Validación final antes de guardar el depósito](../../assets/Bancos/depositos/06_validacion_final.png)
+![Validación final antes de guardar el depósito](../../assets/Bancos/depositos/06_validacion_final.png){ align=center }
 
-## 7. Buenas prácticas
+!!! tip "Montos con decimales"
+    Puede escribir montos con hasta **6 decimales**. En el listado de depósitos, el total se muestra siempre con **2 decimales**.
 
-- Use referencias claras para facilitar la consulta posterior.
-- Revise los cargos antes de guardar, especialmente si el banco aplica comisiones.
-- Mantenga los depósitos organizados por fecha para consultar el historial con rapidez.
-- Imprima o archive el comprobante cuando necesite soporte documental.
+---
 
-## 8. Módulos relacionados
+## ❓ Problemas frecuentes
 
-- [Mantenimiento de bancos, cuentas y chequeras](mantenimiento_bancos_cuentas_chequeras.md)
-- [Conciliación bancaria](Conciliacionbancaria.md)
-- [Transferencias bancarias](transferenciasBancarias.md)
+??? question "No puedo guardar el depósito"
+    Revise los avisos que aparecen en pantalla. Lo más común es que no haya documentos aplicados, o que un documento se haya aplicado por más de su saldo. Corríjalos y vuelva a guardar.
+
+??? question "Un documento no aparece en el buscador"
+    El buscador no muestra las ventas invalidadas con monto negativo. Si el documento es una venta invalidada, no se puede aplicar al depósito.
+
+---
+
+## 🔗 Módulos relacionados
+
+- [Mantenimiento de bancos, cuentas y chequeras](mantenimiento_bancos_cuentas_chequeras.md): crear y configurar las cuentas bancarias.
+- [Conciliación bancaria](Conciliacionbancaria.md): comparar los depósitos con el estado de cuenta del banco.
+- [Transferencias bancarias](transferenciasBancarias.md): mover dinero entre cuentas.
+- [Gestión de clientes y Resumen de Facturas](../facturacion/gestion_clientes.md): los documentos que los depósitos pueden cubrir.
+
+---
