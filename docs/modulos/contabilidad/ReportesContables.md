@@ -1,34 +1,69 @@
 ---
-description: Documentación de los reportes contables del módulo de contabilidad en ContaPortable.
+description: Guía de los reportes de la pantalla Reportes Contables de ContaPortable: catálogo, libros, balances, estados de resultados y datos para análisis externo.
 ---
 
-# 📊 Reportes contables
+# **Reportes contables**
 
-Esta página reúne los reportes del módulo de contabilidad para revisar movimientos, saldos, antigüedad, partidas y exportaciones de información financiera.
+Esta página describe los reportes de la pantalla **Reportes Contables** del sistema **ContaPortable**. En esta pantalla se preparan los libros contables, los balances y los estados de resultados.
 
-!!! info "Objetivo general"
-    Los reportes contables permiten verificar el comportamiento de cada cuenta, revisar los movimientos del período y preparar cierres, conciliaciones y análisis financieros con información confiable.
+!!! info "Cómo se usa la pantalla"
+    1. Seleccione el reporte en la lista de la izquierda.
+    2. Escriba los filtros en el panel **Prepara tu reporte**.
+    3. Presione **Calcular** para generar la información.
+    4. Presione **Imprimir** para ver la vista previa, o **Excel** para exportar.
 
-!!! tip "Cambios recientes incorporados"
-    Estos reportes recibieron las siguientes mejoras:
+    Los botones **Copiar al portapapeles** y **CSV** están disponibles solo en **Libro Auxiliar** y en **Datos para análisis externo**.
 
-    - vista previa de **varias partidas a la vez**, cada una con su propio encabezado, subtotal y página;
-    - la descripción de las líneas de gasto en el **Libro Auxiliar** ahora incluye el proveedor y el código de generación, cuando aplica;
-    - en **antigüedad de saldos de clientes** (CLI21 a CLI25), un documento invalidado en un mes posterior ya no borra el cargo original: el cargo se mantiene en su período y la reversión se muestra aparte;
-    - los montos de antigüedad de saldos se redondean a 2 decimales, para evitar residuos que descuadraban los totales;
-    - más espacio para el nombre de la empresa en los encabezados impresos, para que no se corte cuando es largo.
+!!! warning "Falta captura"
+    Pantalla completa de **Reportes Contables** con la lista de reportes a la izquierda y los botones **Calcular**, **Imprimir**, **Excel**, **Copiar al portapapeles** y **CSV** visibles. Nombre sugerido: `assets/contabilidad/reportes_contables/pantalla_general_01.png`.
 
-<!-- Se agrega un diagrama para resumir la estructura funcional de los reportes contables -->
-!!! tip "Diagrama de los reportes contables"
+!!! tip "Cambios recientes"
+    - **Libro Auxiliar en Excel:** la columna **Saldo** ya no se suma hacia abajo. La fila final muestra el saldo final de la cuenta.
+    - **Libro Auxiliar:** en las líneas de gasto que vienen de la contabilización de cheques, la descripción incluye el proveedor y el código de generación, cuando aplica.
+    - **Libro Diario:** al imprimir, cada partida muestra primero los cargos y después los abonos.
+    - **Reportes impresos:** el título tiene más espacio para el nombre de la empresa. Un nombre largo ya no se corta.
+
+<!-- Diagrama de las categorías de reportes de la pantalla Reportes Contables -->
+!!! tip "Diagrama de las categorías de **Reportes contables**"
     ``` mermaid
     graph TD
       A[Reportes contables]:::root
 
-      subgraph "Categorías principales"
-        B[1. Mayor y auxiliar]
-        C[2. Partidas]
-        D[3. Saldos y antigüedad]
-        E[4. Exportación e impresión]
+      subgraph "Categorías"
+        B[1. Catálogo y libros]
+        C[2. Balances]
+        D[3. Estados de resultados]
+        E[4. Análisis]
+        F[5. Configuración]
+      end
+
+      A --> B
+      A --> C
+      A --> D
+      A --> E
+      A --> F
+
+    click B "#1-catalogo-y-libros" "Ir a catálogo y libros"
+    click C "#2-balances" "Ir a balances"
+    click D "#3-estados-de-resultados" "Ir a estados de resultados"
+    click E "#4-analisis" "Ir a análisis"
+    click F "#5-configuracion" "Ir a configuración"
+    ```
+---
+
+## **1. Catálogo y libros**
+
+<!-- Diagrama de los reportes de la categoría catálogo y libros -->
+!!! tip "Diagrama de los reportes de la categoría **Catálogo y libros**"
+    ``` mermaid
+    graph LR
+      A[Catálogo y libros]:::root
+
+      subgraph "Listado de reportes:"
+        B[1.1 Catálogo de cuentas]
+        C[1.2 Libro Diario]
+        D[1.3 Libro Diario Mayor]
+        E[1.4 Libro Auxiliar]
       end
 
       A --> B
@@ -36,151 +71,316 @@ Esta página reúne los reportes del módulo de contabilidad para revisar movimi
       A --> D
       A --> E
 
-    click B "#1-mayor-y-auxiliar" "Ir al mayor y auxiliar"
-    click C "#2-partidas" "Ir a partidas"
-    click D "#3-saldos-y-antiguedad" "Ir a saldos y antigüedad"
-    click E "#4-exportacion-e-impresion" "Ir a exportación e impresión"
+    click B "#11-catalogo-de-cuentas" "Ir a catálogo de cuentas"
+    click C "#12-libro-diario" "Ir a libro diario"
+    click D "#13-libro-diario-mayor" "Ir a libro diario mayor"
+    click E "#14-libro-auxiliar" "Ir a libro auxiliar"
     ```
 ---
 
-## 📌 Introducción
+### 1.1 Catálogo de cuentas
 
-El módulo de contabilidad incluye reportes para revisar la información financiera con detalle. Entre los más utilizados están el **Libro Auxiliar**, el **listado de partidas** y los reportes de **saldos y antigüedad**.
+!!! info "Descripción del reporte"
+    Este reporte lista las cuentas contables de la empresa. Puede filtrarse por:
 
-Estos reportes están pensados para apoyar:
+    - Todas las cuentas
+    - Rango de cuentas (**Del código** / **al código**)
+    - Nombre de cuenta
 
-- la revisión de cargos y abonos por cuenta;
-- la validación de movimientos del período;
-- la conciliación con clientes y proveedores;
-- la preparación de cierres contables y análisis financiero.
+    También puede escribir un **Título** para el encabezado del reporte.
+
+!!! warning "Falta captura"
+    Filtros del **Catálogo de cuentas** y vista previa del reporte. Nombres sugeridos: `catalogo_filtros_01.png`, `catalogo_reporte_01.png`.
 
 ---
 
-## **1. Mayor y auxiliar**
-
-### 1.1 Libro Auxiliar Mayor
+### 1.2 Libro Diario
 
 !!! info "Descripción del reporte"
-    El reporte de **Libro Auxiliar** permite revisar, cuenta por cuenta, los movimientos registrados en un período determinado, con el detalle de cargos y abonos. Es de uso frecuente para auditoría, conciliación contable y análisis financiero.
+    Este reporte muestra las partidas contables en orden de fecha y número. Puede filtrarse por:
 
-    Puede filtrarse por:
+    - Rango de fechas (**De fecha** / **A la fecha**)
+    - Todas las partidas
+    - Rango de partidas (**Del No.** / **a la partida**)
+    - Descripción de la partida
+    - Tipo de partida
 
-    - período o fecha;
-    - cuenta contable o rango de cuentas;
-    - tipo de movimiento;
-    - datos seleccionados según la empresa o centro de costo.
+    También puede escribir un **Título** para el encabezado del reporte.
 
-!!! tip "Descripción de líneas de gasto con proveedor y código de generación"
-    Cuando una línea de gasto proviene de la contabilización de un cheque, el Libro Auxiliar ahora agrega en la descripción el **nombre del proveedor** y el **código de generación** del documento, cuando corresponde. Esto evita tener que abrir el documento original para identificar a quién pertenece cada cargo.
-
-!!! tip "Opciones de exportación e impresión"
-    Desde la vista previa del reporte, el botón de exportación permite enviar la información a Excel o imprimirla, conforme a las opciones disponibles para los reportes del sistema (ver sección **4. Exportación e impresión**).
-
-!!! note "Uso recomendado"
-    Si la intención es validar la contabilidad con una hoja de cálculo, conviene exportar primero a Excel; si la necesidad es revisar la lógica del movimiento por cuenta, el libro auxiliar en pantalla sigue siendo la mejor alternativa para detectar saldos y variaciones.
+!!! note "Orden de cargos y abonos"
+    En cada partida, el reporte impreso muestra primero los cargos y después los abonos.
 
 !!! warning "Falta captura"
-    Esta sección necesita una captura de la pantalla de filtros del Libro Auxiliar y una vista previa del reporte ya generado, idealmente mostrando una línea de gasto con proveedor y código de generación en la descripción.
+    Filtros del **Libro Diario** y vista previa con una partida que muestre los cargos antes que los abonos. Nombres sugeridos: `libro_diario_filtros_01.png`, `libro_diario_reporte_01.png`.
 
 ---
 
-## **2. Partidas**
-
-### 2.1 Listado de partidas
+### 1.3 Libro Diario Mayor
 
 !!! info "Descripción del reporte"
-    El listado de partidas permite revisar el detalle contable de cada movimiento registrado. Sirve para confirmar que cada crédito, débito y descripción correspondan al documento o proceso que originó la operación.
+    Este reporte resume los movimientos del período por cuenta de mayor. Puede filtrarse por:
 
-    Entre sus ventajas se encuentran:
+    - Rango de fechas
+    - Todas las cuentas, rango de cuentas o nombre de cuenta
+    - **Ancho de ctas de Mayor**
+    - **Mostrar saldos**
+    - **Mostrar movimientos cero**
 
-    - revisión rápida del detalle por fecha y número de partida;
-    - consulta de la composición de cada movimiento;
-    - soporte para encontrar errores de asiento o cuentas mal asignadas;
-    - preparación para impresión del cierre contable.
+!!! warning "Use solo cuentas de mayor"
+    En el rango de cuentas, escriba cuentas de mayor. Si escribe otra cuenta, el sistema muestra el mensaje **Cuenta introducida no es de mayor**.
 
-!!! note "Flujo recomendado"
-    Al revisar una partida, conviene validar primero la fecha, la cuenta, el monto y la descripción; luego, si corresponde, imprimir la vista previa para documentar la aprobación del asiento.
-
-!!! warning "Falta captura"
-    Esta sección necesita una captura del listado de partidas en pantalla, con algunas filas visibles a modo de ejemplo.
-
-### 2.2 Vista previa de varias partidas
-
-!!! info "Descripción del reporte"
-    Al marcar varias partidas en la pantalla de captura y elegir la opción **Vista previa de Partida**, el sistema arma un solo reporte con todas las partidas marcadas, ordenadas por fecha y número. Cada partida conserva su propio encabezado, subtotal y salto de página, igual que si se imprimiera una por una.
-
-    Si alguna de las partidas marcadas no tiene líneas registradas, el sistema avisa cuántas partidas se omitieron y continúa mostrando el resto. Con una sola partida marcada, la vista previa funciona como antes.
-
-!!! tip "Orden exacto de las líneas al imprimir"
-    Si la partida tiene activada la opción de mantener el orden exacto de las líneas, la vista previa de varias partidas respeta ese orden en lugar de reordenar por fecha.
+    Si no aparecen datos, revise el parámetro que indica cuáles cuentas son de mayor. El sistema muestra un recuadro rojo que señala dónde configurarlo.
 
 !!! warning "Falta captura"
-    Esta sección necesita una captura de la pantalla donde se marcan varias partidas y una del reporte resultante, mostrando al menos dos partidas con su encabezado y subtotal por separado.
+    Filtros del **Libro Diario Mayor** y el mensaje de error de cuenta que no es de mayor. Nombres sugeridos: `libro_mayor_filtros_01.png`, `libro_mayor_error_01.png`.
 
 ---
 
-## **3. Saldos y antigüedad**
-
-### 3.1 Antigüedad de saldos de clientes (CLI21 a CLI25)
+### 1.4 Libro Auxiliar
 
 !!! info "Descripción del reporte"
-    Los reportes de **antigüedad de saldos** (CLI21 a CLI25) permiten analizar el comportamiento de los saldos por cliente, identificando vencimientos, pendientes y movimientos de cada período.
+    Este reporte muestra, cuenta por cuenta, los movimientos del período con sus cargos, abonos y saldo. Puede filtrarse por:
 
-    Estos reportes ayudan a:
+    - Rango de fechas
+    - Todas las cuentas, rango de cuentas o nombre de cuenta
+    - **Mostrar saldos**
+    - **Mostrar movimientos cero**
 
-    - revisar la situación financiera por cliente;
-    - evaluar saldos vencidos y pendientes de cobro;
-    - comparar el estado actual con el histórico del período.
+    Escriba cuentas de detalle en el rango. Si escribe una cuenta de mayor, el sistema muestra un aviso.
 
-!!! warning "Documentos invalidados en un período posterior"
-    Cuando una factura o documento se invalida en un mes distinto al que se emitió, el reporte ya no muestra solo el movimiento negativo de la invalidación: el cargo original se mantiene en el período en que se emitió, y la reversión aparece por separado en el período en que ocurrió la invalidación. Esto refleja correctamente en qué momento se generó cada saldo.
+!!! tip "Opciones de exportación"
+    Después de presionar **Calcular**, puede enviar los datos fuera del sistema:
 
-    Además, se corrigió el reporte **CLI21**, que en algunos casos no mostraba ningún cargo.
+    - **Excel:** genera una hoja de cálculo. La columna **Saldo** no se suma hacia abajo. La fila final muestra el saldo final de la cuenta.
+    - **Copiar al portapapeles:** copia los datos para pegarlos en Excel u otro documento.
+    - **CSV:** guarda un archivo de valores separados por comas, con el nombre **Libro auxiliar**.
 
-!!! note "Redondeo a 2 decimales"
-    Los montos de los reportes de antigüedad de saldos se redondean a 2 decimales. Esto evita que queden residuos de centavos que antes provocaban pequeños descuadres al comparar el total del reporte contra el saldo real del cliente.
+!!! note "Descripción de las líneas de gasto"
+    Si la línea de gasto viene de la contabilización de un cheque, la descripción incluye el **proveedor** y el **código de generación** del documento, cuando aplica.
 
 !!! warning "Falta captura"
-    Esta sección necesita una captura de alguno de los reportes CLI21 a CLI25, idealmente mostrando un cliente con un documento invalidado en un período posterior al de su emisión.
+    Esta sección necesita tres capturas:
+
+    - Filtros del **Libro Auxiliar**. Nombre sugerido: `libro_auxiliar_filtros_01.png`.
+    - Vista previa del reporte, con una línea de gasto que muestre proveedor y código de generación. Nombre sugerido: `libro_auxiliar_reporte_01.png`.
+    - Hoja de Excel exportada, con la fila final del saldo. Nombre sugerido: `libro_auxiliar_excel_01.png`.
 
 ---
 
-## **4. Exportación e impresión**
+## **2. Balances**
 
-!!! info "Herramientas de salida"
-    Los reportes contables pueden exportarse o imprimirse desde su vista previa, conforme a la necesidad del usuario:
+<!-- Diagrama de los reportes de la categoría balances -->
+!!! tip "Diagrama de los reportes de la categoría **Balances**"
+    ``` mermaid
+    graph LR
+      A[Balances]:::root
 
-    - **Excel**: para análisis, cruce de información y conciliación con otras herramientas.
-    - **Vista previa / impresión**: para documentación formal y entrega a auditoría o control interno.
+      subgraph "Listado de reportes:"
+        B[2.1 Balance de Comprobación]
+        C[2.2 Balance General]
+        D[2.3 Balance General Tipo Reporte]
+        E[2.4 Balance General Comparativo]
+        F[2.5 Balanza de Comprobación]
+      end
 
-!!! tip "Espacio para nombres de empresa largos"
-    Los encabezados de los reportes contables (como el Balance de Comprobación, Balance General y Catálogo de cuentas, entre otros) ahora reservan más espacio para el nombre de la empresa. Antes, un nombre largo podía cortarse o desalinearse en la impresión; ahora se muestra completo.
+      A --> B
+      A --> C
+      A --> D
+      A --> E
+      A --> F
+
+    click B "#21-balance-de-comprobacion" "Ir a balance de comprobación"
+    click C "#22-balance-general" "Ir a balance general"
+    click D "#23-balance-general-tipo-reporte" "Ir a balance general tipo reporte"
+    click E "#24-balance-general-comparativo" "Ir a balance general comparativo"
+    click F "#25-balanza-de-comprobacion" "Ir a balanza de comprobación"
+    ```
+---
+
+### 2.1 Balance de Comprobación
+
+!!! info "Descripción del reporte"
+    Este reporte muestra, por cuenta, el saldo inicial, los cargos, los abonos y el saldo final. Puede filtrarse por:
+
+    - Rango de fechas
+    - Todas las cuentas, rango de cuentas o nombre de cuenta
+    - **Nivel** de profundidad de las cuentas
+    - **Mostrar saldos cero**
+    - **Mostrar movimientos cero**
+    - **Solo Cuentas de Detalle**
+    - **Balance de Saldos**
+    - **Balance de Saldos Comprobatorio**
+
+!!! tip "Opciones de saldo"
+    - **Mostrar saldos cero:** quita los saldos iniciales de la consulta. Los saldos finales cambian.
+    - **Mostrar movimientos cero:** omite los movimientos en cero, como los de cheques anulados.
+    - **Solo Cuentas de Detalle:** imprime solo las cuentas que reciben saldo directo en las partidas.
+    - **Balance de Saldos:** muestra el saldo neto de cada cuenta según su naturaleza. Una cuenta deudora muestra su saldo en **Debe**. Una cuenta acreedora lo muestra en **Haber**.
+    - **Balance de Saldos Comprobatorio:** igual que **Balance de Saldos**, pero el saldo acreedor es negativo y el saldo deudor es positivo. La suma de los saldos finales debe dar cero.
 
 !!! warning "Falta captura"
-    Esta sección necesita una captura de un encabezado de reporte contable con un nombre de empresa largo, mostrando que ya no se corta.
+    Filtros del **Balance de Comprobación** con las casillas de saldos visibles, y vista previa del reporte. Nombres sugeridos: `balance_comprobacion_filtros_01.png`, `balance_comprobacion_reporte_01.png`.
+
+---
+
+### 2.2 Balance General
+
+!!! info "Descripción del reporte"
+    Este reporte muestra la situación financiera de la empresa a una fecha. Puede filtrarse por:
+
+    - **Desde** y **A la fecha**
+    - **Nivel** de profundidad de las cuentas
+    - **Compactación** del reporte
+    - **Mostrar saldos cero**
+
+    También puede escribir un **Título** y un **Subtítulo**.
+
+!!! warning "Falta captura"
+    Filtros del **Balance General** (opción **General**) y vista previa del reporte. Nombres sugeridos: `balance_general_filtros_01.png`, `balance_general_reporte_01.png`.
+
+---
+
+### 2.3 Balance General Tipo Reporte
+
+!!! info "Descripción del reporte"
+    Este reporte presenta el balance general agrupado por las líneas y los rubros del reporte. Usa los mismos filtros que el [Balance General](#22-balance-general), con la opción **General TP Reporte**.
+
+!!! warning "Falta captura"
+    Vista previa del **Balance General Tipo Reporte**. Nombre sugerido: `balance_tipo_reporte_01.png`.
+
+---
+
+### 2.4 Balance General Comparativo
+
+!!! info "Descripción del reporte"
+    Este reporte compara los saldos del balance general entre dos fechas. Usa los mismos filtros que el [Balance General](#22-balance-general), con la opción **General Comparativo**.
+
+!!! warning "Falta captura"
+    Filtros y vista previa del **Balance General Comparativo**. Nombres sugeridos: `balance_comparativo_filtros_01.png`, `balance_comparativo_reporte_01.png`.
+
+---
+
+### 2.5 Balanza de Comprobación
+
+!!! info "Descripción del reporte"
+    Este reporte lista las cuentas con sus saldos para comprobar que los cargos y los abonos están balanceados. Usa los mismos filtros que el [Balance General](#22-balance-general), con la opción **Comprobación**.
+
+!!! warning "Falta captura"
+    Vista previa de la **Balanza de Comprobación**. Nombre sugerido: `balanza_comprobacion_reporte_01.png`.
+
+---
+
+## **3. Estados de resultados**
+
+<!-- Diagrama de los reportes de la categoría estados de resultados -->
+!!! tip "Diagrama de los reportes de la categoría **Estados de resultados**"
+    ``` mermaid
+    graph LR
+      A[Estados de resultados]:::root
+
+      subgraph "Listado de reportes:"
+        B[3.1 Estado de Resultados del Periodo]
+        C[3.2 Estado de Resultados Comparativo]
+        D[3.3 Estado de Resultados Histórico]
+      end
+
+      A --> B
+      A --> C
+      A --> D
+
+    click B "#31-estado-de-resultados-del-periodo" "Ir a estado de resultados del periodo"
+    click C "#32-estado-de-resultados-comparativo" "Ir a estado de resultados comparativo"
+    click D "#33-estado-de-resultados-historico" "Ir a estado de resultados histórico"
+    ```
+---
+
+### 3.1 Estado de Resultados del Periodo
+
+!!! info "Descripción del reporte"
+    Este reporte compara los resultados del período contra el acumulado del ejercicio. Puede filtrarse por:
+
+    - **Desde** y **Hasta** (fechas)
+    - **Año** y mes final
+    - **Nivel** de profundidad de las cuentas
+    - **Mostrar saldos cero**
+
+    Use la opción **Periodo Vs Acumulado (Ejercicio)**.
+
+!!! warning "Falta captura"
+    Filtros y vista previa del **Estado de Resultados del Periodo**. Nombres sugeridos: `estado_resultados_filtros_01.png`, `estado_resultados_reporte_01.png`.
+
+---
+
+### 3.2 Estado de Resultados Comparativo
+
+!!! info "Descripción del reporte"
+    Este reporte compara los resultados de dos años. Escriba el año inicial (**Desde**) y el año final (**Hasta**). Use la opción **Comparativo**.
+
+!!! warning "Falta captura"
+    Filtros y vista previa del **Estado de Resultados Comparativo**. Nombres sugeridos: `estado_resultados_comp_filtros_01.png`, `estado_resultados_comp_reporte_01.png`.
+
+---
+
+### 3.3 Estado de Resultados Histórico
+
+!!! info "Descripción del reporte"
+    Este reporte muestra solo el acumulado histórico de las cuentas. Use la opción **Solo Acumulado - Historico**.
+
+!!! warning "Falta captura"
+    Vista previa del **Estado de Resultados Histórico**. Nombre sugerido: `estado_resultados_hist_reporte_01.png`.
+
+---
+
+## **4. Análisis**
+
+### 4.1 Comparativo
+
+!!! info "Descripción del reporte"
+    Este reporte compara por mes los gastos y los ingresos de las cuentas del catálogo. Sirve para analizar el comportamiento de las cuentas por período. Puede filtrarse por:
+
+    - Año y mes inicial
+    - Año y mes final
+    - Rango de cuentas (**Del código** / **al código**)
+    - **Mostrar saldos cero**
+    - **Mostrar movimientos cero**
+
+!!! note "Sin impresión"
+    Este reporte se muestra solo en pantalla. Si presiona **Imprimir**, el sistema muestra el mensaje **Este reporte no admite impresión en pantalla**.
+
+!!! warning "Falta captura"
+    Filtros del **Comparativo** y la cuadrícula con el resultado, y el mensaje de error al presionar **Imprimir**. Nombres sugeridos: `comparativo_filtros_01.png`, `comparativo_resultado_01.png`, `comparativo_sin_impresion_01.png`.
+
+---
+
+### 4.2 Datos para análisis externo
+
+!!! info "Descripción del reporte"
+    Esta opción genera un origen de datos con los movimientos contables. Úselo en Excel (tablas dinámicas) u otras herramientas. Con estos datos puede crear gráficos, reportes dinámicos y análisis adicionales.
+
+    En esta opción, el botón **Calcular** cambia a **Generar origen de datos**.
+
+!!! tip "Opciones de exportación"
+    Después de generar los datos, puede usar **Copiar al portapapeles** o **CSV**. El archivo CSV se llama **ETL Export**.
+
+!!! warning "Falta captura"
+    Pantalla de **Datos para análisis externo** con el botón **Generar origen de datos**, y un ejemplo de los datos en una tabla dinámica de Excel. Nombres sugeridos: `datos_analisis_externo_01.png`, `datos_analisis_externo_excel_01.png`.
+
+---
+
+## **5. Configuración**
+
+!!! info "Configuración de los reportes"
+    En esta opción puede ajustar las opciones más comunes de los reportes. Aquí también puede presionar **Seleccionar Impresor** para elegir la impresora.
+
+!!! warning "Falta captura"
+    Pantalla **Configuración de los Reportes**. Nombre sugerido: `configuracion_reportes_01.png`.
 
 ---
 
 ## 🔗 Módulos relacionados
 
-- [Captura de partida contable](captura_partida_contable.md) — alta y revisión de asientos contables.
-- [Contabilización automática](contabilizacion_automatica.md) — generación y validación de movimientos automáticos.
-- [Control de periodos](control_periodos.md) — administración de cierres y vigencia contable.
-- [Reportes generales](../../Reports/reportes.md) — vista general de categorías de reportes del sistema.
-
----
-
-## ☑️ Validaciones y pruebas realizadas
-
-!!! info "Revisión de documentación"
-    La actualización de esta página se realizó con base en los cambios registrados en la rama de desarrollo del módulo de contabilidad, con especial atención a la vista previa de partidas, el Libro Auxiliar, la antigüedad de saldos y la impresión de reportes.
-
-!!! example "Aspectos validados en la mejora documental"
-    - Revisión de la descripción de líneas de gasto con proveedor y código de generación en el **Libro Auxiliar**.
-    - Validación de la vista previa de varias partidas marcadas en un solo reporte.
-    - Validación del tratamiento de documentos invalidados en un período posterior en antigüedad de saldos (CLI21 a CLI25).
-    - Ajuste de redacción y estructura para alinearse con la guía de reportes del producto.
-
-!!! warning "Capturas pendientes"
-    Esta página quedó sin capturas propias: faltan imágenes del Libro Auxiliar, del listado de partidas, de la vista previa de varias partidas, de los reportes de antigüedad de saldos y de un encabezado con nombre de empresa largo. Cada sección de arriba señala puntualmente qué capturar.
-
+- [Captura de partida contable](captura_partida_contable.md): alta, revisión y vista previa de partidas, incluida la vista previa de varias partidas marcadas.
+- [Contabilización automática](contabilizacion_automatica.md): generación de las partidas automáticas.
+- [Control de periodos](control_periodos.md): cierres y vigencia contable.
+- [Reportes de clientes](../../Reports/categorias/clientes.md): incluye la antigüedad de saldos y los estados de cuenta de clientes.
+- [Reportes generales](../../Reports/reportes.md): vista general de las categorías de reportes del sistema.
