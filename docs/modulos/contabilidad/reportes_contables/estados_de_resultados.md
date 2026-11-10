@@ -34,12 +34,17 @@
 !!! info "Descripción del reporte"
     Este reporte compara los resultados de un mes contra el acumulado del año. Puede filtrarse por:
 
+    - **Mes**
     - **Año**
-    - **Mes** final
     - **Nivel** de profundidad de las cuentas
-    - **Mostrar saldos cero**
+    - **Título** y **Subtítulo**
 
-    Para este reporte, elija la opción **Periodo Vs Acumulado (Ejercicio)**.
+    En la lista aparece como **Estado de Resultados del Periodo**, y la pantalla lo titula **Estado de Resultados - Periodo Vs Ejercicio**.
+
+   ![Pantalla de filtros del Estado de Resultados del Periodo](../../../assets/contabilidad/reportes_contables/estado_resultados_filtros_01.png){ align=center }
+
+!!! note "Columnas de la cuadrícula"
+    La cuadrícula muestra el **Código**, el **Nombre de Cuenta** y dos pares de columnas: **Parcial** y **Saldo del Periodo**, y **Parcial** y **Saldo del Ejercicio**. Entre las cuentas aparecen los subtotales, como la **Utilidad Bruta** y la **Utilidad Neta**.
 
 !!! tip "Cómo se calculan las columnas"
     - **Periodo:** va del primer día al último día del mes elegido.
@@ -52,8 +57,10 @@
     4. Presione **Calcular**. El mensaje **Estado de Resultado finalizado** indica que el cálculo terminó.
     5. Presione **Imprimir** para ver el reporte.
 
-!!! warning "Falta captura"
-    Filtros y vista previa del **Estado de Resultados del Periodo**. Nombres sugeridos: `estado_resultados_filtros_01.png`, `estado_resultados_reporte_01.png`.
+!!! note "Vista previa del reporte"
+    El encabezado muestra el mes y el año del reporte, por ejemplo **Estado de Resultados Enero 2026**. La vista previa tiene dos columnas de saldos: **Saldos del Periodo** y **Saldos del Ejercicio**. Al final aparecen las firmas del gerente general, el contador y el representante legal.
+
+   ![Vista previa del Estado de Resultados del Periodo](../../../assets/contabilidad/reportes_contables/estado_resultados_reporte_01.png){ align=center }
 
 ---
 
@@ -67,8 +74,13 @@
 !!! note "Impresión"
     Este reporte se imprime con los rubros personalizados de la empresa.
 
+!!! note "Vista previa del reporte"
+    El encabezado es **Estado de Resultados Comparativo**. Hay una columna para el año **Desde** y otra para el año **Hasta**. Cada columna muestra los ingresos, los costos, los gastos y las utilidades.
+
+   ![Vista previa del Estado de Resultados Comparativo](../../../assets/contabilidad/reportes_contables/estado_resultados_comp_reporte_01.png){ align=center }
+
 !!! warning "Falta captura"
-    Filtros y vista previa del **Estado de Resultados Comparativo**. Nombres sugeridos: `estado_resultados_comp_filtros_01.png`, `estado_resultados_comp_reporte_01.png`.
+    Filtros del **Estado de Resultados Comparativo**. Nombre sugerido: `estado_resultados_comp_filtros_01.png`.
 
 ---
 
@@ -82,5 +94,7 @@
 
     Para este reporte, elija la opción **Solo Acumulado - Historico**.
 
-!!! warning "Falta captura"
-    Vista previa del **Estado de Resultados Histórico**. Nombre sugerido: `estado_resultados_hist_reporte_01.png`.
+!!! note "Vista previa del reporte"
+    El encabezado muestra el rango de fechas del reporte, por ejemplo **Estado de Resultados 01/01/2026 al 30/11/2026**. La vista previa tiene dos columnas: **Saldos del Periodo** y **Saldos acumulados**.
+
+   ![Vista previa del Estado de Resultados Histórico](../../../assets/contabilidad/reportes_contables/estado_resultados_hist_reporte_01.png){ align=center }

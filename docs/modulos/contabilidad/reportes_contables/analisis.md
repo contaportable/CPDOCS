@@ -15,9 +15,7 @@
     - **Mostrar saldos cero**
     - **Mostrar movimientos cero**
 
-!!! note "Solo en pantalla"
-    Este reporte se muestra solo en pantalla. Si presiona **Imprimir**, el sistema muestra el aviso **Este reporte no admite impresión en pantalla**.
-
+!!! note "Exportar el reporte"
     Para sacar el reporte, presione **Excel**. El archivo se llama **Reporte comparativo por periodos**.
 
 !!! example "Cómo comparar los gastos de un año"
@@ -27,8 +25,7 @@
     4. Presione **Calcular**.
     5. Revise la cuadrícula en pantalla. Presione **Excel** para guardar el análisis.
 
-!!! warning "Falta captura"
-    Filtros del **Comparativo** y la cuadrícula con el resultado, y el aviso al presionar **Imprimir**. Nombres sugeridos: `comparativo_filtros_01.png`, `comparativo_resultado_01.png`, `comparativo_sin_impresion_01.png`.
+   ![Pantalla del Comparativo con filtros y resultado](../../../assets/contabilidad/reportes_contables/comparativo_filtros_01.png){ align=center }
 
 ---
 
@@ -66,6 +63,8 @@
     4. Espere el aviso **Proceso finalizado**.
     5. Presione **CSV** o **Copiar al portapapeles**.
     6. Abra el archivo en Excel y cree una tabla dinámica.
+
+   ![Pantalla de Datos para análisis externo con el origen de datos generado](../../../assets/contabilidad/reportes_contables/datos_analisis_externo_01.png){ align=center }
 
 !!! warning "Falta captura"
     Ejemplo de los datos en una tabla dinámica de Excel. Nombre sugerido: `datos_analisis_externo_excel_01.png`.

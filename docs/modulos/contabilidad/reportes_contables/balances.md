@@ -70,54 +70,68 @@
 ### 2.2 Balance General
 
 !!! info "Descripción del reporte"
-    Este reporte muestra la situación financiera de la empresa. Usa los saldos acumulados hasta la fecha **A la fecha**. Puede filtrarse por:
+    Este reporte muestra la situación financiera de la empresa a una fecha. Presenta **Activo** y **Pasivo** en dos columnas, con sus rubros, subcuentas y saldos.
 
-    - **Desde** y **A la fecha**
-    - **Nivel** de profundidad de las cuentas
-    - **Compactación** del reporte (**Compacto**, **Semi Compacto** o **Normal**). Esta opción cambia el espacio entre las líneas.
-    - **Mostrar saldos cero**
+    En la lista aparece como **Balance General**, y la pantalla de filtros lo titula **Balance General Tipo Cuenta**. Puede ajustar:
 
-    También puede escribir un **Título** y un **Subtítulo**.
+    - **Nivel:** la profundidad de las cuentas que se muestran. El valor inicial es **4**.
+    - **Compactación:** el espacio entre las líneas. Puede elegir **Compacto**, **Semi Compacto** o **Normal**. El valor inicial es **Semi Compacto**.
+    - **A la fecha:** la fecha de corte del balance. El valor inicial es la fecha de hoy.
+    - **Título** y **Subtítulo:** los textos del encabezado. El subtítulo inicial indica que el reporte está expresado en dólares de los Estados Unidos.
+    - **Mostrar saldos cero:** si la marca, incluye las cuentas con saldo cero.
 
-    Para este reporte, elija la opción **General**.
+!!! note "Campos deshabilitados"
+    **Desde** y **Hasta** aparecen en gris en este reporte. Solo se usan en el [Balance General Comparativo](#24-balance-general-comparativo).
 
 !!! note "Utilidad del ejercicio"
-    El Balance General calcula la utilidad del ejercicio. La utilidad es igual a los ingresos menos los costos y los gastos. El sistema la suma a la cuenta de utilidad.
+    La utilidad aparece bajo **Resultados por aplicar**, con dos líneas: **Utilidades de ejercicios anteriores** y **Utilidad del presente ejercicio**. La utilidad del ejercicio es igual a los ingresos menos los costos y los gastos.
 
-    Si la empresa usa rubros personalizados, el cálculo separa los gastos, los otros ingresos y gastos, y los gastos e ingresos financieros.
+   ![Pantalla de filtros del Balance General](../../../assets/contabilidad/reportes_contables/balance_general_filtros_01.png){ align=center }
 
-!!! tip "Exportar a Excel"
-    El archivo de Excel tiene estas columnas: Código, Nombre, Parcial, Cuenta y Total. Las mismas columnas aparecen para el lado deudor y para el lado acreedor.
+!!! example "Cómo sacar el balance general"
+    1. Seleccione **Balance General** en la lista.
+    2. Escriba la **A la fecha** de corte.
+    3. Elija la **Compactación** y el **Nivel** que necesite.
+    4. Presione **Calcular**. La cuadrícula muestra las columnas **Código**, **Nombre**, **Sub Cuenta**, **Cuenta** y **Rubro**.
+    5. Presione **Imprimir** para ver la vista previa.
 
-!!! warning "Falta captura"
-    Filtros del **Balance General** (opción **General**) y vista previa del reporte. Nombres sugeridos: `balance_general_filtros_01.png`, `balance_general_reporte_01.png`.
+   ![Vista previa del Balance General](../../../assets/contabilidad/reportes_contables/balance_general_reporte_01.png){ align=center }
 
 ---
 
 ### 2.3 Balance General Tipo Reporte
 
 !!! info "Descripción del reporte"
-    Este reporte muestra los mismos saldos que el [Balance General](#22-balance-general). La diferencia es el formato: agrupa las cuentas por los rubros del reporte y las ordena por código.
+    Este reporte muestra los mismos saldos que el [Balance General](#22-balance-general), con el formato de cuentas por rubro. En la cuadrícula, **Activo** aparece primero y **Pasivo** debajo, en una sola columna de filas.
 
-    Para este reporte, elija la opción **General TP Reporte**. Los filtros son los mismos del Balance General.
+    Los filtros son los mismos del Balance General: **Nivel**, **Compactación**, **A la fecha**, **Título**, **Subtítulo** y **Mostrar saldos cero**. **Desde** y **Hasta** aparecen en gris.
 
-!!! warning "Falta captura"
-    Vista previa del **Balance General Tipo Reporte**. Nombre sugerido: `balance_tipo_reporte_01.png`.
+   ![Pantalla de filtros del Balance General Tipo Reporte](../../../assets/contabilidad/reportes_contables/balance_tipo_reporte_filtros_01.png){ align=center }
+
+!!! note "Vista previa del reporte"
+    La vista previa muestra **Activo** con sus rubros y el **Total Activo**. Después muestra **Pasivo**, con el mismo formato.
+
+   ![Vista previa del Balance General Tipo Reporte](../../../assets/contabilidad/reportes_contables/balance_tipo_reporte_reporte_01.png){ align=center }
 
 ---
 
 ### 2.4 Balance General Comparativo
 
 !!! info "Descripción del reporte"
-    Este reporte compara los saldos de dos años. Toma el saldo al 31 de diciembre del año **Desde** y lo compara con el saldo al 31 de diciembre del año **Hasta**.
+    Este reporte compara los saldos de dos años. Muestra dos bloques de cuentas, uno al lado del otro: el de la izquierda corresponde al año **Desde** y el de la derecha al año **Hasta**. Cada bloque tiene las columnas **Código**, **Nombre**, **Sub Cuenta**, **Cuenta** y **Rubro**.
 
-    Para este reporte, elija la opción **General Comparativo**. Los demás filtros son los mismos del [Balance General](#22-balance-general).
+    En este reporte, **A la fecha** aparece en gris. Los años se escriben en **Desde** y **Hasta**. Los demás filtros son los mismos del [Balance General](#22-balance-general).
+
+   ![Pantalla de filtros del Balance General Comparativo](../../../assets/contabilidad/reportes_contables/balance_comparativo_filtros_01.png){ align=center }
 
 !!! example "Cómo comparar dos años"
     1. Seleccione **Balance General Comparativo** en la lista.
     2. Escriba el año **Desde** y el año **Hasta**.
     3. Presione **Calcular**.
-    4. Presione **Imprimir** para ver el reporte.
+    4. Revise los dos bloques de cuentas en la cuadrícula.
+    5. Presione **Imprimir** para ver el reporte.
 
-!!! warning "Falta captura"
-    Filtros y vista previa del **Balance General Comparativo**. Nombres sugeridos: `balance_comparativo_filtros_01.png`, `balance_comparativo_reporte_01.png`.
+!!! note "Vista previa del reporte"
+    La vista previa muestra los saldos del balance general en dos columnas: una por el año **Desde** y otra por el año **Hasta**. Cada rubro tiene su total. Después del **Total de Activo** aparece **Pasivo**.
+
+   ![Vista previa del Balance General Comparativo](../../../assets/contabilidad/reportes_contables/balance_comparativo_reporte_01.png){ align=center }
