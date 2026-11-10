@@ -277,33 +277,6 @@ Antes de cada actualización, el sistema guarda un respaldo comprimido con la fe
 
 ---
 
-## ☑️ Validaciones y pruebas realizadas 🧪
-
-!!! example "Escenarios verificados"
-    ??? example "Aviso de nueva versión"
-        - :material-check-circle: El sistema revisa las versiones al iniciar, sin demorar la apertura.
-        - :material-check-circle: El aviso aparece solo con versiones más recientes del canal en uso.
-        - :material-check-circle: **Actualizar ahora** abre el Actualizador.
-        - :material-check-circle: El aviso no quita el teclado a la ventana en uso.
-
-    ??? example "Actualización y reversión"
-        - :material-check-circle: El sistema guarda el respaldo antes de instalar y conserva los últimos 3.
-        - :material-check-circle: La reversión restaura la versión anterior sin afectar la base de datos.
-        - :material-check-circle: El Actualizador se renueva a sí mismo sin intervención del usuario.
-
-    ??? example "Acceso directo en el escritorio"
-        - :material-check-circle: Se conserva el acceso directo que funciona.
-        - :material-check-circle: Se crea **Contaportable Actualizado** con la fecha cuando no hay ninguno que funcione.
-        - :material-check-circle: No se modifican accesos de otras carpetas ni de otros programas.
-
-    ??? example "Normativa DTE 2.0"
-        - :material-check-circle: Con el distrito del emisor configurado, se activan todas las fases.
-        - :material-check-circle: Si falta el distrito, se activan las fases que lo permiten y el resto queda pendiente.
-        - :material-check-circle: Si se ejecuta de nuevo, no repite lo que ya está activo.
-        - :material-check-circle: No aplica a empresas que no facturan electrónicamente.
-
----
-
 ## 📝 Historial de actualizaciones
 
 ??? note "Cambios del Actualizador"
