@@ -52,6 +52,8 @@ nav:
           - Estados de resultados: modulos/contabilidad/reportes_contables/estados_de_resultados.md
           - Análisis: modulos/contabilidad/reportes_contables/analisis.md
           - Configuración: modulos/contabilidad/reportes_contables/configuracion.md
+      - 🧾Contribuyentes (NRC/NIT):
+        - Edición del listado de contribuyentes: modulos/contribuyentes/ListadoContribuyentes.md
       - 📑Facturación:
         - Dual: modulos/facturacion/facturacion_dual.md
         - Multilínea: modulos/facturacion/facturacion_lineas_multiples.md
