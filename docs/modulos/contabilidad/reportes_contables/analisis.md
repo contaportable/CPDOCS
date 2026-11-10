@@ -66,6 +66,8 @@
 
    ![Pantalla de Datos para análisis externo con el origen de datos generado](../../../assets/contabilidad/reportes_contables/datos_analisis_externo_01.png){ align=center }
 
-!!! warning "Falta captura"
-    Ejemplo de los datos en una tabla dinámica de Excel. Nombre sugerido: `datos_analisis_externo_excel_01.png`.
+!!! note "Datos en Excel"
+    Al exportar, cada movimiento queda en una fila, con la fecha, la cuenta, el tipo de documento, el código y los importes. Con estas filas puede armar sus tablas dinámicas.
+
+   ![Datos del origen de datos abiertos en Excel](../../../assets/contabilidad/reportes_contables/datos_analisis_externo_excel_01.png){ align=center }
 

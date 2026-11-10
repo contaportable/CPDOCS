@@ -58,7 +58,7 @@ Si se actualiza ContaPortable de forma manual reemplazando los archivos del prog
 !!! tip "No interrumpe su trabajo"
     El aviso no le quita el teclado: puede seguir escribiendo en la ventana donde estaba. Se cierra solo a los 15 segundos, pero permanece abierto mientras tenga el puntero del mouse encima, para que pueda leerlo con calma.
 
-<!-- 📷 CAPTURA PENDIENTE: ![Aviso de nueva versión en canal Estable](../../assets/Actualizador/aviso_estable_01.png){ align=center } -->
+![Aviso de nueva versión en canal Estable](../../assets/Actualizador/aviso_estable_01.png){ align=center }
 <!-- 📷 CAPTURA PENDIENTE: ![Aviso de nueva versión en canal Preview (Beta)](../../assets/Actualizador/aviso_beta_01.png){ align=center } -->
 
 !!! note "Solo versiones más recientes de su canal"
@@ -86,7 +86,7 @@ En la parte superior del actualizador se muestran:
 - **Licencia:** solo los primeros 5 caracteres de su clave de licencia; el resto se oculta con asteriscos por seguridad.
 - **Tipo de sistema:** la descripción del sistema instalado (por ejemplo, ContaPortable Avanzado o Pymepro).
 
-<!-- 📷 CAPTURA PENDIENTE: ![Licencia y tipo de sistema en el encabezado del actualizador](../../assets/Actualizador/licencia_tipo_sistema_01.png){ align=center } -->
+![Licencia y tipo de sistema en el encabezado del actualizador](../../assets/Actualizador/licencia_tipo_sistema_01.png){ align=center }
 
 ### 🔒 Política de membresía
 
@@ -166,7 +166,7 @@ Antes de actualizar ContaPortable, el actualizador comprueba si existe una versi
 Cuando se crea un acceso directo nuevo, el mensaje final de la actualización se lo indica.
 
 <!-- 📷 CAPTURA PENDIENTE: ![Acceso directo Contaportable Actualizado en el escritorio](../../assets/Actualizador/acceso_directo_01.png){ align=center } -->
-<!-- 📷 CAPTURA PENDIENTE: ![Mensaje final indicando el nuevo acceso directo](../../assets/Actualizador/acceso_directo_02.png){ align=center } -->
+![Mensaje final indicando el nuevo acceso directo](../../assets/Actualizador/acceso_directo_02.png){ align=center }
 
 ---
 
@@ -211,7 +211,7 @@ Lo pendiente se volverá a intentar la próxima vez que ingrese al sistema.
 !!! tip "Activación manual"
     Las fases también pueden activarse manualmente desde la opción de instalación de la implementación de la Normativa V2, como se describe en cada fase.
 
-<!-- 📷 CAPTURA PENDIENTE: ![Resumen de la activación de la Normativa DTE 2.0 al iniciar](../../assets/Actualizador/normativa_dte2_01.png){ align=center } -->
+![Resumen de la activación de la Normativa DTE 2.0 al iniciar](../../assets/Actualizador/normativa_dte2_01.png){ align=center }
 
 ---
 

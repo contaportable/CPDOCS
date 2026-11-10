@@ -74,7 +74,6 @@ Esta página describe los reportes de la pantalla **Reportes Contables** del sis
 
 ## 🔗 Módulos relacionados
 
-- [Captura de partida contable](captura_partida_contable.md): alta, revisión y vista previa de partidas, incluida la vista previa de varias partidas marcadas.
 - [Contabilización automática](contabilizacion_automatica.md): generación de las partidas automáticas.
 - [Control de periodos](control_periodos.md): cierres y vigencia contable.
 - [Reportes de clientes](../../Reports/categorias/clientes.md): incluye la antigüedad de saldos y los estados de cuenta de clientes.
