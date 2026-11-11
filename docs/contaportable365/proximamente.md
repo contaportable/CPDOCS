@@ -1,6 +1,6 @@
 # 🚀 ContaPortable365
 
-<p style="text-align:center"><img src="../assets/ContaPortable365/logo.png" alt="Logo de ContaPortable" width="220"></p>
+![Logo de ContaPortable365](../assets/ContaPortable365/logo.png){ width="220" align=center }
 
 !!! abstract "Próximamente"
     ContaPortable365 es la nueva edición de ContaPortable. Tendrá su propio sitio de documentación.
@@ -11,7 +11,7 @@ Según su [sitio oficial](https://www.contaportable365.com), ContaPortable365 es
 
 | Dato | Estado |
 | :--- | :--- |
-| **Estado** | Próximamente |
+| **Estado** | En desarrollo |
 | **Documentación** | Sitio propio, en preparación |
 | **Más información** | [www.contaportable365.com](https://www.contaportable365.com) |
 
