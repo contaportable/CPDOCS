@@ -1,92 +1,116 @@
-# Documentación - Anexo de Pago de Quincena 25 (F14)
+<!---
+description: Guía para elaborar el Anexo F14 de la quincena 25 en ContaPortable: pago anual de enero, importación desde planillas, carga y generación de CSV, y su integración con los reportes consolidados.
+--->
 
-!!! tip " **Informes - Anexo de Pago de Quincena 25**"
-    ``` mermaid
-    graph TD
-      A[Índice de contenidos]:::root
+# 🎁 Anexo de pago de quincena 25 (F14)
 
-      subgraph "Subcategorías"
-        B[1. Selector de Anexos F14]
-        C[2. Menú de gestión de anexos]
-        D[3. Importación desde planillas]
-        E[4. Carga de archivo CSV]
-        F[5. Generación de archivo CSV]
-        G[6. Manual de carga de anexo de planilla Q25]
-      end
+El anexo de pago de quincena 25 reporta la prestación anual que se paga a los empleados. Se presenta en el mes de enero.
 
-      A --> B
-      A --> C
-      A --> D
-      A --> E
-      A --> F
-      A --> G
+!!! abstract "En esta guía aprenderá a"
+    - Abrir el anexo de quincena 25 desde el selector de anexos.
+    - Cargar los registros desde planillas, desde un CSV o a mano.
+    - Generar el archivo CSV para declarar.
+    - Incluir el anexo en los reportes consolidados y en las constancias de renta.
 
-    click B "#1-selector-de-anexos-f14" "Ir a Selector de Anexos F14"
-    click C "#2-menu-de-gestion-de-anexos" "Ir a Menú de gestión de anexos"
-    click D "#3-importacion-desde-planillas" "Ir a Importación desde planillas"
-    click E "#4-carga-de-archivo-csv" "Ir a Carga de archivo CSV"
-    click F "#5-generacion-de-archivo-csv" "Ir a Generación de archivo CSV"
-    click G "#6-manual-de-carga-de-anexo-de-planilla-q25" "Ir a Manual de carga de anexo de planilla Q25"
-    ```
----
-
-## 1. Selector de Anexos F14
-
-!!! abstract "Selector de Anexos F14"
-
-    Dentro del informe F14, se ha añadido un nuevo selector que permite elegir entre los **"Anexos de retenciones de renta"** y el **"Anexo quincena 25"**. Esta funcionalidad permite a los usuarios navegar y gestionar de forma independiente cada tipo de anexo. 
-    
-    El anexo de "Pago de quincena 25" es una prestación anual que se reporta en el mes de enero.
-
-    **![Selector de Anexos F14](../../../assets/Informes_anexos/F14/F14Q25_Main_selector.png){ align=left }**
+!!! info "Manual oficial"
+    [Manual de carga de anexo de planilla Q25 del Ministerio de Hacienda :fontawesome-regular-file-pdf:](../../../assets/Informes_anexos/F14/Manual%20de%20carga%20de%20anexo%20de%20planilla%20Q25.pdf){ .md-button }
 
 ---
 
-## 2. Menú de gestión de anexos
+## 📌 Antes de empezar
 
-!!! abstract "Menú de gestión de anexos"
-
-    El menú de gestión de anexos para la quincena 25 permite realizar las operaciones básicas de creación, edición y eliminación de anexos. Desde esta pantalla se puede acceder a las diferentes funcionalidades de importación y exportación de datos.
-
-    **![Menú de gestión de anexos](../../../assets/Informes_anexos/F14/F14Q25-editor-screen.png){ align=left }**
+!!! info "Requisitos"
+    - Los empleados deben estar registrados en planillas, con su información completa.
+    - El anexo se trabaja en el mismo informe F14 que el anexo de retención de renta. Vea [Anexo F14: retención de renta](anexos_f14.md).
 
 ---
 
-## 3. Importación desde planillas
+## 🔀 Elegir el anexo
 
-!!! abstract "Importación desde planillas"
+En el informe F14 aparece un selector con dos opciones:
 
-    El sistema permite la importación de datos directamente desde una plantilla de hoja de cálculo. Esta opción es ideal para usuarios que prefieren preparar la información en un archivo de Excel antes de subirla al sistema.
+- **Anexos de retenciones de renta**: el anexo mensual de retención de renta.
+- **Anexo quincena 25**: el anexo de pago de quincena 25.
 
-    **![Importación desde planillas](../../../assets/Informes_anexos/F14/F14Q25-IMPORT_PLN.png){ align=left }**
+Cada uno se gestiona por separado.
 
----
-
-## 4. Carga de archivo CSV
-
-!!! abstract "Carga de archivo CSV"
-
-    Esta funcionalidad permite la carga masiva de datos para el anexo Q25 mediante un archivo CSV. El sistema procesará el archivo y registrará cada línea como una entrada individual en el anexo, optimizando el tiempo de ingreso de la información.
-
-    **![Carga de archivo CSV](../../../assets/Informes_anexos/F14/F14Q25-load-csv-file.png){ align=left }**
+![Selector de anexos F14 con la opción de quincena 25](../../../assets/Informes_anexos/F14/F14Q25_Main_selector.png){ align=center }
 
 ---
 
-## 5. Generación de archivo CSV
+## ✍️ Trabajar en el anexo
 
-!!! abstract "Generación de archivo CSV"
+![Menú de gestión del anexo de quincena 25](../../../assets/Informes_anexos/F14/F14Q25-editor-screen.png){ align=center }
 
-    El sistema permite generar un archivo CSV a partir de los datos ingresados en el anexo de la quincena 25. Este archivo puede ser utilizado para realizar declaraciones o para análisis posteriores.
+Desde este menú se crean, se editan y se eliminan los registros, y se accede a la importación y a la exportación.
 
-    **![Generación de archivo CSV](../../../assets/Informes_anexos/F14/F14Q25-generate-csv-file.png){ align=left }**
+!!! tip "Guardado automático"
+    Los cambios se guardan mientras trabaja. Así la información no se pierde si la sesión se interrumpe.
+
+!!! warning "Salario máximo"
+    El sistema valida que el monto no supere el salario máximo permitido para la quincena 25. Si aparece este aviso, revise el monto del empleado antes de continuar.
+
+!!! info "Entrega parcial"
+    El anexo puede declararse con registros parciales. Así puede presentar primero a los empleados ya verificados y completar el resto después.
 
 ---
 
-## 6. Manual de carga de anexo de planilla Q25
+## 📥 Cargar los registros
 
-!!! abstract "Manual de carga de anexo de planilla Q25"
+### Desde planillas
 
-    Para una guía más detallada sobre el proceso de carga de la planilla para el anexo de la quincena 25, puede consultar el siguiente manual oficial del Ministerio de Hacienda:
+Importa los datos desde la planilla. Es la opción recomendada cuando los empleados ya están en planillas.
 
-    - **[Descargar Manual de carga de anexo de planilla Q25 en versión PDF :fontawesome-regular-file-pdf:](../../../assets/Informes_anexos/F14/Manual%20de%20carga%20de%20anexo%20de%20planilla%20Q25.pdf){ .md-button }**
+![Importación desde planillas](../../../assets/Informes_anexos/F14/F14Q25-IMPORT_PLN.png){ align=center }
+
+### Desde CSV
+
+Cada línea del archivo se convierte en un registro del anexo. Prepare el archivo con la plantilla oficial para evitar errores en las columnas.
+
+![Carga de archivo CSV](../../../assets/Informes_anexos/F14/F14Q25-load-csv-file.png){ align=center }
+
+---
+
+## 📤 Generar el archivo CSV
+
+Genera el archivo CSV a partir de los registros del anexo. Ese archivo se usa para declarar o para análisis posterior.
+
+![Generación de archivo CSV](../../../assets/Informes_anexos/F14/F14Q25-generate-csv-file.png){ align=center }
+
+---
+
+## ✅ Declarar e integrar con los reportes
+
+1. Revise los registros del anexo.
+2. Declare el anexo del período.
+3. Genere los reportes consolidados de F14 y las constancias de renta.
+
+Al declarar el anexo, su información se incluye en los **reportes consolidados de F14** y en las **constancias de renta**, sin proceso aparte. Ambos reportes se generan desde la pantalla principal. Vea [Anexo F14: retención de renta](anexos_f14.md#la-pantalla-principal).
+
+!!! tip "Orden recomendado"
+    Declare primero el anexo de quincena 25 y después genere los reportes consolidados y las constancias. Así incluyen la información de la quincena.
+
+![Reportes consolidados de F14 con la opción para incluir el anexo de quincena 25](../../../assets/Informes_anexos/F14/F14Q25-reporte-consolidado.png){ align=center }
+
+Al generar las constancias de renta, el anexo de quincena 25 aparece como un concepto de pago del empleado, con su monto y sus deducciones.
+
+![Constancia de renta con el pago de quincena 25](../../../assets/Informes_anexos/F14/F14Q25-constancia-renta.png){ align=center }
+
+---
+
+## ❓ Problemas frecuentes
+
+??? question "Aparece el aviso de salario máximo"
+    Revise el monto del empleado en la planilla. El sistema no permite guardar un monto superior al máximo permitido para la quincena 25.
+
+??? question "Los reportes consolidados no incluyen la quincena 25"
+    Declare el anexo de quincena 25 del período y vuelva a generar los reportes.
+
+---
+
+## 🔗 Páginas relacionadas
+
+- [Anexo F14: retención de renta](anexos_f14.md)
+- [Planillas](../../planillas/planillas.md)
+
 ---
