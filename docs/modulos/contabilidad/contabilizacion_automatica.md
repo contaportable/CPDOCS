@@ -2,7 +2,7 @@
 description: Guía para contabilizar automáticamente los documentos de un periodo en ContaPortable, agrupar las ventas por tipo de documento y revisar las partidas generadas.
 --->
 
-# ⚙️ Contabilización automática
+# ⚙️ Contabilización automática <span class="estado estado-actualizado" data-hasta="2026-12-31">Actualizado</span>
 
 La contabilización automática crea las partidas contables a partir de los documentos del periodo: ventas, cheques, depósitos, quedans, caja chica y retaceos. Así no tiene que capturar cada asiento a mano.
 

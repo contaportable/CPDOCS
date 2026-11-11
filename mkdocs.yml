@@ -1,4 +1,4 @@
-﻿site_name: ContaPortable Docs
+site_name: ContaPortable Docs
 site_description: Documentación de ContaPortable 
 site_url: https://docs.contaportable.com
 
@@ -36,14 +36,16 @@ nav:
       - 🏦Bancos: 
         - Gestión de bancos, cuentas y chequeras: modulos/bancos/mantenimiento_bancos_cuentas_chequeras.md
         - Conciliación Bancaria: modulos/bancos/Conciliacionbancaria.md
-        - Transferencias Bancarias: modulos/bancos/transferenciasBancarias.md
+        - Traslado de fondos: modulos/bancos/transferenciasBancarias.md
         - Depósitos Bancarios: modulos/bancos/depositos_documentos_multiples.md
       - 🛒Compras (OG Y OC):
-        - Gestión de CXP: modulos/compras/gestion_cuentas_por_pagar.md
-        - Importar Json del DTE en OG: modulos/compras/importJsonOG.md
         - Registrar OG de vehículos: modulos/compras/OG_mantenimiento_vehiculos.md
+        - Importar Json del DTE en OG: modulos/compras/importJsonOG.md
+        - Gestión de CXP: modulos/compras/gestion_cuentas_por_pagar.md
       - 📘Contabilidad:
         - Contabilización Automática: modulos/contabilidad/contabilizacion_automatica.md
+        - Formulario de contabilización: modulos/contabilidad/contabilizar.scx.md
+        - Captura y edición de Partida Contable: modulos/contabilidad/captura_partida_contable.md
         - Control de períodos contables: modulos/contabilidad/control_periodos.md
         - Reportes Contables:
           - Introducción: modulos/contabilidad/ReportesContables.md
@@ -83,7 +85,7 @@ nav:
           - Generales: modulos/Informes_anexos/F07/anexos_f07.md
           - Reportes: modulos/Informes_anexos/F07/reportes.md
           - Agrupar CSV de anexo vtas Consu. Final: modulos/Informes_anexos/F07/agrupacionAnexoConsumidorFinal.md
-        - F14: 
+        - F14:
           - Anexo de retenciones de renta: modulos/Informes_anexos/F14/anexos_f14.md
           - Anexo de pago de quincena 25: modulos/Informes_anexos/F14/anexos_f14Q25.md
         - Importacion de Json Optimizada: modulos/Informes_anexos/importacionJsonAnexos.md
@@ -93,14 +95,12 @@ nav:
       - ⚙️Parámetros en Contaportable:
         - Informes/Anexos: Parametros/Modulos/Informes_anexos/ParametrosEnAnexos.md
         - Generales: Parametros/ParametrosGenerales.md
-        - Activar Informes/Anexos en sistemas de facturación: Parametros/Modulos/Facturación/activarModInformes.md
       - 📊Reportes:
         - Introducción: Reports/reportes.md
         - Clientes: 
           - Reportes de clientes: Reports/categorias/clientes.md
           - Gestión y envío de avisos de cobro: Reports/categorias/CLI1H.md
         - Inventario: Reports/categorias/inventario.md
-        - Bancos: Reports/categorias/bancos.md
         - Impuestos: Reports/categorias/impuestos.md
         - 📈Reportes Gerenciales:
             - Reporte de mantenimiento de vehículos: Reports/reportesGerenciales/reporte_mantenimiento_vehiculos.md
@@ -119,6 +119,7 @@ nav:
       - Fase 2: modulos/dteNormativaV2/fase2.md
       - Fase 3: modulos/dteNormativaV2/fase3.md
   - 🔄Actualizador: modulos/actualizador/actualizador_contaportable.md
+  - ContaPortable365 (próximamente): contaportable365/proximamente.md
 
 # Note: The repository URL and name are commented out for now. No volver a agregar y requiere supervisión.
 #repo_url: https://github.com/contaportable/CPDOCS
@@ -160,10 +161,25 @@ plugins:
 
 extra_css:
   - assets/ContaPortable/branding.css
+  - assets/css/estados.css
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js  # Para renderizar fórmulas matemáticas
+  - assets/js/estados.js
 
 extra:
+  feedback:
+    title: "¿Te fue útil esta página?"
+    ratings:
+      - icon: material/emoticon-happy-outline
+        name: Sí, me ayudó
+        data: 1
+        note: Gracias por tu respuesta.
+        url: "mailto:soporte@contaportable.com?subject=Feedback%20documentaci%C3%B3n%20-%20me%20ayud%C3%B3"
+      - icon: material/emoticon-sad-outline
+        name: No del todo
+        data: 0
+        note: Escríbenos qué te faltó y lo mejoramos.
+        url: "mailto:soporte@contaportable.com?subject=Feedback%20documentaci%C3%B3n%20-%20no%20me%20ayud%C3%B3"
   social:
     - icon: simple/youtube
       link: https://youtube.com/contaportable

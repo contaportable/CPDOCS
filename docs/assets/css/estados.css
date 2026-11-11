@@ -1,0 +1,12 @@
+.estado {
+  display: inline-block;
+  padding: 0.05em 0.55em;
+  margin-left: 0.4em;
+  border-radius: 0.6em;
+  font-size: 0.7em;
+  font-weight: 600;
+  vertical-align: middle;
+  color: #fff;
+}
+.estado-nuevo { background: #2e7d32; }
+.estado-actualizado { background: #1565c0; }

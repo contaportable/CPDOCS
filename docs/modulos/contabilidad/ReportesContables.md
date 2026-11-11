@@ -2,7 +2,7 @@
 description: Guía de los reportes de la pantalla Reportes Contables de ContaPortable: catálogo, libros, balances, estados de resultados y datos para análisis externo.
 -->
 
-# 📒 **Reportes contables**
+# 📒 **Reportes contables** <span class="estado estado-actualizado" data-hasta="2026-12-31">Actualizado</span>
 
 Esta guía explica cómo preparar los libros contables, los balances y los estados de resultados. Todos se preparan en la pantalla **Reportes Contables** de **ContaPortable**.
 

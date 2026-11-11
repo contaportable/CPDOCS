@@ -2,7 +2,7 @@
 description: Guía de usuario del Actualizador de ContaPortable. Cómo actualizar el sistema, elegir el canal Estable o Beta, entender el aviso de nuevas versiones, volver a una versión anterior y resolver problemas frecuentes.
 --->
 
-# Actualizador de ContaPortable
+# Actualizador de ContaPortable <span class="estado estado-actualizado" data-hasta="2026-12-31">Actualizado</span>
 
 El **Actualizador** instala las nuevas versiones de ContaPortable. Así mantiene su sistema al día con las mejoras, las correcciones y los ajustes tributarios más recientes del Ministerio de Hacienda.
 

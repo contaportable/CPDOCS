@@ -2,7 +2,7 @@
 description: Guía del modo de edición directa en el listado de contribuyentes (NRC), con las columnas de datos de ISR y clasificación contable, validaciones, sincronización con personas naturales y registro en bitácora.
 ---
 
-# 🧾 **Edición del listado de contribuyentes**
+# 🧾 **Edición del listado de contribuyentes** <span class="estado estado-nuevo" data-hasta="2026-12-31">Nuevo</span>
 
 El **modo de edición directa** del listado de contribuyentes (NRC) permite completar o corregir los **datos de ISR** y la **clasificación contable** de varios contribuyentes desde la misma cuadrícula, sin abrir la ficha de cada uno.
 

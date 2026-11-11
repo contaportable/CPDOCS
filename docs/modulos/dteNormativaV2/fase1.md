@@ -1,5 +1,5 @@
 
-# DTE Normativa V2 — Fase 1: Evento de Invalidación
+# DTE Normativa V2 — Fase 1: Evento de Invalidación <span class="estado estado-actualizado" data-hasta="2026-12-31">Actualizado</span>
 
 ## 📌 Introducción
 

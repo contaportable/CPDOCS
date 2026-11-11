@@ -2,7 +2,7 @@
 description: Guía para registrar depósitos bancarios, aplicarles los documentos que compensan y registrar los cargos del banco en ContaPortable.
 --->
 
-# 💵 Depósitos bancarios
+# 💵 Depósitos bancarios <span class="estado estado-actualizado" data-hasta="2026-12-31">Actualizado</span>
 
 Un depósito bancario registra el dinero que entra a una cuenta. Con este módulo también aplica el depósito a los documentos que cubre, por ejemplo facturas a crédito de clientes.
 
