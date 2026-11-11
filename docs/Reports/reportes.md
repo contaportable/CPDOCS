@@ -1,6 +1,6 @@
 # Reportes
 
-En esta sección encontrarás los reportes organizados para que puedas ubicar rápidamente la información que necesitas según tu actividad diaria.
+En esta sección encontrará los reportes organizados por actividad. Así puede ubicar rápidamente la información que necesita.
 
 ## Clasificaciones para usuarios
 
@@ -16,7 +16,19 @@ Enfocados en existencias, movimientos de productos, alertas de mínimos y análi
 
 **Ir a la categoría:** [Reportes de inventario](categorias/inventario.md){ .md-button--primary }
 
-### 3. Reportes de impuestos
+### 3. Reportes de proveedores
+
+Enfocados en el movimiento y los saldos pendientes con cada proveedor, como apoyo al control de cuentas por pagar.
+
+**Ir a la categoría:** [Reportes de proveedores](categorias/proveedores.md){ .md-button--primary }
+
+### 4. Reportes de bancos
+
+Orientados al control de movimientos bancarios, saldos, disponibilidad de fondos y cheques.
+
+**Ir a la categoría:** [Reportes de bancos](categorias/bancos.md){ .md-button--primary }
+
+### 5. Reportes de impuestos
 
 Orientados al control tributario y apoyo en la preparación de declaraciones y anexos fiscales.
 
@@ -24,6 +36,6 @@ Orientados al control tributario y apoyo en la preparación de declaraciones y a
 
 ## Recomendaciones de uso
 
-1. Define primero el objetivo del reporte (cobro, inventario o cumplimiento fiscal).
-2. Aplica filtros por fecha, cliente, producto o documento para obtener resultados más útiles.
-3. Exporta o imprime únicamente cuando hayas validado que los datos correspondan al período correcto.
+1. Defina primero el objetivo del reporte: cobro, inventario o cumplimiento fiscal.
+2. Aplique filtros por fecha, cliente, producto o documento para obtener resultados más útiles.
+3. Exporte o imprima solo cuando haya comprobado que los datos corresponden al período correcto.
