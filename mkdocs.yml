@@ -39,6 +39,8 @@ nav:
         - Traslado de fondos: modulos/bancos/transferenciasBancarias.md
         - Depósitos Bancarios: modulos/bancos/depositos_documentos_multiples.md
       - 🛒Compras (OG Y OC):
+        - Registro de Órdenes de Compra (OC) y Ajuste (OA): modulos/compras/registro_ordenes_compra.md
+        - Registro de Órdenes de Gasto (OG): modulos/compras/registro_ordenes_gasto.md
         - Registrar OG de vehículos: modulos/compras/OG_mantenimiento_vehiculos.md
         - Importar Json del DTE en OG: modulos/compras/importJsonOG.md
         - Gestión de CXP: modulos/compras/gestion_cuentas_por_pagar.md
@@ -57,6 +59,7 @@ nav:
       - 🧾Contribuyentes (NRC/NIT):
         - Edición del listado de contribuyentes: modulos/contribuyentes/ListadoContribuyentes.md
       - 📑Facturación:
+        - Gestión de clientes y Resumen de Facturas: modulos/facturacion/gestion_clientes.md
         - Dual: modulos/facturacion/facturacion_dual.md
         - Multilínea: modulos/facturacion/facturacion_lineas_multiples.md
         - Personalizar secuencia de generación DTE: modulos/facturacion/personalizar_secuencia_gen_dte.md
@@ -80,11 +83,14 @@ nav:
         - Importar nombres y precios desde Excel: modulos/inventario/ImportarPreciosExcel.md
         - Gestión de familias de inventario: modulos/inventario/FamiliaInventario.md
         - Requisiciones y mermas: modulos/inventario/requisiciones-mermas-y-perdidas.md
+        - Gastos de importación (OEC): modulos/inventario/GastosImportacion.md
+        - Retaceos: modulos/inventario/Retaceo.md
       - 🧾Informes (Anexos):
         - F07:
           - Generales: modulos/Informes_anexos/F07/anexos_f07.md
           - Reportes: modulos/Informes_anexos/F07/reportes.md
           - Agrupar CSV de anexo vtas Consu. Final: modulos/Informes_anexos/F07/agrupacionAnexoConsumidorFinal.md
+          - Eventos de Retorno en reportes: modulos/Informes_anexos/F07/eventos_retorno_en_reportes.md
         - F14:
           - Anexo de retenciones de renta: modulos/Informes_anexos/F14/anexos_f14.md
           - Anexo de pago de quincena 25: modulos/Informes_anexos/F14/anexos_f14Q25.md
@@ -94,6 +100,7 @@ nav:
         - Quincena 25: modulos/planillas/planillas_Q25.md
       - ⚙️Parámetros en Contaportable:
         - Informes/Anexos: Parametros/Modulos/Informes_anexos/ParametrosEnAnexos.md
+        - Inventario: Parametros/Modulos/Inventario/ParametrosInventario.md
         - Generales: Parametros/ParametrosGenerales.md
       - 📊Reportes:
         - Introducción: Reports/reportes.md
@@ -101,6 +108,8 @@ nav:
           - Reportes de clientes: Reports/categorias/clientes.md
           - Gestión y envío de avisos de cobro: Reports/categorias/CLI1H.md
         - Inventario: Reports/categorias/inventario.md
+        - Proveedores: Reports/categorias/proveedores.md
+        - Bancos: Reports/categorias/bancos.md
         - Impuestos: Reports/categorias/impuestos.md
         - 📈Reportes Gerenciales:
             - Reporte de mantenimiento de vehículos: Reports/reportesGerenciales/reporte_mantenimiento_vehiculos.md
@@ -167,19 +176,22 @@ extra_javascript:
   - assets/js/estados.js
 
 extra:
-  feedback:
-    title: "¿Te fue útil esta página?"
-    ratings:
-      - icon: material/emoticon-happy-outline
-        name: Sí, me ayudó
-        data: 1
-        note: Gracias por tu respuesta.
-        url: "mailto:soporte@contaportable.com?subject=Feedback%20documentaci%C3%B3n%20-%20me%20ayud%C3%B3"
-      - icon: material/emoticon-sad-outline
-        name: No del todo
-        data: 0
-        note: Escríbenos qué te faltó y lo mejoramos.
-        url: "mailto:soporte@contaportable.com?subject=Feedback%20documentaci%C3%B3n%20-%20no%20me%20ayud%C3%B3"
+  analytics:
+    feedback:
+      title: "¿Te fue útil esta página?"
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: Sí, me ayudó
+          data: 1
+          note: >-
+            Gracias por tu respuesta.
+        - icon: material/emoticon-sad-outline
+          name: No del todo
+          data: 0
+          note: >-
+            Escríbenos qué te faltó a
+            <a href="mailto:soporte@contaportable.com?subject=Mejora%20documentaci%C3%B3n:%20{title}&amp;body=P%C3%A1gina:%20{url}">soporte@contaportable.com</a>
+            y lo mejoramos.
   social:
     - icon: simple/youtube
       link: https://youtube.com/contaportable
