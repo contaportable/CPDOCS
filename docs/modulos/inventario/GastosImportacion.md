@@ -1,22 +1,60 @@
-# Gastos de Importación (Órdenes de Exterior)
+<!---
+description: Guía para gestionar las órdenes de compra del exterior (OEC) en ContaPortable, desde su registro hasta su exportación y su trazabilidad con facturas y retaceos.
+--->
 
-El submódulo de **Gastos de Importación** (también conocido como Órdenes de Compra del Exterior o OEC) permite llevar un control detallado de las compras internacionales, desde su solicitud hasta su recepción.
+# 🚢 Gastos de importación (órdenes del exterior)
 
-## 1. Órdenes de Compra del Exterior (OEC)
-El formulario de **Órdenes de Compra del Exterior** es el punto de partida para gestionar las importaciones. 
+Las órdenes de compra del exterior (OEC) registran las compras internacionales desde su solicitud hasta su recepción. Use este módulo para dar seguimiento a cada importación.
 
-![TODO: Insertar Imagen - Listado de Órdenes de Compra del Exterior](../assets/inventario/gridoec_principal.png)
+!!! abstract "En esta guía aprenderá a"
+    - Consultar el listado de órdenes del exterior.
+    - Exportar una OEC a una orden de envío o a un documento de venta.
+    - Rastrear qué facturas y retaceos se generaron a partir de una orden.
 
-### Características Principales
-- **Gestión Visual:** Interfaz clara y optimizada para visualizar fácilmente el estado de las importaciones en curso.
-- **Validaciones de Estado:** Incorpora validaciones para evitar modificaciones accidentales en documentos que ya están vinculados a otras etapas del proceso.
-- **Trazabilidad:** Permite rastrear la orden, consultando en cualquier momento qué facturas de compra o retaceos han sido generados a partir de ella.
+!!! tip "Costos de importación"
+    Para repartir los gastos de la importación, como fletes y aranceles, entre los productos, vea [Retaceos](Retaceo.md).
 
-### Exportación de OEC
-Una orden del exterior (OEC) puede ser exportada rápidamente a:
-- **Orden de Envío (OE)**
-- **Documento de Venta** (cuando la importación ya tiene un cliente final asignado desde el origen).
+---
 
-![TODO: Insertar Imagen - Opciones de exportación de una OEC](../assets/inventario/exportacion_oec.png)
+## 📋 Órdenes de compra del exterior
 
-> **Nota:** Para conocer cómo se distribuyen los gastos asociados a la importación (fletes, aranceles, etc.) para el costeo de los productos, consulte la sección de **[Retaceos](Retaceo.md)**.
+El formulario de OEC es el punto de partida de cada importación. Desde el listado puede consultar el estado de cada compra en curso.
+
+!!! warning "Falta captura"
+    Listado de órdenes de compra del exterior. Nombre sugerido: `01_listado_oec.png`.
+
+### Qué le ayuda el sistema
+
+- **Estado visible:** la lista muestra el avance de cada importación.
+- **Protección de documentos vinculados:** el sistema evita modificar una orden que ya está ligada a otra etapa del proceso.
+- **Trazabilidad:** en cualquier momento puede ver qué facturas de compra o retaceos se generaron a partir de una orden.
+
+---
+
+## 📤 Exportar una OEC
+
+Una OEC se puede exportar en dos formas:
+
+| Destino | Cuándo usarlo |
+| :--- | :--- |
+| **Orden de envío (OE)** | Para comunicar la orden al proveedor del exterior. |
+| **Documento de venta** | Cuando la importación ya tiene un cliente final asignado desde el origen. |
+
+!!! warning "Falta captura"
+    Opciones de exportación de una OEC. Nombre sugerido: `02_exportacion_oec.png`.
+
+---
+
+## ❓ Problemas frecuentes
+
+??? question "No puedo modificar una orden"
+    Es probable que la orden ya esté vinculada a una factura o a un retaceo. Revise la trazabilidad de la orden para ver qué documentos la usan.
+
+---
+
+## 🔗 Páginas relacionadas
+
+- [Retaceos](Retaceo.md): distribución de los gastos de importación entre los productos.
+- [Gestión de inventario](GestionInventario.md)
+
+---
