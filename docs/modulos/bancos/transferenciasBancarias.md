@@ -2,7 +2,7 @@
 description: Documentación del formulario de transferencia entre cuentas bancarias en el módulo de Bancos. Genera automáticamente los documentos DP, CH o NC correspondientes a cada cuenta. Issue #551.
 --->
 
-# Transferencia entre Cuentas
+# Traslado de fondos entre cuentas
 
 El módulo de Bancos incorpora un formulario dedicado para realizar transferencias entre cuentas propias, generando automáticamente los documentos de salida (nota de cargo NC o cheque CH) y entrada (depositos DP) sin necesidad de registrarlos por separado.
 
@@ -12,6 +12,9 @@ El módulo de Bancos incorpora un formulario dedicado para realizar transferenci
 
 !!! abstract "Formulario de Transferencia entre Cuentas"
     Anteriormente, una transferencia entre cuentas bancarias requería dos movimientos manuales separados: un depósito para la cuenta destino y una nota de cargo o cheque para la cuenta origen. El nuevo formulario unifica este proceso en un solo paso, generando los registros correspondientes en el módulo de Bancos de forma automática.
+
+!!! note "Nombres de los botones de Bancos"
+    Para evitar confusiones, en la barra de herramientas de Bancos el botón **Cheques** ahora se llama **Egresos Bancarios** y el botón **Transf Banc** ahora se llama **Traslado de fondos**. También cambiaron sus opciones de menú y el título de esta pantalla. Las funciones no cambian: **Egresos Bancarios** agrupa los cheques y las notas de cargo, y **Traslado de fondos** registra los movimientos entre cuentas bancarias. En el formulario de parámetros, el acceso rápido también aparece como **+ Acceso a Egresos Bancarios**.
 
 ---
 
@@ -28,7 +31,7 @@ El módulo de Bancos incorpora un formulario dedicado para realizar transferenci
 ## 🔍 Alcance
 
 !!! note "Módulos y funciones afectadas"
-    - **Módulo:** Bancos → Transferencia entre Cuentas
+    - **Módulo:** Bancos → Traslado de fondos
     - **Documentos generados automáticamente:** DP (depósito), NC (nota de cargo)
     - **Acceso:** controlado por usuario (A-01 tiene acceso por defecto; otros usuarios requieren permiso explícito)
     - **Reportes bancarios verificados:** Auxiliar de Bancos (ban11.frx), Estado de Cuenta Bancario (ban12.frx), Saldos de Cuentas Bancarias (ban13.frx), Saldos de Cuentas Bancarias — Solo Disponibilidad (ban13v2.frx), Listado de Cheques (ban14.frx)
@@ -86,7 +89,7 @@ El módulo de Bancos incorpora un formulario dedicado para realizar transferenci
 !!! example "Flujo de transferencia entre cuentas"
 
     === "1️⃣ Ejecutar la transferencia"
-        1. Acceder al módulo de Bancos → opción **Transferencias Bancarias**.
+        1. Acceder al módulo de Bancos → opción **Traslado de fondos**.
         2. Ingresar la **descripción** de la transferencia (campo obligatorio).
         3. Seleccionar la **cuenta contable** usando el selector (no se puede ingresar manualmente).
         4. Ingresar el **monto** de la transferencia.
@@ -106,6 +109,9 @@ El módulo de Bancos incorpora un formulario dedicado para realizar transferenci
         14. Desde la administración de usuarios, verificar los permisos del formulario de transferencia.
         15. Un usuario sin acceso verá bloqueada la opción en el módulo.
         16. El usuario A-01 tiene acceso habilitado por defecto.
+
+!!! warning "La cuenta contable debe ser de detalle"
+    Antes de crear la orden de gasto de la transferencia, el sistema valida la **cuenta contable**. Si es una cuenta de mayor, muestra el aviso *"La cuenta contable X es de mayor y no se puede usar. Elija una cuenta de detalle."* y no genera ningún documento ni consume numeración; elija una cuenta de detalle y vuelva a aplicar la transferencia. Si el sistema no dispone del catálogo de cuentas, no se realiza esta validación.
 
 ---
 
