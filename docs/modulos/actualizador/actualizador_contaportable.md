@@ -112,7 +112,7 @@ Cuando hay una versión nueva, aparece un aviso en la esquina inferior derecha d
     2. Marque o desmarque **Notificar sobre nuevas actualizaciones al iniciar ContaPortable**.
 
     - **Marcada:** el sistema avisa cuando hay una versión más reciente.
-    - **Desmarcada:** el sistema no muestra avisos automáticos al iniciar. Puede volver a marcarla cuando quiera.
+    - **Desmarcada:** el sistema no vuelve a avisar de la versión disponible en ese momento. Una versión más reciente sí vuelve a avisarse. Puede volver a marcarla cuando quiera.
 
     La preferencia se guarda por usuario de Windows y por instalación. No afecta los datos de la empresa.
 
@@ -231,8 +231,7 @@ Antes de cada actualización, el sistema guarda un respaldo comprimido con la fe
     1. Cierre ContaPortable y sus módulos.
     2. Abra el **Actualizador**.
     3. Presione **Revertir versión**.
-    4. Seleccione el respaldo que desea restaurar.
-    5. Confirme la reversión y espere a que termine.
+    4. Confirme la reversión y espere a que termine. Se restaura siempre el respaldo más reciente; el Actualizador no permite elegir otro.
 
 !!! success "Sus datos no cambian"
     Al volver a una versión anterior, solo se restauran los archivos del programa y los reportes. Su información contable no se modifica.
