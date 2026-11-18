@@ -1,6 +1,84 @@
 # Changelog ContaPortable
 ---
 
+## 2026-11-17
+
+### 📝 Nuevas Características
+- Cambio: Órdenes de Compra: estandarización de formularios e importación desde Excel y JSON.
+- Descripción: Se unifican el diseño, el tamaño de ventana y las opciones de importación en Orden de Compra (OC), Orden de Ajuste (OA), Orden del Exterior (OE) y Devoluciones (DV). Ahora es posible descargar la plantilla oficial de Excel e importar el detalle en todos estos documentos, e importar archivos JSON de DTE en órdenes de compra (01, 03 y 14), órdenes del exterior (11) y devoluciones sobre compra mediante nota de crédito (05).
+- Cambio: Órdenes de Compra: separación de devoluciones sobre compra y sobre salida.
+- Descripción: En el listado de órdenes de compra se separa el nodo de «Devoluciones sobre salida» del de «Devoluciones sobre compra». Desde una orden de compra aplicada se puede generar directamente la devolución sobre compra con las cantidades en negativo y elegir si corresponde a una devolución simple o a una nota de crédito fiscal para el Libro de Compras.
+- Cambio: Parámetros de Inventario: opciones de costeo y cotizaciones visibles en pantalla.
+- Descripción: En Parámetros Generales (pestaña Herramientas, sección Inventario) ahora se pueden configurar directamente las opciones «Incluir cotizaciones en movimientos de inventario», «Respetar costo en OA kits y devoluciones sobre compra» y el «Método de costeo de inventario».
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Cheques, quedan, caja chica, remesas, órdenes de trabajo, activo fijo, llamadas y proveedores: descripciones largas.
+- Descripción: Un documento con descripción muy larga ya no muestra error en la grilla; se muestran los primeros 254 caracteres.
+- Cambio: Remisión de facturas: descripción muy larga.
+- Descripción: Agregar una factura con descripción muy larga ya no muestra error ni congela la pantalla; la columna muestra los primeros 254 caracteres.
+- Cambio: Cheques, quedan y notas de cargo: guardado simultáneo.
+- Descripción: Si dos usuarios guardan el mismo cheque, nota de cargo o quedan a la vez, el guardado se rechaza con un aviso en lugar de mostrar un error del sistema.
+- Cambio: Bancos: auxiliar de bancos (BAN11).
+- Descripción: El auxiliar incluye los egresos sin detalle, igual que el estado de cuenta (BAN12). Antes los omitía y los dos reportes no cuadraban.
+- Cambio: Requisiciones: selección de productos.
+- Descripción: Elegir un producto de la lista con el mouse llena la línea. Antes aparecía el aviso «no existe en el catálogo» y la selección se perdía.
+- Cambio: Caja chica: saldo de órdenes de gasto pagadas.
+- Descripción: El saldo de una orden de gasto ya pagada queda en cero en el cuadre; antes podía aparecer en negativo.
+
+---
+
+## 2026-11-16
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Libro de compras consolidado (Anexos y Planilla Única).
+- Descripción: El libro consolidado ya no muestra error al generarlo y muestra la percepción 1%, igual que el libro por anexo.
+- Cambio: Anexo F14: importación de varios JSON.
+- Descripción: Al importar varios JSON solo se omite el archivo repetido. Antes se descartaban también todos los archivos que venían después.
+
+---
+
+## 2026-11-13
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Actualizador: accesos directos del Escritorio.
+- Descripción: El actualizador clasifica bien los accesos directos y ya no pasa datos de más.
+
+---
+
+## 2026-11-12
+
+### 📝 Nuevas Características
+- Cambio: Libro de compras versión 3 (F07_21 v3): percepción 1%.
+- Descripción: La percepción 1% de la casilla 163 se muestra en la misma fila del documento, en la columna Per. 1%.
+
+---
+
+## 2026-11-11
+
+### 📝 Nuevas Características
+- Cambio: Anexos F07: creación automática de proveedores.
+- Descripción: Se puede activar o desactivar la creación automática de proveedores en los anexos (activa por defecto).
+- Cambio: Anexos F07: nombre y apellido al crear el NIT.
+- Descripción: Al crear la ficha de una persona natural desde el anexo, el sistema separa nombre y apellido. Si el nombre es de una empresa, lo deja completo en el campo Nombre.
+- Cambio: Anexos F07: validación de campos ISR.
+- Descripción: Nueva opción «Validar configuración de campos ISR» en las fichas NIT y contribuyentes, para evitar heredar una configuración errónea al cargar DTE o importar JSON. La validación de ISR también aplica al anexo de Sujeto Excluido (casilla 66) con la matriz del manual F07. Al generar el CSV, el sistema no permite continuar si los campos ISR están vacíos o mal configurados.
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Libro de compras versión 3: retención.
+- Descripción: La retención recibida se muestra como una fila más del reporte, en lugar de quedar en cero.
+
+---
+
+## 2026-11-09
+
+### 🐞 Corrección de Errores (Bugs)
+- Cambio: Facturación electrónica: transmisión de CDE a extranjeros (no domiciliados).
+- Descripción: Se corrige el error de validación que Hacienda devolvía al transmitir bajo la Normativa DTE 2.0.
+- Cambio: Envío de correo: nombres de cliente con punto y coma.
+- Descripción: Un punto y coma en el nombre del cliente ya no impide enviar el correo con los archivos adjuntos (PDF y JSON).
+
+---
+
 ## 2026-11-03
 
 ### 🐞 Corrección de Errores (Bugs)

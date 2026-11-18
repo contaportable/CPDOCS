@@ -64,6 +64,7 @@ Para registrar una requisición:
 
 - Indique claramente el motivo de la solicitud.
 - Revise la bodega y la cantidad antes de guardar.
+- Para agregar un producto de la lista, puede elegirlo con el mouse: la línea se llena con el producto. Si el producto no aparece en el catálogo, el sistema lo indica.
 - Si cuenta con lector de código de barras, puede activar la búsqueda por código de barras (ver [sección 3](#3-busqueda-de-productos-por-codigo-de-barras)) para agilizar la captura de productos.
 
 ## 📝 **6. Registrar una merma o pérdida**
