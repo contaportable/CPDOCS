@@ -2,6 +2,11 @@
 
 Este documento explica cómo registrar y gestionar las requisiciones y las salidas de inventario por mermas o pérdidas. Ambas funciones se manejan desde un flujo similar y ayudan a mantener el inventario actualizado cuando se entrega material a uso interno o cuando un producto sale del sistema por deterioro o daño.
 
+!!! info "De un vistazo"
+    - ⏱️ **Tiempo:** 5 minutos por documento
+    - 🎚️ **Nivel:** Básico
+    - ✅ **Resultado:** Salida registrada y existencias al día
+
 ## ☝️ **1. ¿Cuándo usar cada opción?**
 
 - Requisiciones: se usan para solicitar productos o materiales para uso interno, producción o un proyecto específico.

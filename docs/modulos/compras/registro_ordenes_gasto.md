@@ -6,6 +6,11 @@ description: Guía para registrar una Orden de Gasto en ContaPortable: encabezad
 
 Use la Orden de Gasto para registrar los gastos operativos de la empresa: combustible, reparaciones, servicios, gastos administrativos y cualquier egreso que no sea una compra de inventario.
 
+!!! info "De un vistazo"
+    - ⏱️ **Tiempo:** 5 minutos por orden
+    - 🎚️ **Nivel:** Básico
+    - ✅ **Resultado:** Orden de gasto guardada y lista para pagar
+
 !!! abstract "En esta guía aprenderá a"
     - Crear una orden de gasto con su encabezado y sus líneas de detalle.
     - Revisar los impuestos y los totales.

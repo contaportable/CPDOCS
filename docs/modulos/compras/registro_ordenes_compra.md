@@ -6,6 +6,11 @@ description: Guía para registrar órdenes de compra, órdenes de ajuste, órden
 
 Use este módulo para registrar la mercadería que entra al inventario. Por ejemplo, una compra a un proveedor. También sirve para devolver mercadería.
 
+!!! info "De un vistazo"
+    - ⏱️ **Tiempo:** 10 minutos por documento
+    - 🎚️ **Nivel:** Básico
+    - ✅ **Resultado:** Documento aplicado y costos recalculados
+
 A diferencia de la [orden de gasto](registro_ordenes_gasto.md), la orden de compra sí cambia el inventario y el costo de los productos.
 
 Todos los documentos de este módulo usan la misma pantalla. Cambia el tipo de documento.
@@ -106,6 +111,8 @@ Puede cargar el detalle sin escribirlo línea por línea. Use Excel o un archivo
         4. Pulse **Importar**, elija **Importar plantilla** y seleccione el archivo. Se aceptan archivos **.xls** y **.xlsx**.
         5. Revise el detalle antes de guardar.
 
+    En la captura, **①** marca el botón **Importar** y **②** marca la respuesta **Sí**.
+
     ![Pregunta para descargar la plantilla de importación](../../assets/Compras/ordenesCompra/importar_excel_descargar_plantilla.png){ align=center }
 
     La plantilla tiene el encabezado en la **fila 3**. Los datos empiezan en la **fila 4**. Use las columnas en este orden:
@@ -202,6 +209,8 @@ En la ventana de la devolución, elija el **Tipo de orden**.
 | **DEVOLUCIÓN** | El proveedor no emitió nota de crédito. | Solo cambia el inventario. |
 | **NOTA DE CRÉDITO** | El proveedor emitió una nota de crédito. | Aparece como nota de crédito en el libro de compras. |
 
+**①** marca la lista **Tipo de orden**.
+
 ![Lista para elegir Devolución o Nota de crédito](../../assets/Compras/ordenesCompra/devolucion_tipo_nota_credito.png){ align=center }
 
 Si carga el archivo JSON de una nota de crédito, el tipo cambia solo a **NOTA DE CRÉDITO**. Si el proveedor no emitió nota, cambie el tipo a **DEVOLUCIÓN**.
@@ -237,6 +246,8 @@ En el listado, cada tipo tiene dos grupos: **No aplicadas** y **Aplicadas**. Las
 - Devoluciones sobre salidas, aplicadas.
 - Devoluciones sobre compras, no aplicadas.
 - Devoluciones sobre compras, aplicadas.
+
+**①** marca los cuatro grupos de devoluciones.
 
 ![Listado de devoluciones con sus grupos](../../assets/Compras/ordenesCompra/listado_devoluciones_nodos.png){ align=center }
 

@@ -16,75 +16,180 @@ Aquí encontrarás información organizada por módulos, procesos, parámetros y
 - Configuraciones funcionales y parámetros de uso.
 - Reportes y material de apoyo para la operación diaria.
 
-## 🧭 Empiece por aquí
+## 🆕 Lo más nuevo
 
-<div class="grid cards" markdown>
+Estas son las guías que más cambiaron este mes. Cada una explica una tarea completa.
 
-- :material-bank: **Bancos** <span class="estado estado-actualizado" data-hasta="2026-12-31">Actualizado</span>
+=== "🆕 Todo lo nuevo"
 
-    ---
+    <div class="grid cards" markdown>
 
-    Registre depósitos, aplique documentos y cargue comisiones del banco.
+    - :material-cart-arrow-down: **Órdenes de compra** <span class="estado estado-nuevo" data-hasta="2026-12-18">Nuevo</span>
 
-    [Ir a depósitos](modulos/bancos/depositos_documentos_multiples.md)
+        ---
 
-- :material-cash-multiple: **Contabilidad** <span class="estado estado-actualizado" data-hasta="2026-12-31">Actualizado</span>
+        Registre compras y devoluciones, e importe el detalle desde Excel o desde el JSON del DTE.
 
-    ---
+        [Ir a órdenes de compra](modulos/compras/registro_ordenes_compra.md)
 
-    Contabilice documentos, revise partidas y prepare sus reportes.
+    - :material-bank-check: **Reportes de bancos** <span class="estado estado-nuevo" data-hasta="2026-12-18">Nuevo</span>
 
-    [Ir a contabilización](modulos/contabilidad/contabilizacion_automatica.md)
+        ---
 
-- :material-file-chart: **Reportes contables** <span class="estado estado-actualizado" data-hasta="2026-12-31">Actualizado</span>
+        Auxiliar de bancos y estado de cuenta que cuadran entre sí.
 
-    ---
+        [Ir a reportes de bancos](Reports/categorias/bancos.md)
 
-    Libros, balances y estados de resultados, paso a paso.
+    - :material-cog-outline: **Parámetros de inventario** <span class="estado estado-nuevo" data-hasta="2026-12-18">Nuevo</span>
 
-    [Ir a reportes](modulos/contabilidad/ReportesContables.md)
+        ---
 
-- :material-receipt-text: **Facturación y DTE** <span class="estado estado-actualizado" data-hasta="2026-12-31">Actualizado</span>
+        Elija el método de costeo y sepa por qué dos empresas ven costos distintos.
 
-    ---
+        [Ir a parámetros](Parametros/Modulos/Inventario/ParametrosInventario.md)
 
-    Impresión dual (RGDUAL), entrega automática de DTE y emisión de comprobantes.
+    - :material-clipboard-arrow-up-outline: **Requisiciones y mermas** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
 
-    [Ir a Facturación](modulos/facturacion/facturacion_dual.md)
+        ---
 
-- :material-shield-check: **Normativa DTE 2.0** <span class="estado estado-actualizado" data-hasta="2026-12-31">Actualizado</span>
+        Dé salida a materiales y pérdidas, y busque productos por código de barras.
 
-    ---
+        [Ir a requisiciones y mermas](modulos/inventario/requisiciones-mermas-y-perdidas.md)
 
-    Fase 1 de invalidación, validaciones para exportación y cumplimiento normativo.
+    - :material-file-export-outline: **Anexo F14** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
 
-    [Ir a Normativa DTE 2.0](modulos/dteNormativaV2/fase1.md)
+        ---
 
-- :material-account-group: **Contribuyentes** <span class="estado estado-nuevo" data-hasta="2026-12-31">Nuevo</span>
+        Cargue varios JSON de una vez y genere el archivo para declarar.
 
-    ---
+        [Ir al Anexo F14](modulos/Informes_anexos/F14/anexos_f14.md)
 
-    Revise y edite el listado de contribuyentes de IVA.
+    - :material-update: **Actualizador** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
 
-    [Ir al listado](modulos/contribuyentes/ListadoContribuyentes.md)
+        ---
 
-- :material-update: **Actualizador** <span class="estado estado-actualizado" data-hasta="2026-12-31">Actualizado</span>
+        Actualice, elija su canal y vuelva a la versión anterior si lo necesita.
 
-    ---
+        [Ir al actualizador](modulos/actualizador/actualizador_contaportable.md)
 
-    Actualice ContaPortable, elija su canal y vuelva a una versión anterior.
+    - :material-file-document-edit-outline: **Órdenes de gasto y CXP** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
 
-    [Ir al actualizador](modulos/actualizador/actualizador_contaportable.md)
+        ---
 
-- :material-file-document-outline: **Reportes de inventario** 
+        Registre gastos y controle lo que debe pagar, paso a paso.
 
-    ---
+        [Ir a órdenes de gasto](modulos/compras/registro_ordenes_gasto.md)
 
-    Existencias, movimientos y análisis de inventario costeado.
+    - :material-bank-transfer: **Traslado de fondos** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
 
-    [Ir a reportes de inventario](Reports/categorias/inventario.md)
+        ---
 
-</div>
+        Mueva dinero entre cuentas bancarias en pocos pasos.
+
+        [Ir al traslado de fondos](modulos/bancos/transferenciasBancarias.md)
+
+    - :material-ship-wheel: **Gastos de importación** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
+
+        ---
+
+        Sume fletes y aranceles al costo real de sus productos.
+
+        [Ir a gastos de importación](modulos/inventario/GastosImportacion.md)
+
+    </div>
+
+=== "🛒 Compras e inventario"
+
+    <div class="grid cards" markdown>
+
+    - :material-cart-arrow-down: **Órdenes de compra** <span class="estado estado-nuevo" data-hasta="2026-12-18">Nuevo</span>
+
+        ---
+
+        Registre compras y devoluciones, e importe el detalle desde Excel o desde el JSON del DTE.
+
+        [Ir a órdenes de compra](modulos/compras/registro_ordenes_compra.md)
+
+    - :material-cog-outline: **Parámetros de inventario** <span class="estado estado-nuevo" data-hasta="2026-12-18">Nuevo</span>
+
+        ---
+
+        Elija el método de costeo y sepa por qué dos empresas ven costos distintos.
+
+        [Ir a parámetros](Parametros/Modulos/Inventario/ParametrosInventario.md)
+
+    - :material-clipboard-arrow-up-outline: **Requisiciones y mermas** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
+
+        ---
+
+        Dé salida a materiales y pérdidas, y busque productos por código de barras.
+
+        [Ir a requisiciones y mermas](modulos/inventario/requisiciones-mermas-y-perdidas.md)
+
+    - :material-file-document-edit-outline: **Órdenes de gasto y CXP** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
+
+        ---
+
+        Registre gastos y controle lo que debe pagar, paso a paso.
+
+        [Ir a órdenes de gasto](modulos/compras/registro_ordenes_gasto.md)
+
+    - :material-ship-wheel: **Gastos de importación** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
+
+        ---
+
+        Sume fletes y aranceles al costo real de sus productos.
+
+        [Ir a gastos de importación](modulos/inventario/GastosImportacion.md)
+
+    </div>
+
+=== "🏦 Bancos"
+
+    <div class="grid cards" markdown>
+
+    - :material-bank-check: **Reportes de bancos** <span class="estado estado-nuevo" data-hasta="2026-12-18">Nuevo</span>
+
+        ---
+
+        Auxiliar de bancos y estado de cuenta que cuadran entre sí.
+
+        [Ir a reportes de bancos](Reports/categorias/bancos.md)
+
+    - :material-bank-transfer: **Traslado de fondos** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
+
+        ---
+
+        Mueva dinero entre cuentas bancarias en pocos pasos.
+
+        [Ir al traslado de fondos](modulos/bancos/transferenciasBancarias.md)
+
+    </div>
+
+=== "🧾 Anexos y sistema"
+
+    <div class="grid cards" markdown>
+
+    - :material-file-export-outline: **Anexo F14** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
+
+        ---
+
+        Cargue varios JSON de una vez y genere el archivo para declarar.
+
+        [Ir al Anexo F14](modulos/Informes_anexos/F14/anexos_f14.md)
+
+    - :material-update: **Actualizador** <span class="estado estado-actualizado" data-hasta="2026-12-18">Actualizado</span>
+
+        ---
+
+        Actualice, elija su canal y vuelva a la versión anterior si lo necesita.
+
+        [Ir al actualizador](modulos/actualizador/actualizador_contaportable.md)
+
+    </div>
+
+!!! tip "¿Qué cambió esta semana?"
+    Consulte el [historial de cambios](changelog.md) para ver las novedades y correcciones día por día.
 
 ## ⚡ Accesos rápidos
 

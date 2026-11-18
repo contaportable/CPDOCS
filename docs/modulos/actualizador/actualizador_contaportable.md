@@ -6,6 +6,11 @@ description: Guía de usuario del Actualizador de ContaPortable. Cómo actualiza
 
 El **Actualizador** instala las nuevas versiones de ContaPortable. Así mantiene su sistema al día con las mejoras, las correcciones y los ajustes tributarios más recientes del Ministerio de Hacienda.
 
+!!! info "De un vistazo"
+    - ⏱️ **Tiempo:** 10 minutos
+    - 🎚️ **Nivel:** Básico
+    - ✅ **Resultado:** ContaPortable en la versión más reciente
+
 ---
 
 ## 📌 Introducción

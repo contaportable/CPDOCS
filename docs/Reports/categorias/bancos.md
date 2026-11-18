@@ -6,6 +6,11 @@ description: Resumen de categorías de reportes de bancos incluídos en ContaPor
 
 Esta página reúne el detalle de los reportes incluidos en la categoría de bancos en el sistema **ContaPortable**, con especial atención a los saldos y movimientos bancarios relevantes para control y conciliación.
 
+!!! info "De un vistazo"
+    - ⏱️ **Tiempo:** 5 minutos
+    - 🎚️ **Nivel:** Básico
+    - ✅ **Resultado:** Saldos y movimientos del banco consultados y cuadrados
+
 !!! tip "Diagrama de la categoría de bancos"
     ``` mermaid
     graph TD

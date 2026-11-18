@@ -6,6 +6,11 @@ description: Opciones de inventario que cambian las existencias y los costos de 
 
 Estas opciones definen qué documentos cuentan para las existencias y cómo se calcula el costo de sus productos. Si dos empresas tienen los mismos documentos y ven números distintos, la diferencia suele estar en estas opciones.
 
+!!! info "De un vistazo"
+    - ⏱️ **Tiempo:** 10 minutos, más el recálculo
+    - 🎚️ **Nivel:** Intermedio
+    - ✅ **Resultado:** Opciones de costeo configuradas y costos recalculados
+
 !!! danger "Antes de cambiar una opción"
     Los movimientos de inventario se **recalculan**: no se actualizan al guardar cada documento. Un cambio en esta pantalla aparece en los reportes solo después de ejecutar **Recalcular costos**.
 

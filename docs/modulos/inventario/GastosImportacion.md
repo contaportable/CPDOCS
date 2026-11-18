@@ -6,6 +6,11 @@ description: Guía para gestionar las órdenes de compra del exterior (OEC) en C
 
 Las órdenes de compra del exterior (OEC) registran las compras internacionales desde su solicitud hasta su recepción. Use este módulo para dar seguimiento a cada importación.
 
+!!! info "De un vistazo"
+    - ⏱️ **Tiempo:** 10 minutos
+    - 🎚️ **Nivel:** Intermedio
+    - ✅ **Resultado:** Orden del exterior exportada y rastreada
+
 !!! abstract "En esta guía aprenderá a"
     - Consultar el listado de órdenes del exterior.
     - Exportar una OEC a una orden de envío o a un documento de venta.

@@ -6,6 +6,11 @@ description: Documentación del formulario de transferencia entre cuentas bancar
 
 El módulo de Bancos incorpora un formulario dedicado para realizar transferencias entre cuentas propias, generando automáticamente los documentos de salida (nota de cargo NC o cheque CH) y entrada (depositos DP) sin necesidad de registrarlos por separado.
 
+!!! info "De un vistazo"
+    - ⏱️ **Tiempo:** 3 minutos por traslado
+    - 🎚️ **Nivel:** Básico
+    - ✅ **Resultado:** Documentos de salida y entrada generados
+
 ---
 
 ## 📌 Introducción

@@ -6,6 +6,11 @@ description: Guía para elaborar el Anexo F14 de retención de renta en ContaPor
 
 El Anexo F14 reporta las retenciones de renta que la empresa aplicó en el mes. Se prepara conforme al manual del Ministerio de Hacienda y se declara como parte del F910.
 
+!!! info "De un vistazo"
+    - ⏱️ **Tiempo:** 20 minutos
+    - 🎚️ **Nivel:** Intermedio
+    - ✅ **Resultado:** Archivo CSV del F14 listo para declarar
+
 !!! abstract "En esta guía aprenderá a"
     - Crear un informe F14 para un mes y un año.
     - Cargar los registros desde planillas, desde DTE de sujetos excluidos, desde un JSON o desde un CSV.
