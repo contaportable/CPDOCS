@@ -96,6 +96,14 @@ Estas son las guías que más cambiaron este mes. Cada una explica una tarea com
 
         [Ir a gastos de importación](modulos/inventario/GastosImportacion.md)
 
+    - :material-backup-restore: **Respaldos** <span class="estado estado-nuevo" data-hasta="2026-12-18">Nuevo</span>
+
+        ---
+
+        Guarde una copia completa de su sistema y restablézcala en cualquier computadora.
+
+        [Ir a respaldos](modulos/respaldos/respaldos_contaportable.md)
+
     </div>
 
 === "🛒 Compras e inventario"
@@ -185,6 +193,14 @@ Estas son las guías que más cambiaron este mes. Cada una explica una tarea com
         Actualice, elija su canal y vuelva a la versión anterior si lo necesita.
 
         [Ir al actualizador](modulos/actualizador/actualizador_contaportable.md)
+
+    - :material-backup-restore: **Respaldos** <span class="estado estado-nuevo" data-hasta="2026-12-18">Nuevo</span>
+
+        ---
+
+        Guarde una copia completa de su sistema y restablézcala en cualquier computadora.
+
+        [Ir a respaldos](modulos/respaldos/respaldos_contaportable.md)
 
     </div>
 
